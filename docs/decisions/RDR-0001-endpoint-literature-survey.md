@@ -21,24 +21,25 @@ Giai đoạn khảo sát văn hiến (Literature Survey) dễ rơi vào bẫy th
 ### 2.1. Bốn mục tiêu khảo sát bắt buộc phải chốt (Objectives)
 
 Khảo sát văn hiến chỉ hợp lệ khi phục vụ chốt 4 thành phần sau:
-
 1. **Khung lý thuyết nền (Theoretical Framework):**
-   - Xác định lý thuyết hành vi giải thích cơ chế mâu thuẫn cảm xúc - điểm số (_Sentiment–Rating Inconsistency_) và hiệu ứng "tấm đệm" (_Buffering Effect_).
-   - Ứng viên ưu tiên đối chiếu: **S-O-R** (Stimulus–Organism–Response), **Expectancy–Disconfirmation Theory (EDT)**, và **Herzberg’s Two-Factor Theory**.
+   * *Mục tiêu tối thiểu:* Xác định được **ít nhất 1 lý thuyết hành vi** giải thích thỏa đáng cơ chế mâu thuẫn cảm xúc - điểm số (*Sentiment–Rating Inconsistency*) và hiệu ứng "tấm đệm" (*Buffering Effect*).
+   * *Điểm neo ban đầu (Baseline Anchors):* **S-O-R** (Stimulus–Organism–Response), **Expectancy–Disconfirmation Theory (EDT)**, và **Herzberg’s Two-Factor Theory**.
+   * *Ghi chú mở rộng (Open Exploration):* Không giới hạn ở 3 điểm neo trên; chủ động ghi nhận các khung lý thuyết hành vi/tâm lý học khác (như *Cognitive Dissonance Theory*, *Attribution Theory*, *Justice Theory*...) nếu văn hiến chứng minh tính phù hợp cao hơn.
 
 2. **Cách lượng hóa độ bất nhất (Operationalizing Discrepancy):**
-   - **Hợp đồng bài toán mở (Open Problem Contract):** Khảo sát toàn diện văn hiến để tìm hàm ánh xạ $D = f(\text{Aspect/Text Sentiment}, \text{Rating})$ sao cho phản ánh được cả độ lớn (_magnitude_) và chiều hướng (_direction_: vị tha/nâng đỡ vs. trừng phạt/bực bội) của sự mâu thuẫn. Không giới hạn trước bất kỳ trường phái nào (kinh tế lượng, khoảng cách đại số, vector embedding, hay lý thuyết thông tin).
-   - **Bộ tiêu chí tuyển chọn công thức (Selection Criteria cho `RDR-0002`):**
-     1. _Tính diễn giải hành vi (Behavioral Interpretability):_ Gắn kết trực tiếp được với lý thuyết hành vi (vị tha, trừng phạt, kỳ vọng thất bại).
-     2. _Độ chi tiết cấp khía cạnh (Aspect-level Granularity):_ Cho phép bóc tách nguồn gốc mâu thuẫn đến từ khía cạnh nào (`Service`, `Facility`...).
-     3. _Tính khả thi thực nghiệm (Data Feasibility):_ Tương thích và tính toán được trên tập dữ liệu review khách sạn của dự án.
+   * *Mục tiêu tối thiểu:* Xác định được **ít nhất 1 công thức/chỉ số toán học hoặc NLP** khả thi trên tập dữ liệu của dự án, phản ánh được cả độ lớn (*magnitude*) và chiều hướng (*direction*: vị tha/nâng đỡ vs. trừng phạt/bực bội).
+   * *Điểm neo ban đầu (Baseline Anchors):*
+     * *Phần dư mô hình (Econometric Residual):* $\text{Discrepancy} = \text{Rating} - \widehat{\text{Rating}}_{\text{text}}$ (kế thừa từ hồi quy WMLR của paper gốc).
+     * *Ma trận phân cực (Polarity Discrepancy Matrix):* Phân nhóm $2 \times 2$ (Positive Text $\times$ Low Rating; Negative Text $\times$ High Rating) như 402 mẫu 5-sao đã phát hiện.
+   * *Ghi chú mở rộng (Open Exploration):* Chủ động rà soát các họ công thức mới (Embedding distance, Attitudinal Ambivalence/Entropy, Aspect-Weighted Discrepancy Vector, Wasserstein distance...) và tuyển chọn dựa trên 3 tiêu chí: *Tính diễn giải hành vi*, *Độ chi tiết cấp khía cạnh*, và *Tính khả thi thực nghiệm*.
+
 3. **Baseline & Phương pháp luận thực nghiệm (Methodology Benchmark):**
-   - Xác định mô hình khai phá khía cạnh cảm xúc (ABSA: BERTopic + VADER vs. Pre-trained LM / LLM few-shot).
-   - Xác định mô hình kinh tế lượng kiểm định tác động điều tiết (Moderated WMLR, Ordered Logit/Probit).
+   * *Mục tiêu tối thiểu:* Xác định được **ít nhất 1 baseline kỹ thuật hoàn chỉnh** để đối chuẩn trực tiếp hiệu năng trích xuất khía cạnh và mô hình hóa tác động.
+   * *Điểm neo ban đầu (Baseline Anchors):* Pipeline của bài báo gốc (Le et al., 2026): **BERTopic + VADER + WMLR**.
+   * *Ghi chú mở rộng (Open Exploration):* Chủ động đối sánh với các kỹ thuật ABSA tiên tiến (DeBERTa, RoBERTa ABSA, LLM few-shot) và các mô hình kinh tế lượng phân loại thứ bậc (Ordered Logit/Probit) để chọn ra kiến trúc vượt trội cho `RDR-0002`.
 
 4. **Lập luận đóng góp nghiên cứu (Research Gap & Contribution):**
-   - Khẳng định tính mới so với paper gốc (Le et al., IJHM 2026): Khắc phục lỗi lập luận vòng (Tautology) của biến Loyalty bằng cách chuyển sang giải thích hiện tượng mâu thuẫn điểm số ở cấp độ khía cạnh (Aspect-level Discrepancy).
-
+   * Khẳng định tính mới so với paper gốc (Le et al., IJHM 2026): Khắc phục lỗi lập luận vòng (Tautology) của biến Loyalty bằng cách chuyển sang giải thích hiện tượng mâu thuẫn điểm số ở cấp độ khía cạnh (Aspect-level Discrepancy).
 ---
 
 ### 2.2. Tiêu chí dừng khảo sát (Stopping Criteria / Endpoint)
