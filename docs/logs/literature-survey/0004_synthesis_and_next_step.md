@@ -48,17 +48,17 @@ $$D_{i,a}^{signed}=r_i^*-s_{i,a}^*$$
 
 ### 1.3. Theory phải tách actor và outcome
 
-| Tầng giải thích | Theory/construct phù hợp | Điều giải thích được | Không được suy diễn |
-|---|---|---|---|
-| Reviewer đánh giá trải nghiệm | S-O-R, Justice Theory, Expectancy–Disconfirmation, Attribution | Service failure/recovery → empathy/forgiveness/dissatisfaction | Chưa chứng minh trực tiếp tác động lên star rating thực tế |
-| Trade-off giữa service aspects | Compensatory Choice Models; multi-aspect rules | Positive và negative aspects có thể bù trừ khi hình thành overall judgment | Không tự động chứng minh “loyalty” hay “sublimation” |
-| Người đọc tiếp nhận review bất nhất | HSM, Schema Incongruity, Curiosity Theory | Inconsistency ảnh hưởng helpfulness, attention và information processing | Không giải thích trực tiếp tại sao reviewer chọn mức sao |
+| Tầng giải thích                     | Theory/construct phù hợp                                       | Điều giải thích được                                                       | Không được suy diễn                                        |
+| ----------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| Reviewer đánh giá trải nghiệm       | S-O-R, Justice Theory, Expectancy–Disconfirmation, Attribution | Service failure/recovery → empathy/forgiveness/dissatisfaction             | Chưa chứng minh trực tiếp tác động lên star rating thực tế |
+| Trade-off giữa service aspects      | Compensatory Choice Models; multi-aspect rules                 | Positive và negative aspects có thể bù trừ khi hình thành overall judgment | Không tự động chứng minh “loyalty” hay “sublimation”       |
+| Người đọc tiếp nhận review bất nhất | HSM, Schema Incongruity, Curiosity Theory                      | Inconsistency ảnh hưởng helpfulness, attention và information processing   | Không giải thích trực tiếp tại sao reviewer chọn mức sao   |
 
 Bằng chứng mới nhất cho forgiveness vẫn dừng ở forgiveness, repatronage, service-recovery expectation hoặc dissatisfaction; chưa có đường kiểm định trực tiếp `Forgiveness/Anger → observed star rating` trong hotel-review data ([Kumar & Shankar, 2024](https://doi.org/10.1177/14413582231194071); [Honora et al., 2024](https://doi.org/10.1007/s11628-024-00563-1); [Huang & Lo, 2025](https://doi.org/10.1007/s40558-025-00314-6); [Wei et al., 2025](https://doi.org/10.1002/jtr.70154)).
 
 ### 1.4. Baseline kỹ thuật đã đủ để validation, chưa đủ để chốt pipeline
 
-- **Baseline tái lập:** `BERTopic + VADER + WMLR` của [paper gốc](../../../refs/root/FACTSHEET.md).
+- **Baseline tái lập:** `BERTopic + VADER + WMLR` của [paper gốc](../../../refs/root/factsheet.md).
 - **Aspect-level benchmark:** HOSSemEval-EB23/TAS-BERT cung cấp điểm quy chiếu cho hospitality ABSA ([Doan et al., 2025](https://doi.org/10.1007/s11042-024-19518-9)).
 - **Interpretable rating driver:** high-utility aspect rules của Öztürk mô tả co-occurrence và trade-off giữa aspects ([Öztürk, 2026](https://doi.org/10.1109/access.2026.3672490)).
 - **Rating-prediction watchlist:** DeBERTa + random oversampling của Topçu et al. là baseline dự đoán rating, nhưng không được dùng làm sentiment estimator độc lập vì rating là training label ([Topçu et al., 2026](https://doi.org/10.35377/saucis...1748175)).
@@ -109,11 +109,11 @@ Không nên so sánh trực tiếp accuracy/F1 giữa các paper vì khác label
 
 ### Gate B — So sánh ba formulation tối thiểu
 
-| Candidate | Output | Vai trò |
-|---|---|---|
-| 3×3 directional polarity matrix | Class | Baseline dễ giải thích |
-| Signed standardized gap `z(r)-z(s)` | Sign + magnitude | Kiểm tra extension từ Kwon |
-| Signed aspect gap `r^*-s_a^*` | Aspect vector + aggregate | Candidate measure chính của đề tài |
+| Candidate                           | Output                    | Vai trò                            |
+| ----------------------------------- | ------------------------- | ---------------------------------- |
+| 3×3 directional polarity matrix     | Class                     | Baseline dễ giải thích             |
+| Signed standardized gap `z(r)-z(s)` | Sign + magnitude          | Kiểm tra extension từ Kwon         |
+| Signed aspect gap `r^*-s_a^*`       | Aspect vector + aggregate | Candidate measure chính của đề tài |
 
 Residual `rating - predicted_rating_text` chỉ nên dùng như sensitivity analysis. Embedding distance và entropy chưa cần triển khai trừ khi ba formulation trên thất bại.
 
