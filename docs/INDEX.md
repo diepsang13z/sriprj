@@ -31,6 +31,8 @@ Khu vực ghi lại tiến trình tư duy, khảo sát văn hiến và nhật k�
 - [`docs/logs/literature-survey/`](logs/literature-survey/) — Nhật ký khảo sát các bài báo liên quan, phân tích đối chứng và tổng quan lý thuyết:
   - [`0001_discrepancy_formulations.md`](logs/literature-survey/0001_discrepancy_formulations.md) — Phân loại các họ phương pháp lượng hóa mâu thuẫn điểm số - bài viết và câu hỏi định hướng khảo sát.
   - [`0002_survey_matrix_round_1.md`](logs/literature-survey/0002_survey_matrix_round_1.md) — Vòng khảo sát đầu tiên: search protocol, ma trận 11 nguồn, theory/measurement/baseline synthesis và endpoint check.
+  - [`0003_survey_matrix_round_2.md`](logs/literature-survey/0003_survey_matrix_round_2.md) — Vòng quét latest-first: 6 core candidates mới, operationalization magnitude/direction/aspect conflict, core-set curation và endpoint check.
+  - [`0004_synthesis_and_next_step.md`](logs/literature-survey/0004_synthesis_and_next_step.md) — Tổng kết toàn bộ evidence, các quyết định đã/chưa chốt và phase gate cho validation trên dữ liệu dự án.
 
 ---
 
