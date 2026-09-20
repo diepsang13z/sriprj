@@ -38,6 +38,13 @@ Ba lớp đo đã có bằng chứng hoặc hỗ trợ trực tiếp:
 
    - Đây là operationalization hospitality gần bài toán nhất, nhưng trị tuyệt đối làm mất direction và paper không báo cáo đủ quy trình chọn $\tau$ để tái lập ([Jayakody et al., 2026](https://arxiv.org/abs/2606.00084)).
 
+4. **Unified geometric index**
+   - Valdivia et al. (2019) gộp rating và text sentiment qua trung bình nhân có trọng số:
+
+     $$f(x, y) = \sqrt{x \cdot y^\beta}$$
+
+   - Trong đó $x, y \in [0, 1]$ là user rating và SAM sentiment đã min–max chuẩn hóa; $\beta > 0$ điều tiết trọng số text. Điểm đặc trưng của trung bình nhân là kéo chỉ số về 0 nếu một trong hai phía cực thấp, trừng phạt mạnh review có một vế sụp đổ.
+
 **Candidate extension của dự án:** giữ dấu ở cấp aspect:
 
 $$D_{i,a}^{signed}=r_i^*-s_{i,a}^*$$
@@ -84,7 +91,7 @@ Không nên so sánh trực tiếp accuracy/F1 giữa các paper vì khác label
 3. Threshold nào phân biệt aligned, mixed và truly inconsistent review.
 4. Cách tổng hợp nhiều aspect sentiments thành document-level expectation.
 5. `Sublimation` và `Anger` có construct validity hay chỉ là working labels; literature hiện hỗ trợ forgiveness, empathy, negative emotion và compensatory behavior gần hơn các nhãn này.
-6. Công thức unified index của Valdivia et al. (2019) và chi tiết measure của Wang et al. (2025, DSS) chưa lấy được từ full text; không được suy diễn.
+6. Chi tiết đo lường của Wang et al. (2025, DSS) chưa lấy được từ full text (Elsevier paywall); riêng công thức unified index của Valdivia et al. (2019) **đã được trích xuất và xác minh trực tiếp từ PDF toàn văn** ($f(x,y)=\sqrt{x \cdot y^\beta}$).
 7. Hai nguồn 2026 trực tiếp nhất cho directional typology và aspect conflict vẫn là preprints.
 
 ---
