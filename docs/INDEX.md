@@ -27,7 +27,8 @@ Khu vực ghi lại tiến trình tư duy, khảo sát văn hiến và nhật k�
 
 - [`docs/logs/brainstorm/`](logs/brainstorm/) — Nhật ký phát triển ý tưởng, bóc tách bài báo gốc và định hình đề tài:
   - [`0001_root_idea.md`](logs/brainstorm/0001_root_idea.md) — Phân tích bài báo gốc (IJHM 2026) và định hướng Sentiment–Rating Inconsistency.
-- [`docs/logs/literature-survey/`](logs/literature-survey/) — Nhật ký khảo sát các bài báo liên quan, phân tích đối chứng và tổng quan lý thuyết.
+- [`docs/logs/literature-survey/`](logs/literature-survey/) — Nhật ký khảo sát các bài báo liên quan, phân tích đối chứng và tổng quan lý thuyết:
+  - [`0001_discrepancy_formulations.md`](logs/literature-survey/0001_discrepancy_formulations.md) — Phân loại các họ phương pháp lượng hóa mâu thuẫn điểm số - bài viết và câu hỏi định hướng khảo sát.
 
 ---
 
