@@ -16,6 +16,8 @@ Nếu chỉ giới hạn ở 1–2 công thức cố định, nghiên cứu sẽ
 
 > **Nguyên tắc khảo sát mở (Open Space Principle):** Danh mục dưới đây là các họ phương pháp tham khảo đã được ghi nhận trước đó, **không phải là danh sách đóng**. Đợt khảo sát văn hiến chủ động tìm kiếm các công thức/phương pháp mới xuất hiện trong các bài báo 2023–2026.
 
+> **Cập nhật sau vòng 1:** Ma trận phân cực có hướng đã có bằng chứng trực tiếp; residual, embedding distance, entropy và aspect-weighted vector vẫn là **candidate formulations**, chưa phải các phép đo chuẩn đã được xác minh. Xem [`0002_survey_matrix_round_1.md`](0002_survey_matrix_round_1.md).
+
 ---
 
 ## 2. Bản đồ các họ phương pháp (Taxonomy of Discrepancy Formulations)

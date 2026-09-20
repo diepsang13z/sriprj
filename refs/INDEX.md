@@ -12,21 +12,31 @@ Danh mục toàn bộ các bài báo khoa học, tài liệu học thuật và n
 * **Vai trò trong dự án:** Bài báo gốc cung cấp khung tiếp cận S-O-R, pipeline BERTopic + WMLR trên 1.3M review và dataset đối chuẩn. Dự án kế thừa, tái lập và chỉ ra lỗi ngụy biện vòng lặp để mở rộng sang bài toán Bất nhất cảm xúc - điểm số.
 ---
 
-## 2. Inconsistency & Related Literature (Bài báo đối chứng & Mở rộng)
+## 2. Inconsistency & Related Literature
 
-### A. Nghiên cứu về Bất nhất giữa Điểm số và Văn bản (Score-Textual Inconsistency)
+### A. Score–Textual Inconsistency
 
-- **File:** [`refs/2025_beyond_the_stars_Unpacking_the_impact_of_score-textual_inconsistency_of_online_reviews_on_hotel_performance.pdf`](2025_beyond_the_stars_Unpacking_the_impact_of_score-textual_inconsistency_of_online_reviews_on_hotel_performance.pdf)
-- **Tiêu đề:** _Beyond the stars: Unpacking the impact of score-textual inconsistency of online reviews on hotel performance_ (2025).
-- **Vai trò:** Cung cấp cơ sở lý thuyết về tác động của sự bất nhất (lệch pha giữa sao và chữ) lên hiệu quả kinh doanh của khách sạn; tài liệu then chốt cho đề tài mới.
+- **Wang, P., Zhang, H., Yuan, X., & Zhang, X. (2025).** _Beyond the stars: Unpacking the impact of score-textual inconsistency of online reviews on hotel performance_. *International Journal of Hospitality Management, 130*, 104271. [DOI](https://doi.org/10.1016/j.ijhm.2025.104271). [Local PDF](2025_beyond_the_stars_Unpacking_the_impact_of_score-textual_inconsistency_of_online_reviews_on_hotel_performance.pdf). **Vai trò:** directional polarity mismatch và hotel-level inconsistency proportion.
+- **Almansour, A., Alotaibi, R., & Alharbi, H. (2022).** _Text-rating review discrepancy (TRRD): An integrative review and implications for research_. *Future Business Journal, 8*, 3. [DOI](https://doi.org/10.1186/s43093-022-00114-y). **Vai trò:** định nghĩa TRRD và cảnh báo dùng rating làm sentiment label.
+- **Bigne, E., Ruiz, C., Perez-Cabañero, C., & Cuenca, A. (2023).** _Are customer star ratings and sentiments aligned?_ *Service Business, 17*, 281–314. [DOI](https://doi.org/10.1007/s11628-023-00524-0). **Vai trò:** compensatory/cancel-out effect giữa positive và negative aspect sentiments.
+- **Valdivia, A., et al. (2019).** _Inconsistencies on TripAdvisor reviews: A unified index between users and sentiment analysis methods_. *Neurocomputing, 353*, 3–16. [DOI](https://doi.org/10.1016/j.neucom.2018.09.096). **Vai trò:** ứng viên unified continuous index; cần đọc full text để trích công thức.
+- **Wang, D., Xia, Q., Feng, Y., & Cheng, T. C. E. (2025).** _Unravelling the effects of two inconsistencies on online review helpfulness: Evidence from TripAdvisor_. *Decision Support Systems, 193*, 114450. [DOI](https://doi.org/10.1016/j.dss.2025.114450). **Vai trò:** phân biệt review inconsistency và rating inconsistency; full-text verification còn thiếu.
 
-### B. Nghiên cứu về Dự đoán Cảm xúc và Điểm số (Sentiment & Rating Prediction)
+### B. Hospitality Sentiment Analysis / ABSA
 
-- **File:** [`refs/2022_predicting_sentiment_and_rating_of_tourist_reviews_using_machine_learning.pdf`](2022_predicting_sentiment_and_rating_of_tourist_reviews_using_machine_learning.pdf)
-- **Trích dẫn:** Puh, K., & Bagić Babac, M. (2023). _Predicting sentiment and rating of tourist reviews using machine learning_. Journal of Hospitality and Tourism Insights, 6(3), 1188–1204.
-- **Vai trò:** Nghiên cứu máy học dự đoán đồng thời cảm xúc và rating; cung cấp baseline và tiêu chuẩn phân loại điểm số hài lòng/không hài lòng.
+- **Ameur, A., Hamdi, S., & Ben Yahia, S. (2024).** _Sentiment analysis for hotel reviews: A systematic literature review_. *ACM Computing Surveys, 56*(2), 1–38. [DOI](https://doi.org/10.1145/3605152). **Vai trò:** bản đồ preprocessing, representation, model và dataset.
+- **Doan, T. T., et al. (2025).** _HOSSemEval-EB23: A robust dataset for aspect-based sentiment analysis of hospitality reviews_. *Multimedia Tools and Applications, 84*, 13057–13087. [DOI](https://doi.org/10.1007/s11042-024-19518-9). **Vai trò:** benchmark dataset/model cho aspect-level hospitality sentiment.
+- **Puh, K., & Bagić Babac, M. (2023).** _Predicting sentiment and rating of tourist reviews using machine learning_. *Journal of Hospitality and Tourism Insights, 6*(3), 1188–1204. [DOI](https://doi.org/10.1108/JHTI-02-2022-0078). [Local PDF](2022_predicting_sentiment_and_rating_of_tourist_reviews_using_machine_learning.pdf). **Vai trò:** baseline text→rating; không phải phép đo discrepancy độc lập.
 
----
+### C. Forgiveness, Justice, and Buffering
+
+- **Yoruk, I., Hsu, J.-H., & Lee, Z. W. Y. (2025).** _Consumer forgiveness: A literature review and research agenda_. *Psychology & Marketing, 42*(2), 554–578. [DOI](https://doi.org/10.1002/mar.22138). **Vai trò:** systematic synthesis của 89 nghiên cứu forgiveness.
+- **Kumar, A., & Shankar, A. (2024).** _Why do consumers forgive online travel agencies? A multi-study approach_. *Australasian Marketing Journal, 32*(4), 323–338. [DOI](https://doi.org/10.1177/14413582231194071). **Vai trò:** nối S-O-R, Justice Theory, forgiveness và repatronage trong OTA context.
+- **Honora, A., Wang, K.-Y., & Chih, W.-H. (2024).** _The role of customer forgiveness and perceived justice in restoring relationships with customers_. *Service Business, 18*, 363–393. [DOI](https://doi.org/10.1007/s11628-024-00563-1). **Vai trò:** perceived justice như cơ chế buffer giữa failure severity và forgiveness.
+
+### D. Survey Synthesis
+
+- [`docs/logs/literature-survey/0002_survey_matrix_round_1.md`](../docs/logs/literature-survey/0002_survey_matrix_round_1.md) — Search protocol, evidence matrix, cross-paper tensions, gap analysis và endpoint check của vòng khảo sát đầu tiên.
 
 ## 3. Cấu trúc Bổ sung Tài liệu Tương lai (Template)
 

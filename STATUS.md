@@ -6,7 +6,7 @@ _Cập nhật lần cuối: 2026-09-20 | Trạng thái: Đang khởi động (Ki
 
 ## 1. Giai đoạn Hiện tại & Trạng thái Đề tài
 * **Trạng thái đề tài:** **ĐANG KHÁM PHÁ / CHƯA CHỐT CHÍNH THỨC (Exploratory Phase)**.
-* **Tiến độ:** Khởi động dự án, bóc tách bài báo gốc (`refs/root/...`), nhận diện các hạn chế phương pháp luận (lập luận vòng ở biến Loyalty), khảo sát dataset (`data/TripAdvisor_EN.json`), chuẩn bị khung Research Questions (RQs) và khảo sát văn hiến.
+* **Tiến độ:** Đã bóc tách paper gốc, nhận diện tautology ở biến Loyalty, khảo sát dataset, ban hành `RDR-0001`, và hoàn tất vòng khảo sát văn hiến đầu tiên với 11 nguồn ngoài paper gốc.
 
 ## 2. Research Questions (Chưa chốt — Đang định hình)
 
@@ -22,6 +22,6 @@ _Cập nhật lần cuối: 2026-09-20 | Trạng thái: Đang khởi động (Ki
 ## 4. Việc tiếp theo (Next Steps)
 
 1. Khảo sát cấu trúc nhãn chi tiết trong `data/TripAdvisor_EN.json` và phân loại 402 mẫu 5 sao chứa negative span.
-2. Tìm kiếm và bổ sung tài liệu liên quan về _Score-Textual Inconsistency_ vào `docs/logs/literature-survey/` và `refs/INDEX.md`.
-3. Soạn thảo tài liệu đề xuất nghiên cứu (Research Proposal draft) theo mẫu tại `reports/templates/`.
-4. Ban hành quyết định kỹ thuật `RDR-0002` chốt cấu trúc pipeline nghiên cứu sau khi khảo sát đạt endpoint.
+2. Thực hiện survey round 2: trích công thức của Valdivia et al. (2019), xác minh hai biến inconsistency của Wang et al. (2025, DSS), và tìm phép đo signed/continuous ở aspect level.
+3. Soạn thảo Research Proposal sau khi đạt saturation và chốt operationalization.
+4. Ban hành `RDR-0002` chốt theory, discrepancy measure và pipeline sau khi khảo sát đạt endpoint.
