@@ -30,6 +30,8 @@ Khu vực ghi lại tiến trình tư duy, khảo sát văn hiến và nhật k�
 
 - [`docs/logs/brainstorm/`](logs/brainstorm/) — Nhật ký phát triển ý tưởng, bóc tách bài báo gốc và định hình đề tài:
   - [`0001_root_idea.md`](logs/brainstorm/0001_root_idea.md) — Phân tích bài báo gốc (IJHM 2026) và định hướng Sentiment–Rating Inconsistency.
+  - [`0002_direction_of_work_after_survey_2.md`](logs/brainstorm/0002_direction_of_work_after_survey_2.md) — Nhật ký hướng triển khai B1–B3 sau Survey Round 2 (EDA dataset → evaluation set → gán nhãn thủ công).
+  - [`0003_app_concept_and_course_requirements.md`](logs/brainstorm/0003_app_concept_and_course_requirements.md) — Nhật ký khám phá: ràng buộc môn DAP391m, khoảng trống nhánh dự báo, ý tưởng ứng dụng Fair-Value Rating Radar và các bẫy rò rỉ dữ liệu đã xác minh. **Chưa quyết định gì.**
 - [`docs/logs/literature-survey/`](logs/literature-survey/) — Nhật ký khảo sát các bài báo liên quan, phân tích đối chứng và tổng quan lý thuyết:
   - [`0001_discrepancy_formulations.md`](logs/literature-survey/0001_discrepancy_formulations.md) — Phân loại các họ phương pháp lượng hóa mâu thuẫn điểm số - bài viết và câu hỏi định hướng khảo sát.
   - [`0002_survey_matrix_round_1.md`](logs/literature-survey/0002_survey_matrix_round_1.md) — Vòng khảo sát đầu tiên: search protocol, ma trận 11 nguồn, theory/measurement/baseline synthesis và endpoint check.
