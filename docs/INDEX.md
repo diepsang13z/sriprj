@@ -25,6 +25,7 @@ Thư mục lưu trữ các quyết định kỹ thuật và kiến trúc theo qu
 ## 3. Logs & Working Notes (Cấp Thư mục)
 
 Khu vực ghi lại tiến trình tư duy, khảo sát văn hiến và nhật ký thử nghiệm (không áp dụng giới hạn 200 dòng):
+- [`notes/GLOSSARY.md`](../notes/GLOSSARY.md) — Từ điển thuật ngữ nghiên cứu: định nghĩa song ngữ toàn bộ khái niệm cốt lõi, lý thuyết hành vi, mô hình ABSA/NLP và công thức đo lường.
 
 - [`docs/logs/brainstorm/`](logs/brainstorm/) — Nhật ký phát triển ý tưởng, bóc tách bài báo gốc và định hình đề tài:
   - [`0001_root_idea.md`](logs/brainstorm/0001_root_idea.md) — Phân tích bài báo gốc (IJHM 2026) và định hướng Sentiment–Rating Inconsistency.
