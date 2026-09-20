@@ -46,36 +46,52 @@
    - Bỏ qua các trường hợp mâu thuẫn thực tế: Khách chê tơi bời cơ sở vật chất (Negative Facility) nhưng vẫn bấm 5 sao; hoặc khách khen nhân viên và đồ ăn nhưng chỉ vì một trải nghiệm tồi tệ lúc trả phòng mà chấm 1 sao.
 3. **Chưa phân biệt giữa Khía cạnh dịch vụ (Aspect) và Cường độ cảm xúc (Emotional Intensity):**
    - Việc gom `Loyalty` thành aspect ngang hàng với `Facility`, `Service` gây nhiễu phạm trù. Những câu mang tính cực đoan như "chắc chắn quay lại" hay "cạch mặt" thực chất là **Thăng hoa (Sublimation/Delight)** hoặc **Phẫn nộ (Anger/Rage)**.
-   - Không nên đổi `Loyalty` thành aspect `Sublimation` hay `Anger` vì sẽ mắc lỗi phạm trù (Aspect = khách nói về cái gì; Emotion = cảm xúc như thế nào). Thay vào đó, cần tách thành **2 trục độc lập**:
-     - **Trục Aspects:** Facility, Service, Amenity, Experience Value.
-     - **Trục Cường độ cảm xúc / Biến điều tiết (Moderator):** Gắn kết tình cảm / Sự tha thứ (Tolerance & Buffering effect) vs. Sự phẫn nộ (Anger catalyst).
 
+> **Note: Thảo luận về ý tưởng tách `Loyalty` thành `Sublimation` (Thăng hoa) và `Anger` (Phẫn nộ)**
+>
+> * **Điểm hợp lý về mặt tâm lý học hành vi:** Các phát ngôn gắn nhãn `Loyalty` trong paper gốc (*"stay away, never again"* vs. *"definitely return, highly recommend"*) thực chất là biểu hiện của hai cực cảm xúc tột cùng:
+>   * **Anger / Rage (Phẫn nộ):** Cảm xúc ức chế bùng phát, thôi thúc hành vi trừng phạt khách sạn (bấm 1 sao, kêu gọi tẩy chay).
+>   * **Sublimation / Delight (Thăng hoa):** Trải nghiệm vượt mong đợi, thôi thúc hành vi khen ngợi tuyệt đối và tự nguyện làm đại sứ thương hiệu (bấm 5 sao).
+> * **Tại sao không nên đổi trực tiếp thành 2 Aspect ngang hàng:**
+>   * *Lỗi sai phạm trù (Category Mistake):* Trong ABSA, **Aspect** là đối tượng phục vụ (khách nói về *cái gì*: phòng, đồ ăn, nhân viên), còn **Emotion** là trạng thái nội tâm (khách cảm thấy *như thế nào*). Đặt chúng ngang hàng sẽ bị sai lệch về bản thể luận (ontology).
+>   * *Vẫn vướng lập luận vòng:* Nếu coi Anger là một aspect thì việc Anger dẫn tới 1 sao hay Sublimation dẫn tới 5 sao vẫn là tương quan 1:1 hiển nhiên.
+> * **Định vị chuẩn xác cho đề tài mới:** Tách thành **2 trục độc lập**:
+>   1. **Trục 4 Khía cạnh khách quan (Core Aspects):** `Facility`, `Service`, `Amenity`, `Experience Value`.
+>   2. **Trục Cường độ cảm xúc / Biến điều tiết (Emotional Tone / Moderator):**
+>      * *Có Negative Facility nhưng KHÔNG có Anger (Mild tone):* Khách vị tha, xem lỗi là nhỏ, rating vẫn giữ **5 sao** $\rightarrow$ Giải thích hiện tượng **Positive Inconsistency** (Tha thứ).
+>      * *Có Negative Facility và KÍCH HOẠT Anger:* Sự bực bội vượt ngưỡng chịu đựng, rating bị trừng phạt về **1–2 sao** $\rightarrow$ Giải thích cơ chế sụt giảm điểm số.
 ## Hướng nghiên cứu: Sentiment–Rating Inconsistency
 
 Đây là hướng rất thú vị về cả AI lẫn hospitality research.
 
 ### 1. Hiện tượng trong dữ liệu
+
 Trong paper gốc, ta có hiện tượng: **5 stars + Negative aspect**.
 
-* **Ví dụ Review:**
-  > *"Fantastic hotel, would definitely return, but the room was a little noisy."* — **Rating: 5/5**
-  * `Experience` $\rightarrow$ Positive
-  * `Loyalty` $\rightarrow$ Positive
-  * `Facility` $\rightarrow$ Negative
+**Ví dụ Review:**
+
+> _"Fantastic hotel, would definitely return, but the room was a little noisy."_ — **Rating: 5/5**
+
+- `Experience` $\rightarrow$ Positive
+- `Loyalty` $\rightarrow$ Positive
+- `Facility` $\rightarrow$ Negative
 
 Trong dataset có **402 review rating 5** nhưng vẫn chứa negative span. Ngược lại, với low-rating review đôi khi chứa positive aspects.
 
 ### 2. Định nghĩa toán học
+
 Có thể định nghĩa:
 $$D = f(\text{rating}, \text{aspect sentiments})$$
-với $D$ là *rating–text discrepancy score*.
+với $D$ là _rating–text discrepancy score_.
 
 ### 3. Research Questions (Câu hỏi nghiên cứu)
+
 - Khi nào negative aspect không đủ làm giảm overall rating?
 - Aspect nào khách hàng “tha thứ” nhiều nhất?
 - Negative sentiment nào ở Facility, Service, Amenity hay Loyalty làm rating giảm mạnh nhất?
 - Loyalty có đóng vai trò “buffer” cho negative service experience không?
 
 ### 4. Giá trị hướng đi
+
 - Đây là hướng rất phù hợp để kết nối: **NLP + Consumer behavior + Hospitality**.
 - Tránh sự vòng tròn khá rõ của paper cũ khi dùng “recommend/return” rồi kết luận loyalty tương quan mạnh với rating.
