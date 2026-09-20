@@ -25,7 +25,7 @@ Thư mục lưu trữ các quyết định kỹ thuật và kiến trúc theo qu
 ## 3. Logs & Working Notes (Cấp Thư mục)
 
 Khu vực ghi lại tiến trình tư duy, khảo sát văn hiến và nhật ký thử nghiệm (không áp dụng giới hạn 200 dòng):
-- [`notes/GLOSSARY.md`](../notes/GLOSSARY.md) — Từ điển thuật ngữ nghiên cứu: định nghĩa song ngữ toàn bộ khái niệm cốt lõi, lý thuyết hành vi, mô hình ABSA/NLP và công thức đo lường.
+- [`notes/glossary.md`](../notes/glossary.md) — Từ điển thuật ngữ nghiên cứu: định nghĩa song ngữ toàn bộ khái niệm cốt lõi, lý thuyết hành vi, mô hình ABSA/NLP và công thức đo lường.
 
 - [`docs/logs/brainstorm/`](logs/brainstorm/) — Nhật ký phát triển ý tưởng, bóc tách bài báo gốc và định hình đề tài:
   - [`0001_root_idea.md`](logs/brainstorm/0001_root_idea.md) — Phân tích bài báo gốc (IJHM 2026) và định hướng Sentiment–Rating Inconsistency.
@@ -35,9 +35,12 @@ Khu vực ghi lại tiến trình tư duy, khảo sát văn hiến và nhật k�
   - [`0003_survey_matrix_round_2.md`](logs/literature-survey/0003_survey_matrix_round_2.md) — Vòng quét latest-first: 6 core candidates mới, operationalization magnitude/direction/aspect conflict, core-set curation và endpoint check.
   - [`0004_synthesis_and_next_step.md`](logs/literature-survey/0004_synthesis_and_next_step.md) — Tổng kết toàn bộ evidence, các quyết định đã/chưa chốt và phase gate cho validation trên dữ liệu dự án.
 
----
+- [`docs/logs/validation/`](logs/validation/) — Nhật ký và quy chuẩn thử nghiệm, kiểm định trên tập dữ liệu thực tế:
+  - [`0001_manual_annotation_protocol.md`](logs/validation/0001_manual_annotation_protocol.md) — Hướng dẫn thiết kế tập đánh giá (Evaluation Set) và quy chuẩn gán nhãn thủ công (Ground Truth).
 
+---
 ## 4. Reports & Deliverables (Cấp Thư mục)
 
 - `reports/templates/` — Các biểu mẫu học phần DAP391m (Research Proposal, Project Planning, Weekly Report, Slide Sample).
 - `reports/md/` — Các bản thảo báo cáo, đề cương nghiên cứu dạng Markdown phục vụ nghiệm thu.
+  - [`research_proposal_draft.md`](../reports/md/research_proposal_draft.md) — Bản nháp Research Proposal: abstract, literature review, gap, objectives, scope, feasibility, approach & method, expected results; các điểm chưa chốt gom ở Phụ lục A.
