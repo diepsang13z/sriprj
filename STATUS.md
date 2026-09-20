@@ -1,12 +1,12 @@
 # Project Status Snapshot
 
-_Cập nhật lần cuối: 2026-09-20 | Trạng thái: Đang khởi động (Kickoff)_
+_Cập nhật lần cuối: 2026-09-20 | Trạng thái: Khám phá có kiểm soát_
 
 ---
 
 ## 1. Giai đoạn Hiện tại & Trạng thái Đề tài
 * **Trạng thái đề tài:** **ĐANG KHÁM PHÁ / CHƯA CHỐT CHÍNH THỨC (Exploratory Phase)**.
-* **Tiến độ:** Đã bóc tách paper gốc, nhận diện tautology ở biến Loyalty, khảo sát dataset, hoàn tất Survey Round 1 với 11 nguồn, và ban hành `RDR-0001`–`RDR-0002`.
+* **Tiến độ:** Đã hoàn tất Survey Round 2 và synthesis `0004`; core set còn 15 nguồn, đủ theory/measure/baseline để chuyển sang targeted validation nhưng chưa đạt saturation.
 
 ## 2. Research Questions (Chưa chốt — Đang định hình)
 
@@ -15,14 +15,16 @@ _Cập nhật lần cuối: 2026-09-20 | Trạng thái: Đang khởi động (Ki
   * Mâu thuẫn cảm xúc - điểm số (Sentiment–Rating Inconsistency / Discrepancy).
   * Tái định nghĩa Loyalty thành Sublimation (Thăng hoa / Vị tha) & Anger (Phẫn nộ / Trừng phạt).
   * Vai trò điều tiết / "tấm đệm" (Buffering Effect) của Service hoặc Sublimation trước các lỗi cơ sở vật chất.
+* Round 2 xác nhận ba lớp đo: continuous magnitude, directional class và absolute aspect-level conflict; signed aspect discrepancy vẫn là candidate extension.
+
 ## 3. Quyết định Kỹ thuật đã chốt (Decisions)
 
 - Đã chốt `RDR-0001`: Mục tiêu và tiêu chí dừng khảo sát văn hiến (Literature Survey Endpoint).
 - Đã chốt `RDR-0002`: Chỉ quét chủ động bài trong cửa sổ 36 tháng mới nhất; nguồn cũ chỉ truy xuất theo citation chain có lý do.
+- Survey Round 2 dừng broad search tạm thời vì core set đã chạm ngưỡng 15; chưa ban hành `RDR-0003`.
 
 ## 4. Việc tiếp theo (Next Steps)
 
-1. Khảo sát cấu trúc nhãn chi tiết trong `data/TripAdvisor_EN.json` và phân loại 402 mẫu 5 sao chứa negative span.
-2. Thực hiện Survey Round 2 theo cửa sổ mới nhất của `RDR-0002`; chỉ truy xuất Valdivia et al. (2019) như ngoại lệ để xác minh công thức unified index.
-3. Soạn thảo Research Proposal sau khi đạt saturation và chốt operationalization.
-4. Ban hành `RDR-0003` chốt theory, discrepancy measure và pipeline sau khi khảo sát đạt endpoint.
+1. Khảo sát cấu trúc nhãn trong `data/TripAdvisor_EN.json` và phân loại 402 mẫu 5 sao chứa negative span.
+2. So sánh magnitude, direction và signed aspect discrepancy trên mẫu đã gắn nhãn; chốt sentiment estimator, normalization và threshold.
+3. Ban hành `RDR-0003` sau validation; sau đó soạn Research Proposal.
