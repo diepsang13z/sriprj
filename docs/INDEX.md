@@ -17,8 +17,7 @@ Tài liệu này là Router đơn (Single Router) phân tầng điều hướng 
 
 Thư mục lưu trữ các quyết định kỹ thuật và kiến trúc theo quy tắc Append-only (`RDR-NNNN`). Quyết định có số hiệu lớn nhất là nguồn sự thật tối cao.
 
-- `docs/decisions/` — _Chưa có quyết định nào (Đang khởi tạo)._
-  - _(Dự kiến: `RDR-0001-research-pipeline-design.md`)_
+- [`docs/decisions/RDR-0001-endpoint-literature-survey.md`](decisions/RDR-0001-endpoint-literature-survey.md) — Mục tiêu và tiêu chí dừng khảo sát văn hiến (Literature Survey Endpoint).
 
 ---
 
