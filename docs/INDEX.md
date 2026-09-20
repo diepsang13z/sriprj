@@ -25,6 +25,7 @@ Thư mục lưu trữ các quyết định kỹ thuật và kiến trúc theo qu
 ## 3. Logs & Working Notes (Cấp Thư mục)
 
 Khu vực ghi lại tiến trình tư duy, khảo sát văn hiến và nhật ký thử nghiệm (không áp dụng giới hạn 200 dòng):
+- [`notes/project-overview.md`](../notes/project-overview.md) — Bản đồ một trang về đề tài: hướng nghiên cứu, research gap, RQ nháp, sản phẩm đầu ra và lộ trình.
 - [`notes/glossary.md`](../notes/glossary.md) — Từ điển thuật ngữ nghiên cứu: định nghĩa song ngữ toàn bộ khái niệm cốt lõi, lý thuyết hành vi, mô hình ABSA/NLP và công thức đo lường.
 
 - [`docs/logs/brainstorm/`](logs/brainstorm/) — Nhật ký phát triển ý tưởng, bóc tách bài báo gốc và định hình đề tài:
