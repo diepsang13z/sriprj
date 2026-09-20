@@ -5,7 +5,8 @@ Danh mục toàn bộ các bài báo khoa học, tài liệu học thuật và n
 ---
 
 ## 1. Root Paper (Bài báo nền tảng)
-* **Factsheet đọc nhanh (Dành cho Agent):** [`refs/root/FACTSHEET.md`](root/FACTSHEET.md) *(Đọc file này thay vì đọc file PDF 5.4MB)*.
+* **Factsheet đọc nhanh (Dành cho Agent):** [`refs/root/FACTSHEET.md`](root/FACTSHEET.md) *(Tóm tắt thông số cốt lõi, phương trình và phân tích phản biện)*.
+* **Toàn văn Markdown đầy đủ (Dành cho Agent):** [`refs/root/FULL_PAPER.md`](root/FULL_PAPER.md) *(Trích xuất 100% nguyên văn toàn bộ 15 trang bài báo: text, bảng biểu, công thức LaTeX, trích dẫn)*.
 * **File gốc:** [`refs/root/2026_unlocking_insights_into_customer_sentiment_analysis_impact_of_loyalty_on online_hotel_ratings.pdf`](root/2026_unlocking_insights_into_customer_sentiment_analysis_impact_of_loyalty_on%20online_hotel_ratings.pdf)
 * **Trích dẫn:** Le, H. T. M., Nguyen, T. Q., & Nguyen, B. T. (2026). *Unlocking insights into customer sentiment analysis: Impact of loyalty on online hotel ratings*. International Journal of Hospitality Management, 134, 104574.
 * **Vai trò trong dự án:** Bài báo gốc cung cấp khung tiếp cận S-O-R, pipeline BERTopic + WMLR trên 1.3M review và dataset đối chuẩn. Dự án kế thừa, tái lập và chỉ ra lỗi ngụy biện vòng lặp để mở rộng sang bài toán Bất nhất cảm xúc - điểm số.
