@@ -4,7 +4,7 @@
 - **Cập nhật gần nhất:** 2026-09-23, sau Survey Round 4 (verification round).
 - **Mục đích:** Bản đồ một trang về đề tài — hướng nghiên cứu, research gap, câu hỏi nghiên cứu và sản phẩm đầu ra. Dùng để định hướng lại khi bị lạc trong thuật ngữ.
 
-> **Cảnh báo về thẩm quyền:** Đây là bản tóm tắt định hướng, **không phải nguồn sự thật**. Nguồn sự thật là các quyết định trong `docs/decisions/` (`RDR-NNNN`, số lớn nhất thắng). Các RQ dưới đây mới ở dạng **nháp, chưa được ban hành chính thức**.
+> **Cảnh báo về thẩm quyền:** Đây là bản tóm tắt định hướng, **không phải nguồn sự thật**. Nguồn sự thật là các quyết định trong `docs/decisions/` (`RDR-NNNN`, số lớn nhất thắng). **Khung lý thuyết và phạm vi dữ liệu đã khóa theo `RDR-0005`;** RQ1–RQ2 vẫn ở dạng nháp.
 
 ---
 
@@ -74,8 +74,9 @@
                             → novelty check độc lập; devil's advocate PASS có điều kiện
         │
         ▼
-[Bước hiện tại] ──────────► Đóng khảo sát có điều kiện
-                            → RDR-0005 (đề xuất): miễn tiêu chí bão hòa, định nghĩa lại cụm, đóng băng core set
+[Bước hiện tại] ──────────► Khảo sát ĐÓNG có điều kiện (RDR-0005, 2026-09-23)
+                            → khung lý thuyết khóa: S-O-R + Kano + Prospect Theory
+                            → phạm vi dữ liệu khóa: 9.990 review gán nhãn, TripAdvisor 2015–2023
                             → còn 2 bài mở tải tay (Liu, Slevitch) + 14 bài đóng cần thư viện (refs/INDEX.md mục 9)
                             → cập nhật Research Proposal theo RQ3 + bốn điều chỉnh của Round 4
         │

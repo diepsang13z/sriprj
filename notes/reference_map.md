@@ -157,7 +157,7 @@ Tình trạng toàn văn sau Round 4: **16 bài đã tải** (9 tự tải + 7 t
 
 ## 10. Giới hạn sử dụng
 
-- RQ3 đã chốt theo `RDR-0004` (2026-09-23); công thức đo discrepancy vẫn chưa chốt vì chờ validation study.
+- RQ3 đã chốt theo `RDR-0004`; khảo sát đã đóng có điều kiện và khung lý thuyết đã khóa theo `RDR-0005` (2026-09-23). Công thức đo discrepancy vẫn chưa chốt — chờ validation study. Phạm vi dữ liệu: 9.990 review gán nhãn.
 - **Round 4 đặt bốn điều kiện không thương lượng cho mọi văn bản của đề tài:** (1) không phân biệt được bù trừ thật với thiên lệch trình bày khi chỉ dùng review công khai — đây là hạn chế nhận dạng, phải viết tường minh (D1, D3, D6); (2) mọi tuyên bố prevalence ghi rõ phạm vi TripAdvisor 2015–2023 (D2); (3) phân loại Kano/PRCA chỉ trình bày như phân tích khám phá, kèm bất định (D5, D4); (4) giữ khung hai nhánh compensatory/non-compensatory, không viết "penalty luôn thắng" (D4).
 - **Tính mới:** câu "chưa tìm thấy thước đo discrepancy có dấu ở cấp khía cạnh" chỉ đứng trên tìm kiếm title/abstract — phải viết kèm cách đã tìm, không viết "chưa ai làm". A1 (Regitz et al. 2026) làm ranh giới này mỏng đi.
 - **16 nguồn Round 4 đã có toàn văn và xếp vào cụm chức năng** (9 tự tải + 7 tải tay, log `0006` mục 7.2 và 8). Sơ đồ thư mục: `refs/INDEX.md` mục 0.
