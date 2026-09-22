@@ -38,7 +38,7 @@
 
 ## 3. Câu hỏi nghiên cứu (RQ — bản nháp, chưa chốt chính thức)
 
-- **RQ1 (khám phá):** Hiện tượng bất nhất giữa nội dung review và số sao xuất hiện với tần suất bao nhiêu, và gồm những dạng có hướng nào (rating cao hơn hoặc thấp hơn mức text gợi ý)?
+- **RQ1 (khám phá):** Hiện tượng bất nhất giữa nội dung review và số sao xuất hiện với tần suất bao nhiêu, và gồm những dạng có hướng nào khi số sao cao hơn hoặc thấp hơn so với mức mà nội dung văn bản gợi ý?
 - **RQ2 (phương pháp):** Làm thế nào để lượng hóa độ bất nhất này theo từng khía cạnh dịch vụ mà giữ được cả magnitude lẫn direction?
 - **RQ3 (candidate sau Round 3, chưa chốt):** Cảm xúc tích cực và tiêu cực trên nhiều khía cạnh kết hợp bất đối xứng như thế nào để quyết định chiều hướng và độ lớn của sentiment–rating discrepancy?
 
