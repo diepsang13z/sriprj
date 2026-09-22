@@ -255,7 +255,7 @@ Patil, P., Bacha, J., Yamani, B., Sun, S., & Kejriwal, M. (2026). *Beyond the st
 
 Puh, K., & Bagić Babac, M. (2023). Predicting sentiment and rating of tourist reviews using machine learning. *Journal of Hospitality and Tourism Insights, 6*(3), 1188–1204. https://doi.org/10.1108/JHTI-02-2022-0078
 
-Topçu, A., Asar, M. A., & Orman, G. K. (2026). Improving hotel review rating prediction with transformer models. *Sakarya University Journal of Computer and Information Sciences, 9*(2), 451–464. https://doi.org/10.35377/saucis...1748175
+Topçu, A., Asar, M. A., & Orman, G. K. (2026). Improving hotel review rating prediction with transformer models. *Sakarya University Journal of Computer and Information Sciences, 9*(2), 451–464. https://dergipark.org.tr/en/pub/saucis/article/1748175
 
 Valdivia, A., et al. (2019). Inconsistencies on TripAdvisor reviews: A unified index between users and sentiment analysis methods. *Neurocomputing, 353*, 3–16. https://doi.org/10.1016/j.neucom.2018.09.096
 

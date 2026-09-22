@@ -102,7 +102,7 @@ trên dữ liệu review khách sạn thực tế. Đây vẫn là khoảng tr�
 
 | Nguồn | Lý do giữ | Lý do chưa vào core |
 |---|---|---|
-| Topçu, Asar, & Orman (2026). [DOI](https://doi.org/10.35377/saucis...1748175) | 68,785 TripAdvisor reviews; DeBERTa + random oversampling đạt macro-F1 0.8141 và accuracy 0.8438; có phân tích mismatch định tính | Dùng rating làm supervised label nên không tạo sentiment signal độc lập; phù hợp baseline rating prediction, không phải discrepancy measure |
+| Topçu, Asar, & Orman (2026). [Publisher record](https://dergipark.org.tr/en/pub/saucis/article/1748175) | 68,785 TripAdvisor reviews; DeBERTa + random oversampling đạt macro-F1 0.8141 và accuracy 0.8438; có phân tích mismatch định tính | Dùng rating làm supervised label nên không tạo sentiment signal độc lập; phù hợp baseline rating prediction, không phải discrepancy measure |
 | McMurry (2026). [DOI](https://doi.org/10.18653/v1/2026.wassa-1.3) | 4,994 nhãn tay + 162,840 pseudo-labels cho implicit hostel “socialness”; F1 0.826 | Không có star-rating discrepancy; construct gián tiếp |
 | Patil et al. (2026). [arXiv](https://arxiv.org/abs/2602.21082) | LLM-assisted ABSA trên 4.7M Yelp reviews; baseline scale lớn | Restaurant domain, preprint, không có discrepancy operationalization |
 
