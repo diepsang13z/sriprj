@@ -1,29 +1,35 @@
 # Project Status Snapshot
 
-_Cập nhật lần cuối: 2026-09-22 | Trạng thái: Khám phá có kiểm soát_
+_Cập nhật lần cuối: 2026-09-23 | Trạng thái: RQ3 đã chốt, Round 4 đã xong_
 
 ---
 
 ## 1. Giai đoạn Hiện tại & Trạng thái Đề tài
-* **Trạng thái đề tài:** **ĐANG KHÁM PHÁ / CHƯA CHỐT CHÍNH THỨC (Exploratory Phase)**.
-* **Tiến độ:** Đã hoàn tất targeted Survey Round 3 theo `RDR-0003`; tìm được hướng thay RQ3 bằng cơ chế asymmetric compensatory/non-compensatory, nhưng chưa được nghiên cứu viên phê duyệt làm RQ chính thức.
+* **Trạng thái đề tài:** **ĐANG KHÁM PHÁ / RQ3 ĐÃ CHỐT, RQ1–RQ2 CÒN NHÁP**.
+* **Tiến độ:** Đã hoàn tất targeted Survey Round 3 theo `RDR-0003` và chốt RQ3 theo `RDR-0004`. Đã chốt hướng artifact ứng dụng cho môn DAP391m (Bảng soát điểm sao).
 
-## 2. Research Questions (Chưa chốt — Đang định hình)
+## 2. Research Questions
 
+* **RQ3 — ĐÃ CHỐT (`RDR-0004`):** Cảm xúc tích cực và tiêu cực trên nhiều khía cạnh khách sạn kết hợp bất đối xứng như thế nào để quyết định chiều hướng và độ lớn của sentiment–rating discrepancy?
 * RQ1–RQ2 chưa chốt chính thức; tiếp tục giữ hướng prevalence/typology và signed aspect-level discrepancy.
-* RQ3 cũ `positive Service × negative Facility` đã bị đánh giá là quá hẹp và một chiều.
-* Candidate sau Round 3: các cảm xúc trên nhiều aspect kết hợp bất đối xứng như thế nào để quyết định direction và magnitude của sentiment–rating discrepancy?
-* `Severity`, `Service_Recovery` và hotel class là boundary conditions khả thi; `Service × Facility` chỉ còn là planned contrast.
+* RQ3 dùng cơ chế asymmetric compensatory/non-compensatory. `Service × Facility` chỉ còn là planned contrast.
+* `Severity` và `Service_Recovery` chỉ kiểm định được trên evaluation set (sub-sample); hotel class dùng cho robustness.
+* Ba RQ kỹ thuật RQ4–RQ6 sinh từ nhánh dự báo phục vụ Bước 5 của môn (`0003` brainstorm log).
 
 ## 3. Quyết định Kỹ thuật đã chốt (Decisions)
 
 - Đã chốt `RDR-0001`: Mục tiêu và tiêu chí dừng khảo sát văn hiến.
 - Đã chốt `RDR-0002`: Quét chủ động trong cửa sổ 36 tháng, nguồn cũ chỉ theo citation chain có lý do.
 - Đã chốt `RDR-0003`: Mở lại khảo sát để tái định hình RQ3; ưu tiên journal và nguồn đóng.
-- Survey Round 3 đã sàng lọc 9 journal candidates; chưa tự động nhập các nguồn này vào core set 15 bài.
+- Đã chốt `RDR-0004` (2026-09-23): Chốt RQ3 theo cơ chế asymmetric aspect compensation.
+- Survey Round 3 đã sàng lọc 9 journal candidates; 2/9 nguồn đã có toàn văn. Hàng đợi ưu tiên ban đầu 8 bài, đã lấy Sharma và còn 7 bài.
+- Chưa chốt công thức đo discrepancy — chờ validation study quyết định.
 
 ## 4. Việc tiếp theo (Next Steps)
 
-1. Nghiên cứu viên chọn/chỉnh candidate RQ3 trong `docs/logs/literature-survey/0005_survey_matrix_round_3_rq3_rescoping.md`.
-2. Full-text audit bốn nguồn trực tiếp nhất: Kwon (2026), Sharma et al. (2025), Wang et al. (2024), Albayrak et al. (2025).
-3. Sau khi chốt RQ3, cập nhật Proposal rồi mới khóa mô hình validation/econometric.
+1. Nhờ thư viện trường/giảng viên lấy 6 bài đóng trong `refs/INDEX.md` mục B2 (ưu tiên Kwon 2026) — 4 bài truy cập mở đã lấy xong.
+2. Cập nhật Research Proposal theo RQ3 đã chốt và theo nhánh dự báo; giữ nguyên audit trail `refs/`.
+3. Chạy validation study để chốt công thức đo discrepancy, rồi mới khóa mô hình econometric.
+4. Tải 5 bài truy cập mở còn thiếu + nhờ thư viện 12 bài đóng (xem `refs/INDEX.md` mục D và log `0006` mục 7.2).
+5. Ban hành `RDR-0005`: miễn tiêu chí bão hòa của `RDR-0001` kèm lý do, định nghĩa lại ba cụm, đóng băng core set, khóa khung lý thuyết.
+6. Dựng khung ứng dụng + endpoint sớm (mục tiêu tuần 4); cảnh báo SNS làm sớm vì không thể mock.

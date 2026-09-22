@@ -14,8 +14,8 @@ Chào mừng bạn đến với dự án nghiên cứu **Customer Sentiment Anal
 >
 > - Mọi đề cập đến _"paper gốc"_, _"bài báo gốc"_, hoặc _"root paper"_ đều chỉ bài báo:
 >   - **Trích dẫn:** Le, H. T. M., Nguyen, T. Q., & Nguyen, B. T. (2026). _Unlocking insights into customer sentiment analysis: Impact of loyalty on online hotel ratings_. _International Journal of Hospitality Management_, 134, 104574.
->   - **Vị trí file:** `refs/root/2026_unlocking_insights_into_customer_sentiment_analysis_impact_of_loyalty_on online_hotel_ratings.pdf`.
->   - **Bản tóm tắt kỹ thuật:** [`refs/root/factsheet.md`](refs/root/factsheet.md) (Agent tra cứu file này, **KHÔNG đọc file PDF 5.4MB**).
+>   - **Vị trí file:** `refs/01_root/2026_unlocking_insights_into_customer_sentiment_analysis_impact_of_loyalty_on_online_hotel_ratings.pdf`.
+>   - **Bản tóm tắt kỹ thuật:** [`refs/01_root/factsheet.md`](refs/01_root/factsheet.md) (Agent tra cứu file này, **KHÔNG đọc file PDF 5.4MB**).
 >   - **Bản chất bài báo gốc:** Áp dụng khung S-O-R trên 1.3M review (Booking.com & TripAdvisor tại VN) dùng BERTopic + VADER + WMLR để phân 5 khía cạnh (`Facility`, `Amenity`, `Service`, `Experience Value`, `Loyalty`) giải thích cho `CoRe` (Rating $\ge 4$ sao).
 >   - **Điểm kế thừa & phản biện:** Kế thừa bộ dữ liệu đối chuẩn; đồng thời chỉ ra lỗi **lập luận vòng (Tautology)** khi dùng từ khóa Loyalty dự đoán Rating để mở ra hướng nghiên cứu mới về **Sự bất nhất (Inconsistency)**.
 

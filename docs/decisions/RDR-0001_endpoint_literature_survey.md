@@ -59,7 +59,7 @@ Hoạt động khảo sát dừng lại khi thỏa mãn đồng thời 4 điều
 
 Khi đạt điểm dừng, kết quả khảo sát phải được đóng gói thành các tài liệu:
 
-1. **Synthesis Matrix:** Bảng tổng hợp các bài báo tại `docs/logs/literature-survey/id_survey_matrix.md`.
+1. **Synthesis Matrix:** Bảng tổng hợp các bài báo tại `docs/logs/literature_survey/id_survey_matrix.md`.
 2. **Cập nhật thư viện:** Đăng ký các paper hạt nhân vào `refs/INDEX.md` kèm tóm tắt ngắn.
 3. **Chuyển tiếp giai đoạn:** Soạn thảo Research Proposal draft tại `reports/md/` và ban hành `RDR-0002` chốt pipeline thực nghiệm.
 

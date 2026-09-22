@@ -31,6 +31,17 @@ Tài liệu này quy định các nguyên tắc vận hành, quản lý context 
 
 ---
 
+## 5. Quy ước Đặt tên File và Thư mục (Naming Convention)
+
+- **Quy tắc:** Tên file và thư mục **chỉ dùng chữ thường, chữ số và dấu gạch dưới `_`**. Không dùng **gạch ngang `-`**, khoảng trắng, dấu tiếng Việt hoặc ký tự đặc biệt.
+- **Lý do:** gạch dưới không bị shell, đường dẫn URL và một số công cụ diễn giải thành ký tự đặc biệt; gạch ngang dễ lẫn với dấu phân tách từ khi tên đã có sẵn nhiều thành phần.
+- **Ngoại lệ duy nhất:** mã định danh quyết định `RDR-NNNN` giữ nguyên gạch ngang vì đó là phần của mã, không phải dấu phân tách từ. Phần mô tả phía sau vẫn dùng `_`, ví dụ `RDR-0004_lock_rq3_asymmetric_aspect_compensation.md`.
+- **Ví dụ đúng:** `refs/04_mechanism/2025_sharma_review_sentiment_garden.pdf`
+- **Ví dụ sai:** `refs/04_mechanism/2025-sharma-review.pdf`
+- **Quy ước thư viện `refs/`:** `<năm>_<tác giả chính không dấu>_<chủ đề ngắn>.pdf`, đặt trong thư mục chức năng (xem `refs/INDEX.md` mục 0).
+
+---
+
 ## 4. Kỷ luật trong Giai đoạn Khám phá Đề tài (Exploratory Discipline)
 * **Quy tắc:** Khi đề tài và Research Questions (RQs) chưa được chốt chính thức (chưa có quyết định kiến trúc `RDR-0001` ban hành trong `docs/decisions/`), **Agent KHÔNG tự ý sinh code triển khai hay tự chốt khung phương pháp luận**.
 * **Phạm vi hành vi:** Agent chỉ tập trung hỗ trợ phân tích dữ liệu, bóc tách cấu trúc dataset, đối soát văn hiến và brainstorm ý tưởng theo yêu cầu của người dùng.
