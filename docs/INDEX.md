@@ -19,6 +19,7 @@ Thư mục lưu trữ các quyết định kỹ thuật và kiến trúc theo qu
 
 - [`docs/decisions/RDR-0001_endpoint_literature_survey.md`](decisions/RDR-0001_endpoint_literature_survey.md) — Mục tiêu và tiêu chí dừng khảo sát văn hiến (Literature Survey Endpoint).
 - [`docs/decisions/RDR-0002_latest_first_literature_scanning.md`](decisions/RDR-0002_latest_first_literature_scanning.md) — Chỉ quét chủ động tài liệu trong cửa sổ 36 tháng mới nhất; nguồn cũ chỉ được truy xuất theo ngoại lệ xác minh provenance.
+- [`docs/decisions/RDR-0005_close_survey_and_lock_framework.md`](decisions/RDR-0005_close_survey_and_lock_framework.md) — Đóng khảo sát có điều kiện: miễn tiêu chí bão hòa, định nghĩa lại ba cụm, đóng băng core set, khóa khung lý thuyết, chốt boundary conditions và phạm vi dữ liệu 9.990 review.
 - [`docs/decisions/RDR-0003_review_and_reset_survey.md`](decisions/RDR-0003_review_and_reset_survey.md) — Mở lại khảo sát để tái định hình RQ3; ưu tiên journal và nguồn đóng khi quét.
 - [`docs/decisions/RDR-0004_lock_rq3_asymmetric_aspect_compensation.md`](decisions/RDR-0004_lock_rq3_asymmetric_aspect_compensation.md) — Chốt RQ3 theo cơ chế asymmetric aspect compensation; chốt bốn kiểm định phụ và danh sách boundary conditions dùng/loại.
 

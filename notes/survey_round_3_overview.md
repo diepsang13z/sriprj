@@ -80,7 +80,7 @@ Dữ liệu hiện có hỗ trợ quyết định này: `star` đầy đủ 9,99
 
 - Chưa chứng minh literature saturation theo `RDR-0001`.
 - 6/9 nguồn Round 3 chưa có full text; các claim chỉ có trong abstract vẫn phải giữ ở mức `pending full-text audit`.
-- Round 4 (2026-09-23) xác nhận các điểm trên vẫn mở và bổ sung một hạn chế mới: không phân biệt được bù trừ thật với thiên lệch trình bày khi chỉ dùng review công khai. Tiêu chí bão hòa của `RDR-0001` vẫn không đạt → đề xuất miễn bằng `RDR-0005` (chưa ban hành).
+- Round 4 (2026-09-23) xác nhận các điểm trên vẫn mở và bổ sung một hạn chế mới: không phân biệt được bù trừ thật với thiên lệch trình bày khi chỉ dùng review công khai. Tiêu chí bão hòa của `RDR-0001` không đạt và **đã được miễn** bằng [`RDR-0005`](../docs/decisions/RDR-0005_close_survey_and_lock_framework.md) (2026-09-23), thay bằng tiêu chí "không còn phát hiện nào làm đổi thiết kế".
 - Chưa khóa công thức đo discrepancy, econometric model hoặc validation design.
 
 ## 6. Bước tiếp theo
