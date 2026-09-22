@@ -3,7 +3,7 @@
 - **Ngày ghi:** 2026-09-21 · **Cập nhật và chốt:** 2026-09-22
 - **Loại tài liệu:** Nhật ký khám phá + ghi nhận quyết định **hướng ứng dụng** (không phải `RDR`)
 - **Trạng thái:** **ĐÃ CHỐT — Hướng app 1: Bảng soát điểm sao.** Không đổi câu hỏi nghiên cứu; một **nhánh dự báo** được thêm vào để đáp ứng Bước 5 của môn.
-- **Phạm vi ảnh hưởng:** thêm artifact ứng dụng vào sản phẩm đầu ra; thêm họ mô hình dự báo. Không đổi dữ liệu, không đổi RQ, không thay công thức đo lường.
+- **Phạm vi ảnh hưởng:** thêm artifact ứng dụng vào sản phẩm đầu ra; thêm họ mô hình dự báo. Không đổi dữ liệu, không đổi RQ, không thay công thức đo lường. RQ3 đã được chốt riêng theo [`RDR-0004`](../../decisions/RDR-0004_lock_rq3_asymmetric_aspect_compensation.md) ngày 2026-09-23.
 
 > **Cảnh báo thẩm quyền:** nguồn sự thật vẫn là các quyết định trong `docs/decisions/` (`RDR-NNNN`, số lớn nhất thắng). Tài liệu này ghi **lý do và bằng chứng** cho lựa chọn ứng dụng, không thay thế `RDR`.
 
@@ -94,7 +94,7 @@ Hệ quả nếu giữ nguyên: mất gần trọn 15 điểm Model · Bước 4
 - **RQ5** — Phần dư `score − score_dự_báo` phân bố thế nào giữa hai phía điểm, và có ổn định giữa các mức sao không?
 - **RQ6** — Có dự đoán được review nào rơi vào nhóm trừng phạt ($D < 0$) từ đặc trưng khía cạnh và severity không?
 
-Ba RQ nghiên cứu đã có trong [`notes/project-overview.md`](../../../notes/project-overview.md) mục 3: khám phá hình thái bất nhất · lượng hóa có dấu · kiểm định vai trò điều tiết.
+Ba RQ nghiên cứu đã có trong [`notes/project_overview.md`](../../../notes/project_overview.md) mục 3: khám phá hình thái bất nhất · lượng hóa có dấu · kiểm định vai trò điều tiết.
 
 ---
 
@@ -158,11 +158,11 @@ Ba RQ nghiên cứu đã có trong [`notes/project-overview.md`](../../../notes/
 | **1 — Bảng soát điểm sao** | Màn hình chọn khách sạn → xem ca lệch → tô sáng span → hàng đợi cảnh báo | **CHỐT** |
 | 2 — Tra một review | Chỉ một ô dán văn bản, trả điểm dự báo + phán quyết lệch | **Gộp vào 1** như tab tra cứu — dùng chung tầng dưới, demo vấn đáp rất mạnh |
 | 3 — Hồ sơ radar theo khách sạn | Đa giác 6 khía cạnh cho từng khách sạn | **LOẠI** — lý do ở Mục 6.2 và 6.3 |
-| 4 — Ghép 2 + 3 | Hai tab, radar xây sau khi có `RDR-0003` | **LOẠI** — không xóa được rủi ro, chỉ giới hạn thiệt hại; mà radar vốn không cần thiết |
+| 4 — Ghép 2 + 3 | Hai tab, radar xây sau khi công thức đo lường được chốt | **LOẠI** — không xóa được rủi ro, chỉ giới hạn thiệt hại; mà radar vốn không cần thiết |
 
 **Phương án 3 bị loại vì hai lý do độc lập:**
 
-- **Phụ thuộc `RDR-0003`:** radar 6 cạnh chỉ vẽ được nếu công thức thắng là **Signed Aspect Gap $r^*-s_a^*$** (có một số cho từng khía cạnh). Nếu thắng là **3×3 Polarity Matrix** (chỉ có nhãn hướng) hoặc **$z(r)-z(s)$** (một số cho cả review) thì không có số theo khía cạnh để vẽ. Khung app phải có tuần 4, còn `RDR-0003` ban hành sau validation — tức là quyết định bị đặt cược trước khi biết kết quả.
+- **Phụ thuộc công thức đo lường:** radar 6 cạnh chỉ vẽ được nếu công thức thắng là **Signed Aspect Gap $r^*-s_a^*$** (có một số cho từng khía cạnh). Nếu thắng là **3×3 Polarity Matrix** (chỉ có nhãn hướng) hoặc **$z(r)-z(s)$** (một số cho cả review) thì không có số theo khía cạnh để vẽ. Khung app phải có tuần 4, còn công thức chỉ được chốt sau validation study — tức là quyết định bị đặt cược trước khi biết kết quả.
 - **Không có thông tin để hiển thị:** xem Mục 6.3 — phần lớn khách sạn cho ra hình gần tròn.
 
 ---
@@ -258,7 +258,7 @@ Lưu ý: giới hạn ≥20 review **chỉ áp cho phần tổng hợp cấp kh�
 
 ## 8. Thiết kế trực quan thay thế radar
 
-| Mục đích | Biểu đồ | Phụ thuộc `RDR-0003`? |
+| Mục đích | Biểu đồ | Phụ thuộc công thức đo lường? |
 | --- | --- | --- |
 | Khía cạnh nào bị chê nhiều | **Cột lệch** (khen/chê hai phía quanh trục) | Không — dựng trên span người gán |
 | Khía cạnh × mức sao | **Heatmap** | Không |
@@ -285,9 +285,9 @@ Booking flow · tài khoản người dùng · multi-tenant SaaS · scraping th�
 
 ### 9.3. Ba ràng buộc thứ tự thực hiện
 
-1. **Nhánh dự báo (Bước 2–5) không phụ thuộc các quyết định đo lường còn mở** (Phụ lục A của proposal). Chạy song song với validation study. Chỉ phần hiển thị $D^{signed}_{i,a}$ mới phải chờ `RDR-0003`.
+1. **Nhánh dự báo (Bước 2–5) không phụ thuộc các quyết định đo lường còn mở** (Phụ lục A của proposal). Chạy song song với validation study. Chỉ phần hiển thị $D^{signed}_{i,a}$ mới phải chờ công thức đo lường được chốt.
 2. **Ưu tiên review:** Review 1 ở tuần 5 cần "năm mô hình sơ bộ". Nếu Bước 5 trống ở tuần 5, điểm On-going Assessment (30 điểm) bị ảnh hưởng trước cả điểm Model.
-3. **Chưa ship phần hiển thị $D$ trước `RDR-0003`:** xây giao diện trên một công thức đang thay đổi sẽ phải viết lại tầng tính toán.
+3. **Chưa ship phần hiển thị $D$ trước khi công thức đo lường được chốt:** xây giao diện trên một công thức đang thay đổi sẽ phải viết lại tầng tính toán.
 
 ### 9.4. Việc tiếp theo
 
@@ -302,8 +302,9 @@ Booking flow · tài khoản người dùng · multi-tenant SaaS · scraping th�
 ## 10. Đọc thêm
 
 - [`reports/templates/DAP391m_Guide_FA26.pdf`](../../../reports/templates/DAP391m_Guide_FA26.pdf) — nguồn của toàn bộ ràng buộc Mục 2 (Bảng 3, 14, 37; Hình 22; tr.25–33).
-- [`notes/project-overview.md`](../../../notes/project-overview.md) — định hướng đề tài và các RQ nghiên cứu.
-- [`notes/reference-map.md`](../../../notes/reference-map.md) — ref nào dùng cho phần nào, trạng thái full text.
+- [`notes/project_overview.md`](../../../notes/project_overview.md) — định hướng đề tài và các RQ nghiên cứu.
+- [`notes/reference_map.md`](../../../notes/reference_map.md) — ref nào dùng cho phần nào, trạng thái full text.
 - [`reports/md/research_proposal_draft.md`](../../../reports/md/research_proposal_draft.md) — proposal hiện tại và các điểm chưa chốt.
 - [`docs/logs/validation/0001_manual_annotation_protocol.md`](../validation/0001_manual_annotation_protocol.md) — thiết kế evaluation set và quy chuẩn gán nhãn.
-- [`docs/decisions/RDR-0003-review-and-reset-survey.md`](../../decisions/RDR-0003-review-and-reset-survey.md) — quyết định mở lại khảo sát và tái định hình RQ3.
+- [`docs/decisions/RDR-0003_review_and_reset_survey.md`](../../decisions/RDR-0003_review_and_reset_survey.md) — quyết định mở lại khảo sát và tái định hình RQ3.
+- [`docs/decisions/RDR-0004_lock_rq3_asymmetric_aspect_compensation.md`](../../decisions/RDR-0004_lock_rq3_asymmetric_aspect_compensation.md) — quyết định chốt RQ3 và bốn kiểm định phụ.

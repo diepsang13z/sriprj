@@ -294,4 +294,4 @@ Yoruk, I., Hsu, J.-H., & Lee, Z. W. Y. (2025). Consumer forgiveness: A literatur
 
 ---
 
-*Tài liệu liên quan: [`docs/INDEX.md`](../../docs/INDEX.md) · [`docs/logs/literature-survey/0004_synthesis_and_next_step.md`](../../docs/logs/literature-survey/0004_synthesis_and_next_step.md) · [`docs/logs/validation/0001_manual_annotation_protocol.md`](../../docs/logs/validation/0001_manual_annotation_protocol.md) · [`refs/INDEX.md`](../../refs/INDEX.md) · [`notes/glossary.md`](../../notes/glossary.md)*
+*Tài liệu liên quan: [`docs/INDEX.md`](../../docs/INDEX.md) · [`docs/logs/literature_survey/0004_synthesis_and_next_step.md`](../../docs/logs/literature_survey/0004_synthesis_and_next_step.md) · [`docs/logs/validation/0001_manual_annotation_protocol.md`](../../docs/logs/validation/0001_manual_annotation_protocol.md) · [`refs/INDEX.md`](../../refs/INDEX.md) · [`notes/glossary.md`](../../notes/glossary.md)*
