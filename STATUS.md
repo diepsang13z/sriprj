@@ -29,9 +29,9 @@ _Cập nhật lần cuối: 2026-09-23 | Trạng thái: RQ3 chốt, khảo sát 
 
 ## 4. Việc tiếp theo (Next Steps)
 
-1. Nhờ thư viện trường/giảng viên lấy 6 bài đóng trong `refs/INDEX.md` mục B2 (ưu tiên Kwon 2026) — 4 bài truy cập mở đã lấy xong.
+1. Nhờ thư viện trường/giảng viên lấy 16 bài đóng trong `refs/INDEX.md` mục 9.C — ưu tiên tier 1: Kwon W. 2026 · Han & Anderson · Slevitch. Không còn bài truy cập mở nào phải tải (kiểm chứng 2026-09-23).
 2. Cập nhật Research Proposal theo RQ3 đã chốt và theo nhánh dự báo; giữ nguyên audit trail `refs/`.
 3. Chạy validation study để chốt công thức đo discrepancy, rồi mới khóa mô hình econometric.
-4. Tải 5 bài truy cập mở còn thiếu + nhờ thư viện 12 bài đóng (xem `refs/INDEX.md` mục D và log `0006` mục 7.2).
+4. Thử repository mở trước khi nhờ thư viện: Mellinas `https://hdl.handle.net/10459.1/469937`; danh sách đầy đủ ở `refs/INDEX.md` mục 9.C.
 5. Viết Research Proposal trên khung đã khóa: phạm vi 9.990 review, boundary conditions = Severity + Service_Recovery + hotel class.
 6. Dựng khung ứng dụng + endpoint sớm (mục tiêu tuần 4); cảnh báo SNS làm sớm vì không thể mock.

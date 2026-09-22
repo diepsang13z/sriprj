@@ -162,12 +162,13 @@ Tổng kiểm chứng Round 4: **9 + 9 + 8 = 26**. Thư viện hiện có **35 P
 
 **A. Đã tải 16 bài** (9 tự tải + 7 tải tay) — đã xếp vào cụm chức năng; xem link `[Local PDF]` ở các mục 3–5.
 
-**B. Truy cập mở (8 bài): 7 đã tải xong** — Li (SAGE) · Zhang · Das · Tengilimoglu · Leo · Hwang · Biasetton. **Còn 1 bài phải tải tay:**
-   1. `10.1177/10963480241230957` — D5 Slevitch → `refs/06_counter_evidence/2024_slevitch_kano_categorization_critique.pdf`
-   Link tải trực tiếp: log `0006` mục 7.2 phần B.
-   *Kiểm chứng lại 2026-09-23:* `10.1016/j.ipm.2025.104088` (C3 Liu, Ma & Dou) **không truy cập mở** — ScienceDirect chỉ trả abstract + `Purchase PDF`; ResearchGate không có full-text. Đã chuyển sang mục C.
+**B. Truy cập mở (7 bài): đã tải xong toàn bộ** — Li (SAGE) · Zhang · Das · Tengilimoglu · Leo · Hwang · Biasetton.
+   *Kiểm chứng 2026-09-23 — hai bài tưởng là OA nhưng thực tế đóng:*
+   - `10.1016/j.ipm.2025.104088` (C3 Liu, Ma & Dou): ScienceDirect chỉ trả abstract + `Purchase PDF`; ResearchGate "No full-text available".
+   - `10.1177/10963480241230957` (D5 Slevitch): SAGE ghi `Restricted access`; bấm `Download PDF` → trả HTML paywall, không phải PDF (Unpaywall xếp `bronze` là sai).
+   Cả hai đã chuyển sang mục C.
 
-**C. Đóng thật — cần thư viện trường hoặc nhờ giảng viên (9 bài: 11 + 12):**
+**C. Đóng thật — cần thư viện trường hoặc nhờ giảng viên (10 bài):**
 
 1. `10.1177/19389655251327536` — D1 Han & Anderson → `06_counter_evidence/` *(ưu tiên 1)*
 2. `10.1108/IJCHM-12-2023-1914` — A2 Park et al. → `04_mechanism/`
@@ -178,17 +179,18 @@ Tổng kiểm chứng Round 4: **9 + 9 + 8 = 26**. Thư viện hiện có **35 P
 7. `10.1177/14673584251384011` — D6 Mellinas et al. → `06_counter_evidence/` *(thử repository trước: <https://hdl.handle.net/10459.1/469937>)*
 8. `10.1007/s11277-024-11457-w` — E5 Kumar et al. → `07_baselines_methods/`
 9. `10.1016/j.ipm.2025.104088` — C3 Liu, Ma & Dou → `03_phenomenon/2025_liu_rating_inconsistency_airline.pdf` *(chuyển từ mục B ngày 2026-09-23: kiểm chứng là đóng thật)*
+10. `10.1177/10963480241230957` — D5 Slevitch → `06_counter_evidence/2024_slevitch_kano_categorization_critique.pdf` *(chuyển từ mục B ngày 2026-09-23: kiểm chứng là đóng thật)*
 
 **Cộng 6 nguồn còn thiếu từ Round 3** (vẫn chưa có toàn văn, ghi ở mục tương ứng):
 
-10. `10.1016/j.ijhm.2025.104397` — Kwon, W. (2026), IJHM → mục 4 *(trục lý thuyết RQ3)*
-11. `10.1016/j.ijhm.2025.104242` — Albayrak et al. (2025), IJHM → mục 5
-12. `10.1016/j.ijhm.2024.104057` — Xu et al. (2025), IJHM → mục 4
-13. `10.1016/j.annals.2026.104208` — Zhong et al. (2026), Annals of TR → mục 4
-14. `10.1007/s11042-024-19518-9` — Doan et al. (2025), MTAP → mục 7
-15. `10.1016/j.dss.2025.114450` — Wang, D. et al. (2025), DSS → mục 3
+11. `10.1016/j.ijhm.2025.104397` — Kwon, W. (2026), IJHM → mục 4 *(trục lý thuyết RQ3)*
+12. `10.1016/j.ijhm.2025.104242` — Albayrak et al. (2025), IJHM → mục 5
+13. `10.1016/j.ijhm.2024.104057` — Xu et al. (2025), IJHM → mục 4
+14. `10.1016/j.annals.2026.104208` — Zhong et al. (2026), Annals of TR → mục 4
+15. `10.1007/s11042-024-19518-9` — Doan et al. (2025), MTAP → mục 7
+16. `10.1016/j.dss.2025.114450` — Wang, D. et al. (2025), DSS → mục 3
 
-**Tổng cần lấy: 16 bài** (10 từ Round 4 + 6 từ Round 3). Ba bài trọng yếu để quyết việc đóng khảo sát: **Kwon W.** (mục 4, ưu tiên 1) · **B1 Das** (mục 5, tải bằng trình duyệt) · **D1 Han & Anderson** (mục 6, cần thư viện).
+**Tổng cần lấy: 16 bài** (10 từ Round 4 + 6 từ Round 3) — cả 16 đều đóng. Ba bài trọng yếu để quyết việc đóng khảo sát: **Kwon W. 2026** (mục 4, trục lý thuyết RQ3) · **Han & Anderson** (mục 6, phản biện đo lường) · **Slevitch** (mục 6, critique phân loại Kano).
 
 ---
 
