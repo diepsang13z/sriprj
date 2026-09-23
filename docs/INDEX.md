@@ -36,6 +36,7 @@ Khu vực ghi lại tiến trình tư duy, khảo sát văn hiến và nhật k�
 - [`notes/reference_map.md`](../notes/reference_map.md) — bản đồ đọc nhanh từng ref: tóm tắt, tác dụng trong đề tài và trạng thái full text/local file.
 - [`notes/glossary.md`](../notes/glossary.md) — Từ điển thuật ngữ nghiên cứu: định nghĩa song ngữ toàn bộ khái niệm cốt lõi, lý thuyết hành vi, mô hình ABSA/NLP và công thức đo lường.
 - [`notes/pillar_strength.md`](../notes/pillar_strength.md) — Độ mạnh **6 trụ cột bằng chứng** (coverage 45% + evidence 35% + recency 20%), chi tiết từng trụ cột và khoảng trống thước đo discrepancy có dấu ở cấp khía cạnh.
+- [`notes/theory/INDEX.md`](../notes/theory/INDEX.md) — **Bốn lớp lý thuyết nền tảng** đã khóa ở `RDR-0005` (S-O-R · Kano/three-factor + IAA/PRCA/AIPA · Prospect Theory · hai giai đoạn non-compensatory → compensatory): vai trò từng lớp, bằng chứng trong `refs/`, câu hỏi bảo vệ và bốn câu không được viết.
 
 - [`docs/logs/progress/`](logs/progress/) — Nhật ký tiến độ theo người: mỗi người một tệp theo ngày, append-only, không sửa tệp của người khác.
 - [`docs/logs/brainstorm/`](logs/brainstorm/) — Nhật ký phát triển ý tưởng, bóc tách bài báo gốc và định hình đề tài:
@@ -61,5 +62,5 @@ Khu vực ghi lại tiến trình tư duy, khảo sát văn hiến và nhật k�
   - [`project_planning.md`](../reports/md/project_planning.md) — Project Planning theo template DAP391m: thông tin nhóm, đề tài và dataset, ba câu hỏi nghiên cứu, ba paper baseline, kế hoạch 10 tuần, phân công, kế hoạch dùng AI và audit log, rủi ro.
   - [`research_proposal.md`](../reports/md/research_proposal.md) — Research Proposal theo template học phần: abstract, literature review, limitations, necessity, objectives, scope, feasibility, approach & method, research plan, expected results.
 - `reports/presen/` — Bài trình bày theo từng mốc báo cáo, đặt số thứ tự theo mốc.
-  - [`01_progress_report/progress_slide.md`](../reports/presen/01_progress_report/progress_slide.md) — Slide báo cáo tiến độ dạng markdown: đề tài, khoảng trống nghiên cứu, RQ, phương pháp, sáu màn hình ứng dụng, kết quả bốn vòng khảo sát và việc tiếp theo.
+  - [`01_progress_report/progress_slide.md`](../reports/presen/01_progress_report/progress_slide.md) — Slide báo cáo tiến độ dạng markdown: đề tài, khoảng trống nghiên cứu, RQ, phương pháp, kết quả khảo sát văn hiến, việc tiếp theo và ứng dụng Bảng soát điểm sao.
 
