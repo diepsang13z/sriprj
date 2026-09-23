@@ -20,6 +20,7 @@ Tài liệu này quy định các nguyên tắc vận hành, quản lý context 
   2. Báo cáo các thay đổi, đề xuất commit message.
   3. Chỉ thực thi lệnh git khi người dùng xác nhận phê duyệt.
 - **Nhánh làm việc:** mỗi người một nhánh riêng theo mẫu `<tên>/work` (`dieps13z/work`, `khoideptrai/work`, …), rồi mở pull request vào `main`. **Không commit thẳng vào `main`.**
+- **Kiểm trước khi commit (bắt buộc):** chạy `python tools/check_docs.py`, phải trả về **0 lỗi**. Bộ kiểm gồm bốn lớp — link nội bộ, toàn vẹn bảng Markdown, backtick lẻ, vết escape sót — đều là lỗi im lặng mà mắt không bắt được. Lý do có luật này: hai lỗi đã từng lọt vào bản nộp chỉ vì sửa xong không đọc lại.
 - **Không tạo nhánh lồng tên nhánh khác** (ví dụ `remotes/origin/<tên>/work`). Lỗi này đã từng xảy ra và làm `git push` trần báo *"upstream branch does not match"*; nhánh rác sau đó phải xoá tay.
 
 ---

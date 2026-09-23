@@ -57,7 +57,7 @@ Le, Nguyen & Nguyen (2026) áp dụng khung **S-O-R** trên hơn 1,3 triệu rev
 
 ### 1.2. The limitation of current works / Những hạn chế của các nghiên cứu hiện tại
 
-**L1 — Bỏ qua hiện tượng bất nhất, hoặc xử lý nó như nhiễu.** Mô hình của Le et al. (2026) giả định quan hệ đơn điệu giữa cảm xúc khía cạnh và điểm số: tích cực thì điểm tăng, tiêu cực thì điểm giảm. Giả định này không giải thích được các quan sát có thật trong chính tập dữ liệu gán nhãn của bài báo. Khảo sát trực tiếp của nhóm trên `data/TripAdvisor_EN.json` (9.990 review gán nhãn) cho thấy **394 review 5 sao chứa ít nhất một span cảm xúc `Negative`**, trong khi toàn tập chỉ có 465 review 1–2 sao và trong đó **199 review vẫn chứa span `Positive`**. Đây là hiện tượng có cấu trúc: Abaiyan et al. (2026) chỉ ra phần lớn mismatch tập trung vào một số nhóm người viết có hành vi hệ thống, chứ không phân bố ngẫu nhiên.
+**L1 — Bỏ qua hiện tượng bất nhất, hoặc xử lý nó như nhiễu.** Mô hình của Le et al. (2026) giả định quan hệ đơn điệu giữa cảm xúc khía cạnh và điểm số: tích cực thì điểm tăng, tiêu cực thì điểm giảm. Giả định này không giải thích được các quan sát có thật trong chính tập dữ liệu gán nhãn của bài báo. Khảo sát trực tiếp của nhóm trên `data/TripAdvisor_EN.json` (9.990 review gán nhãn) cho thấy **394 review 5 sao chứa ít nhất một span cảm xúc `Negative` gắn khía cạnh** (định nghĩa đóng băng ở `RDR-0006`: bỏ span gắn `Branding`), trong khi toàn tập chỉ có 465 review 1–2 sao và trong đó **199 review vẫn chứa span `Positive`**. Đây là hiện tượng có cấu trúc: Abaiyan et al. (2026) chỉ ra phần lớn mismatch tập trung vào một số nhóm người viết có hành vi hệ thống, chứ không phân bố ngẫu nhiên.
 
 **L2 — Lập luận vòng ở biến `Loyalty`.** Biến `Loyalty` trong Le et al. (2026) được định nghĩa bằng chính các từ ngữ chỉ ý định hành vi (*"come back"*, *"highly recommend"* so với *"stay away"*, *"never again"*), rồi được đưa vào hồi quy để giải thích cho điểm số. Diễn đạt bằng lời và hành vi chấm điểm trong cùng một review là hai biểu hiện đồng thời của một trạng thái, nên dùng vế lời để giải thích vế số là lặp thừa. Hệ quả thực nghiệm là biến "mạnh nhất" trong mô hình lại gần như đồng nhất với biến phụ thuộc.
 
@@ -109,9 +109,9 @@ Le, Nguyen & Nguyen (2026) áp dụng khung **S-O-R** trên hơn 1,3 triệu rev
 | Tổng số span khía cạnh | 54.326 |
 | Phân bố khía cạnh | Service 19.289 · Facility 12.641 · Experience 9.113 · Amenity 7.651 · Loyalty 4.293 · Branding 1.339 |
 | Tổng số span cảm xúc | 54.272 (Positive 46.772 · Negative 4.508 · Neutral 2.992) |
-| Review 5★ chứa ≥1 span `Negative` | 394 review |
+| Review 5★ chứa ≥1 span `Negative` gắn khía cạnh (theo `RDR-0006`) | 394 review |
 | Review 1–2★ chứa ≥1 span `Positive` | 199 review (trên tổng 465 review 1–2★) |
-| Aligned control 5★ (không có span `Negative`) | 6.754 review |
+| Aligned control 5★ (không có span `Negative` gắn khía cạnh, theo `RDR-0006`) | 6.754 review |
 | Aligned control 1–2★ (không có span `Positive`) | 266 review |
 
 **Nội dung nghiên cứu chính (in-scope):**
@@ -138,7 +138,7 @@ Le, Nguyen & Nguyen (2026) áp dụng khung **S-O-R** trên hơn 1,3 triệu rev
 
 ## 4. Feasibility of research / Tính khả thi của đề tài
 
-**Dữ liệu đã có sẵn và đã được xác minh.** Corpus review khách sạn tiếng Anh với nhãn khía cạnh và cảm xúc cấp span đã nằm trong repo (`data/TripAdvisor_EN.json`, 41,1 MB), không phải chờ thu thập. Toàn bộ số liệu ở Mục 3 được tính trực tiếp trên file này. Nguồn gốc và điều kiện sử dụng dữ liệu **[CHƯA CHỐT]** — phải khai báo trước khi nộp bản cuối.
+**Dữ liệu đã có sẵn và đã được xác minh.** Corpus review khách sạn tiếng Anh với nhãn khía cạnh và cảm xúc cấp span đã nằm trong repo (`data/TripAdvisor_EN.json`, 41,1 MB), không phải chờ thu thập. Toàn bộ số liệu ở Mục 3 được tính trực tiếp trên file này. Nguồn gốc và điều kiện sử dụng dữ liệu: **giảng viên môn học cung cấp**, nhóm có quyền sử dụng trong phạm vi môn DAP391m (chốt 2026-09-23); bản dùng để tính mọi số liệu ở Mục 3 được định danh bằng checksum SHA-256 ghi ở `README.md`.
 
 **Tài liệu nền đã đủ để thiết kế thực nghiệm.** Thư viện `refs/` hiện có **35 tệp toàn văn trong 8 cụm chức năng**, trong đó 31 nguồn thuộc core set dùng để viết đề cương (định nghĩa và provenance của thước đo, bằng chứng hiện tượng, cơ chế bất đối xứng, điều kiện biên, phản biện phương pháp, baseline kỹ thuật). Khảo sát văn hiến đã đóng có điều kiện; không cần mở vòng quét rộng thêm.
 
@@ -218,7 +218,7 @@ Dùng cấu hình khía cạnh (aspect polarity/configuration), mức độ nghi
 
 Chạy song song, không phụ thuộc các quyết định đo lường còn mở: **năm mô hình** dự đoán mức điểm từ văn bản — TF-IDF + Logistic Regression, TF-IDF + SVM, LightGBM, BiLSTM và DeBERTa (mô hình học sâu) — so sánh bằng macro-F1 và PR-AUC, chia tập theo khách sạn, có tuning và cross-validation. Kết quả nhánh này được đóng gói thành ứng dụng **"Bảng soát điểm sao"**, tách điểm khách bấm khỏi điểm mà nội dung review biện minh, có endpoint dự báo, hàng đợi cảnh báo và kênh hỏi đáp.
 
-**Năm quyết định kỹ thuật phải khóa sau validation (ghi vào một quyết định kiến trúc mới trong `docs/decisions/`, số hiệu kế tiếp sau `RDR-0005`):** (1) bộ ước lượng cảm xúc; (2) cách chuẩn hóa điểm – cảm xúc; (3) ngưỡng phân biệt `aligned` / `mixed` / bất nhất thật; (4) cách tổng hợp cảm xúc nhiều khía cạnh thành kỳ vọng cấp văn bản; (5) công thức đo bất nhất được chọn.
+**Năm quyết định kỹ thuật phải khóa sau validation (ghi vào một quyết định kiến trúc mới trong `docs/decisions/`, số hiệu kế tiếp sau `RDR-0006`):** (1) bộ ước lượng cảm xúc; (2) cách chuẩn hóa điểm – cảm xúc; (3) ngưỡng phân biệt `aligned` / `mixed` / bất nhất thật; (4) cách tổng hợp cảm xúc nhiều khía cạnh thành kỳ vọng cấp văn bản; (5) công thức đo bất nhất được chọn.
 
 ---
 
@@ -306,7 +306,7 @@ Kwon, B., Lee, J., Min, J., Kwak, C., & Choi, H. S. (2025). Beyond the stars: Th
 
 Kwon, W. (2026). Aspect-based sentiment analysis through zero-shot text classification and impact-asymmetry analysis. *International Journal of Hospitality Management, 133*, 104397. https://doi.org/10.1016/j.ijhm.2025.104397
 
-Le, H. T. M., Nguyen, T. Q., & Nguyen, B. T. (2026). Unlocking insights into customer sentiment analysis: Impact of loyalty on online hotel ratings. *International Journal of Hospitality Management, 134*, 104574.
+Le, H. T. M., Nguyen, T. Q., & Nguyen, B. T. (2026). Unlocking insights into customer sentiment analysis: Impact of loyalty on online hotel ratings. *International Journal of Hospitality Management, 134*, 104574. https://doi.org/10.1016/j.ijhm.2026.104574
 
 Leo, W. W. C., Maggioni, I., Sembada, A. Y., & Tsarenko, Y. (2026). The dynamics of customer participation in service recovery: The roles of failure severity, quality signals, and responsiveness. *International Journal of Hospitality Management, 140*, 104809. https://doi.org/10.1016/j.ijhm.2026.104809
 
@@ -378,7 +378,7 @@ Zhu, A., et al. (2025). DaNet: Dual-aware enhanced alignment network for multimo
 | --- | --- | --- | --- |
 | 1 | Tiêu đề | Tên đề tài chính thức | Chốt sau validation (phụ thuộc phép đo được chọn) |
 | 2 | Phần đầu | Giảng viên hướng dẫn, thành viên, MSSV | Điền trực tiếp |
-| 3 | Mục 4 | Nguồn gốc và điều kiện sử dụng dữ liệu | Ghi rõ nguồn trong báo cáo |
+| 3 | Mục 4 | Nguồn gốc và điều kiện sử dụng dữ liệu | **Đã chốt 2026-09-23:** giảng viên môn học cung cấp, nhóm có quyền sử dụng trong phạm vi DAP391m; checksum ở `README.md`. Repo mà bài báo công bố không chứa tệp TripAdvisor (kiểm 2026-09-23) |
 | 4 | Mục 5 | Bộ ước lượng cảm xúc | Validation Stage 3–4 |
 | 5 | Mục 5 | Chuẩn hóa điểm – cảm xúc | Validation Stage 4 |
 | 6 | Mục 5 | Ngưỡng phân biệt `aligned` / `mixed` / bất nhất thật | Validation Stage 4 |

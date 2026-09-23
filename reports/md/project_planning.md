@@ -35,9 +35,9 @@ Nộp trên LMS trong tuần 1; chiếm 10% điểm môn học, trong đó 3 đi
 | Số thứ tự và tên đề tài | Đề xuất riêng — **Bất nhất cảm xúc – điểm số ở cấp khía cạnh trong review khách sạn** (*Aspect-Level Sentiment–Rating Discrepancy in Online Hotel Reviews*) |
 | Bài toán (phân loại, hồi quy, dự báo chuỗi thời gian, phát hiện bất thường) | **Phân loại đa lớp** (dự đoán mức điểm 1–5 từ văn bản) + **phát hiện bất thường** (nhận diện review bất nhất giữa văn bản và điểm sao) + **mô hình giải thích dạng hồi quy thứ tự** cho quan hệ khía cạnh → điểm |
 | Tên bộ dữ liệu | `TripAdvisor_EN.json` — corpus review khách sạn tiếng Anh đã gán nhãn khía cạnh và cảm xúc ở cấp span |
-| Nguồn công bố và link gốc | Kế thừa tập gán nhãn chuyên gia của Le, H. T. M., Nguyen, T. Q., & Nguyen, B. T. (2026), *IJHM*, 134, 104574. File local: `data/TripAdvisor_EN.json` (41,1 MB). Link repo/DOI của nhóm tác giả gốc: [điền — xác minh trước khi nộp] |
+| Nguồn công bố và link gốc | Kế thừa tập gán nhãn chuyên gia của Le, H. T. M., Nguyen, T. Q., & Nguyen, B. T. (2026), *IJHM*, 134, 104574. File local: `data/TripAdvisor_EN.json` (41,1 MB). Link bài báo (DOI): `10.1016/j.ijhm.2026.104574` · Repo mà bài báo công bố: `github.com/Hanhlevna/Manhos` (kiểm 2026-09-23: chỉ có `data_Booking.com.csv`, **không chứa tệp TripAdvisor**). Bản nhóm dùng do **giảng viên môn học cung cấp**, định danh bằng SHA-256 ghi ở `README.md` |
 | Bài báo mô tả bộ dữ liệu (tác giả, năm, nơi công bố) | Le, H. T. M., Nguyen, T. Q., & Nguyen, B. T. (2026). *Unlocking insights into customer sentiment analysis: Impact of loyalty on online hotel ratings*. International Journal of Hospitality Management, 134, 104574 |
-| Giấy phép sử dụng | **[CHƯA CHỐT]** — phải ghi rõ điều kiện sử dụng tập dữ liệu của nhóm tác giả gốc và cách ghi nguồn trong báo cáo |
+| Giấy phép sử dụng | **Giảng viên môn học cung cấp** cho nhóm; nhóm có quyền sử dụng trong phạm vi môn DAP391m (chốt 2026-09-23). Khi nộp báo cáo, ghi nguồn theo dòng này kèm checksum SHA-256 ở `README.md` |
 | Quy mô: số dòng, số cột, khoảng thời gian | 9.990 review · 2.622 khách sạn · 50 địa điểm · 2015–2023. JSON gồm `annotations` (54.326 span khía cạnh `entities`, 54.272 span cảm xúc `entity_sentiment`) và `meta_info` |
 | Biến mục tiêu (target) và các nhóm biến đầu vào | Target: `score` (thang 1–5). Đầu vào: (1) văn bản review; (2) span khía cạnh `entities` — Facility, Amenity, Service, Experience, Loyalty, Branding; (3) span cảm xúc `entity_sentiment` — Positive, Negative, Neutral; (4) metadata `star`, `year`, `month`, `location`, `hotel name`/`id_url` |
 | Lý do chọn bộ dữ liệu này | Đã nằm trong repo, không phải chờ thu thập; nhãn đã được chuyên gia gán ở cấp span (không phải nhãn yếu sinh từ điểm sao); có bối cảnh Việt Nam khớp bài báo gốc; đủ lớn cho cả nhánh đo lường và nhánh dự báo; có sẵn cấu trúc `start`/`end` để liên kết span khía cạnh với span cảm xúc và để tô sáng giải thích trong ứng dụng |
@@ -50,10 +50,10 @@ Nộp trên LMS trong tuần 1; chiếm 10% điểm môn học, trong đó 3 đi
 | Phân bố điểm | 1★ 228 · 2★ 237 · 3★ 601 · 4★ 1.776 · 5★ 7.148 (71,6%) |
 | Span khía cạnh | Service 19.289 · Facility 12.641 · Experience 9.113 · Amenity 7.651 · Loyalty 4.293 · Branding 1.339 |
 | Span cảm xúc | Positive 46.772 · Negative 4.508 · Neutral 2.992 |
-| Review 5★ chứa ≥1 span `Negative` | 394 review |
+| Review 5★ chứa ≥1 span `Negative` gắn khía cạnh (theo `RDR-0006`) | 394 review |
 | Review 1–2★ chứa ≥1 span `Positive` | 199 review (trên tổng 465 review 1–2★) |
 | Tổng ca đáng ngờ | 593 review, trải trên 461 khách sạn |
-| Nhóm có sẵn cho gán nhãn tay | 394 + 199 ca đáng ngờ · aligned controls 5★ 6.754 review · aligned controls 1–2★ 266 review |
+| Nhóm có sẵn cho gán nhãn tay | 394 + 199 ca đáng ngờ · aligned controls 5★ 6.754 review (không có span `Negative` gắn khía cạnh, theo `RDR-0006`) · aligned controls 1–2★ 266 review |
 
 ---
 
@@ -86,7 +86,7 @@ Nộp trên LMS trong tuần 1; chiếm 10% điểm môn học, trong đó 3 đi
 | **STT** | **Tác giả, năm, tên bài, nơi công bố** | **Dữ liệu và mô hình trong bài** | **Kết quả sẽ so sánh** | **Trạng thái đọc** |
 | --- | --- | --- | --- | --- |
 | 1 | Le, H. T. M., Nguyen, T. Q., & Nguyen, B. T. (2026). *Unlocking insights into customer sentiment analysis: Impact of loyalty on online hotel ratings*. International Journal of Hospitality Management, 134, 104574 | Hơn 1,3 triệu review (Booking.com, TripAdvisor); BERTopic → SentenceBERT + c-TF-IDF → VADER → Weighted Multinomial Logistic Regression; 5 khía cạnh | McFadden pseudo $R^2$ = 0,4617 (Booking) và 0,5898 (TripAdvisor); hệ số `FacilityNegative` (−1,0778 / −1,1661); dùng làm đối chuẩn cho quan hệ khía cạnh → điểm và làm mốc phản biện tính vòng của `Loyalty` | Đã đọc kỹ (toàn văn dạng markdown). Chưa chạy thử — tái lập ở Bước 5 |
-| 2 | Kwon, B., Lee, J., Min, J., Kwak, C., & Choi, H. S. (2025). *Beyond the stars: The impact of rating-text inconsistency on perceived review usefulness*. Asia Pacific Journal of Information Systems, 35(1), 49–72 | Review sản phẩm; tách **degree** $D=|z(rating)-z(sentiment)|$ khỏi **direction**; outcome là perceived usefulness | Định nghĩa degree/direction để đối chiếu với công thức của nhóm; cho thấy tách hai khái niệm này là cần thiết, nhưng bài không ở cấp khía cạnh và không thuộc hospitality | Đã đọc kỹ (local PDF). Chưa chạy thử |
+| 2 | Kwon, B., Lee, J., Min, J., Kwak, C., & Choi, H. S. (2025). *Beyond the stars: The impact of rating-text inconsistency on perceived review usefulness*. Asia Pacific Journal of Information Systems, 35(1), 49–72 | Review sản phẩm; tách **degree** $D=\lvert z(rating)-z(sentiment)\rvert$ khỏi **direction**; outcome là perceived usefulness | Định nghĩa degree/direction để đối chiếu với công thức của nhóm; cho thấy tách hai khái niệm này là cần thiết, nhưng bài không ở cấp khía cạnh và không thuộc hospitality | Đã đọc kỹ (local PDF). Chưa chạy thử |
 | 3 | You, X.-Y., Chang, S.-C., Hung, S.-M., Ku, C.-H., & Chang, Y.-C. (2024). *Using multitask learning with pre-trained language models for aspect-based sentiment analysis in the hospitality industry*. PACLIC 2024, 131–140 | ABSA đa nhiệm trên 8 khía cạnh hospitality bằng mô hình ngôn ngữ tiền huấn luyện | Mốc so kỹ thuật: RoBERTa đa nhiệm AUROC 0,9214 · AUPRC 0,6152 · F1 0,5817; so XGBoost 0,4938 và LSTM-attention 0,4208 — dùng làm ngưỡng tham chiếu cho Bước 5 | Đã đọc kỹ (local PDF). Chưa chạy thử |
 
 Ba paper này sẽ được trích dẫn lại trong Research Proposal (tuần 3) và Final Report. Một nguồn bổ trợ đã có toàn văn và sẽ dùng khi viết Methodology: Ameur, Hamdi & Ben Yahia (2024), *ACM Computing Surveys* — systematic literature review về sentiment analysis cho review khách sạn.
