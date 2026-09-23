@@ -50,3 +50,11 @@ Mỗi Agent khi bắt đầu phiên làm việc mới chỉ cần đọc lướt
 3. **Bước 3 — `STATUS.md`:** Xem ảnh chụp trạng thái **cấp dự án** ($\le 40$ dòng) — chỉ đổi khi có `RDR` mới.
 4. **Bước 4 — `docs/BACKLOG.md` và `docs/logs/progress/` (khi cần biết đang làm gì):** backlog là việc đang mở cấp dự án; progress là việc theo người theo ngày.
 5. **Bước 5 — Không tự ý đọc file PDF gốc và không đọc tràn lan `docs/logs/`**: Chỉ mở file log hoặc factsheet cụ thể khi nhiệm vụ hiện tại yêu cầu.
+
+---
+
+## 4. Dữ liệu (Dataset)
+
+Dataset **không nằm trong git** — thư mục `data/` bị gitignore. Cách lấy, kích thước và checksum nằm ở [`README.md`](README.md) mục **"Lấy dữ liệu về"**.
+
+Không tự tạo lại hay thay bằng nguồn khác: mọi con số thống kê trong tài liệu được tính trên đúng bản ghi ở checksum đó. Nếu tệp lệch checksum, **dừng lại và báo** thay vì tính tiếp.

@@ -19,6 +19,8 @@ Tài liệu này quy định các nguyên tắc vận hành, quản lý context 
   1. Chỉ thực hiện chỉnh sửa, bổ sung nội dung trên working tree.
   2. Báo cáo các thay đổi, đề xuất commit message.
   3. Chỉ thực thi lệnh git khi người dùng xác nhận phê duyệt.
+- **Nhánh làm việc:** mỗi người một nhánh riêng theo mẫu `<tên>/work` (`dieps13z/work`, `khoideptrai/work`, …), rồi mở pull request vào `main`. **Không commit thẳng vào `main`.**
+- **Không tạo nhánh lồng tên nhánh khác** (ví dụ `remotes/origin/<tên>/work`). Lỗi này đã từng xảy ra và làm `git push` trần báo *"upstream branch does not match"*; nhánh rác sau đó phải xoá tay.
 
 ---
 
@@ -33,8 +35,9 @@ Tài liệu này quy định các nguyên tắc vận hành, quản lý context 
 
 ## 4. Kỷ luật trong Giai đoạn Khám phá Đề tài (Exploratory Discipline)
 
-* **Quy tắc:** Khi đề tài và Research Questions (RQs) chưa được chốt chính thức (chưa có quyết định kiến trúc `RDR-0001` ban hành trong `docs/decisions/`), **Agent KHÔNG tự ý sinh code triển khai hay tự chốt khung phương pháp luận**.
-* **Phạm vi hành vi:** Agent chỉ tập trung hỗ trợ phân tích dữ liệu, bóc tách cấu trúc dataset, đối soát văn hiến và brainstorm ý tưởng theo yêu cầu của người dùng.
+- **Bối cảnh:** điều kiện kích hoạt cũ của mục này — *"chưa có quyết định kiến trúc `RDR-0001` ban hành"* — **đã hết hiệu lực** vì `RDR-0001` đã ban hành. Nhưng RQ1–RQ2 vẫn còn nháp và công thức đo discrepancy vẫn chưa chốt, nên phần tinh thần của mục này vẫn giữ.
+- **Quy tắc:** khi một quyết định phương pháp **chưa có trong `docs/decisions/`**, Agent **KHÔNG tự chốt thay nhóm** — không tự chọn công thức đo bất nhất, bộ ước lượng cảm xúc, cách chuẩn hóa, ngưỡng phân loại hay khung lý thuyết.
+- **Phạm vi hành vi:** Agent được hỗ trợ phân tích dữ liệu, bóc tách cấu trúc dataset, đối soát văn hiến và brainstorm ý tưởng. Việc chốt phương pháp do nhóm quyết và ghi thành `RDR`.
 
 ---
 

@@ -6,6 +6,7 @@ Tài liệu này là Router đơn (Single Router) phân tầng điều hướng 
 
 ## 1. Core Context Files (Cốt lõi - Cấp File)
 
+- [`README.md`](../README.md) — Điểm vào cho người đọc: đề tài một câu, cấu trúc thư mục, lấy dữ liệu ở đâu và checksum, quy ước nhánh.
 - [`RULES.md`](../RULES.md) — Quy tắc vận hành, ngân sách dòng ($\le 200$ dòng), kỷ luật Git và Single Source of Truth.
 - [`AGENTS.md`](../AGENTS.md) — Định vị đề tài, phạm vi In-scope / Out-of-scope và thứ tự đọc tài liệu.
 - [`STATUS.md`](../STATUS.md) — Ảnh chụp trạng thái **cấp dự án** ($\le 40$ dòng). Chỉ sửa khi có `RDR` mới, đổi pha, hoặc chốt RQ.
