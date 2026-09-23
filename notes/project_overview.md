@@ -94,10 +94,10 @@
 - [`docs/logs/literature_survey/0004_synthesis_and_next_step.md`](../docs/logs/literature_survey/0004_synthesis_and_next_step.md) — tổng kết bằng chứng, các điểm đã chốt và còn mở.
 - [`docs/logs/literature_survey/0005_survey_matrix_round_3_rq3_rescoping.md`](../docs/logs/literature_survey/0005_survey_matrix_round_3_rq3_rescoping.md) — targeted scan tái định hình RQ3 và đánh giá các phương án theo fit dữ liệu.
 - [`docs/logs/literature_survey/0006_survey_matrix_round_4.md`](../docs/logs/literature_survey/0006_survey_matrix_round_4.md) — Round 4 verification: 5 cluster, 26 nguồn mới, checkpoint phản biện, kiểm tra tính mới và đề xuất phân loại cụm.
-- [`notes/survey_round_3_overview.md`](survey_round_3_overview.md) — bản giải thích ngắn về mục đích, phạm vi, số liệu và kết quả chính của Survey Round 3.
+- [`notes/survey_overview.md`](survey_overview.md) — tổng quan bốn vòng khảo sát văn hiến: mỗi vòng thu được gì và khảo sát đang dừng ở đâu.
 - [`notes/reference_map.md`](reference_map.md) — mỗi ref nói gì, được dùng vào đâu và trạng thái đã/chưa kéo toàn văn.
 - [`docs/logs/validation/0001_manual_annotation_protocol.md`](../docs/logs/validation/0001_manual_annotation_protocol.md) — thiết kế evaluation set và quy chuẩn gán nhãn.
 - [`reports/md/research_proposal.md`](../reports/md/research_proposal.md) — Research Proposal theo template học phần; Phụ lục A liệt kê các điểm chưa chốt.
 - [`notes/reference_map.md`](reference_map.md) — trạng thái từng ref, đọc kèm mục 6 (Round 4) và mục 10 (giới hạn sử dụng).
-- [`reports/pillar_strength.html`](../reports/pillar_strength.html) — **xem độ mạnh 6 trụ cột bằng chứng** (thanh điểm: coverage 45% + evidence 35% + recency 20%) và khoảng trống thước đo có dấu cấp khía cạnh.
+- [`notes/pillar_strength.md`](pillar_strength.md) — **độ mạnh 6 trụ cột bằng chứng** (coverage 45% + evidence 35% + recency 20%) và khoảng trống thước đo có dấu cấp khía cạnh.
 - [`notes/glossary.md`](glossary.md) — từ điển thuật ngữ song ngữ.

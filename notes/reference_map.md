@@ -153,7 +153,7 @@ Tình trạng toàn văn sau Round 4: **16 bài đã tải** (9 tự tải + 7 t
 | Chốt tuyên bố prevalence cho RQ1 | E4 Hu et al. (17,3% trên 4.004 review), đọc kèm D1/D2 để ghi đúng giới hạn phạm vi. |
 | Chọn baseline và tầng giải thích cho app DAP391m | E2 (số baseline F1 0,5817), E1 (SHAP/LIME), E3 (prior art mục đích), E5. |
 | Tránh leakage/circularity khi xây sentiment estimator | Root paper, Valdivia (2019), Almansour (2022), Topçu (2026), D1. |
-| Chuẩn bị proposal sau khi RQ3 được duyệt | `notes/project_overview.md`, `notes/survey_round_3_overview.md`, rồi literature logs. |
+| Chuẩn bị proposal sau khi RQ3 được duyệt | `notes/project_overview.md`, `notes/survey_overview.md`, rồi literature logs. |
 
 ## 10. Giới hạn sử dụng
 
