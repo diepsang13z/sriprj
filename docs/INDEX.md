@@ -54,4 +54,6 @@ Khu vực ghi lại tiến trình tư duy, khảo sát văn hiến và nhật k�
 - `reports/templates/` — Các biểu mẫu học phần DAP391m (Research Proposal, Project Planning, Weekly Report, Slide Sample).
 - [`reports/pillar_strength.html`](../reports/pillar_strength.html) — Trang xem **độ mạnh 6 trụ cột bằng chứng** (coverage 45% + evidence 35% + recency 20%) và khoảng trống thước đo discrepancy có dấu ở cấp khía cạnh.
 - `reports/md/` — Các bản thảo báo cáo, đề cương nghiên cứu dạng Markdown phục vụ nghiệm thu.
-  - [`research_proposal_draft.md`](../reports/md/research_proposal_draft.md) — Bản nháp Research Proposal: abstract, literature review, gap, objectives, scope, feasibility, approach & method, expected results; các điểm chưa chốt gom ở Phụ lục A.
+  - [`project_planning.md`](../reports/md/project_planning.md) — Project Planning theo template DAP391m: thông tin nhóm, đề tài và dataset, ba câu hỏi nghiên cứu, ba paper baseline, kế hoạch 10 tuần, phân công, kế hoạch dùng AI và audit log, rủi ro.
+  - [`research_proposal.md`](../reports/md/research_proposal.md) — Research Proposal theo template học phần: abstract, literature review, limitations, necessity, objectives, scope, feasibility, approach & method, research plan, expected results.
+

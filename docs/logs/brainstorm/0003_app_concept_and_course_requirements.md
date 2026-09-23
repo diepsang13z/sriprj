@@ -292,7 +292,7 @@ Booking flow · tài khoản người dùng · multi-tenant SaaS · scraping th�
 ### 9.4. Việc tiếp theo
 
 1. Cập nhật `AGENTS.md` (artifact ứng dụng vào in-scope) và `STATUS.md` theo quyết định này.
-2. Cập nhật Mục 5 của `reports/md/research_proposal_draft.md` để có nhánh dự báo; thêm điểm mở #17–#18 vào Phụ lục A (chọn 5 mô hình nào · chọn AWS hay GCP).
+2. Cập nhật Mục 5 của proposal để có nhánh dự báo; thêm điểm mở cho việc chọn 5 mô hình và chọn AWS/GCP vào Phụ lục A. *(Đã thực hiện — xem [`reports/md/research_proposal.md`](../../../reports/md/research_proposal.md).)*
 3. Chốt 5 mô hình cho Bước 5: TF-IDF + Logistic · TF-IDF + SVM · LightGBM · BiLSTM · **DeBERTa** (học sâu), metric macro-F1 và PR-AUC.
 4. Dựng khung app + endpoint sớm (mục tiêu tuần 4); làm cảnh báo SNS sớm vì đây là thứ duy nhất không thể mock.
 5. Ghi nhánh dự báo vào `docs/logs/validation/` khi bắt đầu Bước 2.
@@ -304,7 +304,7 @@ Booking flow · tài khoản người dùng · multi-tenant SaaS · scraping th�
 - [`reports/templates/DAP391m_Guide_FA26.pdf`](../../../reports/templates/DAP391m_Guide_FA26.pdf) — nguồn của toàn bộ ràng buộc Mục 2 (Bảng 3, 14, 37; Hình 22; tr.25–33).
 - [`notes/project_overview.md`](../../../notes/project_overview.md) — định hướng đề tài và các RQ nghiên cứu.
 - [`notes/reference_map.md`](../../../notes/reference_map.md) — ref nào dùng cho phần nào, trạng thái full text.
-- [`reports/md/research_proposal_draft.md`](../../../reports/md/research_proposal_draft.md) — proposal hiện tại và các điểm chưa chốt.
+- [`reports/md/research_proposal.md`](../../../reports/md/research_proposal.md) — proposal hiện tại và các điểm chưa chốt.
 - [`docs/logs/validation/0001_manual_annotation_protocol.md`](../validation/0001_manual_annotation_protocol.md) — thiết kế evaluation set và quy chuẩn gán nhãn.
 - [`docs/decisions/RDR-0003_review_and_reset_survey.md`](../../decisions/RDR-0003_review_and_reset_survey.md) — quyết định mở lại khảo sát và tái định hình RQ3.
 - [`docs/decisions/RDR-0004_lock_rq3_asymmetric_aspect_compensation.md`](../../decisions/RDR-0004_lock_rq3_asymmetric_aspect_compensation.md) — quyết định chốt RQ3 và bốn kiểm định phụ.
