@@ -66,9 +66,9 @@ Tập dữ liệu: **9.990 review TripAdvisor tiếng Anh, giai đoạn 2015–2
 
 | Chỉ số | Số lượng |
 | --- | ---: |
-| Review 5 sao **vẫn chứa phàn nàn tiêu cực** | **404** |
+| Review 5 sao **vẫn chứa phàn nàn tiêu cực** | **394** |
 | Review 1–2 sao **vẫn chứa lời khen** | **199** (trên tổng 465 review 1–2 sao) |
-| Tổng số ca đáng ngờ | **603 review**, trải trên **468 khách sạn** |
+| Tổng số ca đáng ngờ | **593 review**, trải trên **461 khách sạn** |
 
 Hai con số này không thể là may rủi ngẫu nhiên — chúng cho thấy một **mẫu hành vi có cấu trúc**.
 
@@ -100,7 +100,7 @@ Hai con số này không thể là may rủi ngẫu nhiên — chúng cho thấy
 
 **Phản biện ba điểm:**
 
-1. **Giả định quan hệ đơn điệu** — mô hình giả định cảm xúc tích cực thì điểm tăng, tiêu cực thì điểm giảm. Giả định này không giải thích được 404 review 5 sao có phàn nàn tiêu cực trong chính dữ liệu bài báo.
+1. **Giả định quan hệ đơn điệu** — mô hình giả định cảm xúc tích cực thì điểm tăng, tiêu cực thì điểm giảm. Giả định này không giải thích được 394 review 5 sao có phàn nàn tiêu cực trong chính dữ liệu bài báo.
 2. **Lập luận vòng ở biến `Loyalty`** — biến này được định nghĩa bằng chính các câu như *"sẽ quay lại"*, *"rất khuyến khích"*, rồi đưa vào mô hình để giải thích cho điểm số. Dùng vế lời để giải thích vế số là lặp thừa.
 3. **Trộn hai trục khác bản chất** — "khách nói về *cái gì*" (khía cạnh) bị trộn với "khách cảm thấy *như thế nào*" (cảm xúc).
 
@@ -419,7 +419,7 @@ Vòng 4 **không** tìm thêm tài liệu để mở rộng đề tài. Nó nh�
 ## Phụ lục — Gợi ý trả lời câu hỏi
 
 **"Vì sao không dùng luôn điểm sao làm nhãn cảm xúc?"**
-Vì chính dữ liệu cho thấy hai tín hiệu không khớp: 404 review 5 sao có phàn nàn tiêu cực. Nếu dùng điểm sao làm nhãn, mô hình học luôn cả phần sai đó.
+Vì chính dữ liệu cho thấy hai tín hiệu không khớp: 394 review 5 sao có phàn nàn tiêu cực. Nếu dùng điểm sao làm nhãn, mô hình học luôn cả phần sai đó.
 
 **"Vì sao cần tận hai người gán nhãn?"**
 Vì "thế nào là bất nhất thật" là phán đoán chủ quan. Cần đo mức đồng thuận (Cohen's Kappa) để biết quy chuẩn có dùng được không, và phải giải quyết bất đồng trước khi mở rộng.

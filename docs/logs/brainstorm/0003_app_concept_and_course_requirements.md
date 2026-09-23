@@ -222,10 +222,10 @@ Chênh nhau ~4 lần. Radar vẽ cảm xúc ròng nên **che mất** khác biệ
 
 | Tập | Số lượng |
 | --- | ---: |
-| Review 5★ chứa ≥1 span `Negative` | 404 |
+| Review 5★ chứa ≥1 span `Negative` | 394 |
 | Review 1–2★ chứa ≥1 span `Positive` | 199 |
-| **Tổng ca đáng ngờ** | **603**, trải trên **468 khách sạn** |
-| Ca đáng ngờ nằm trong khách sạn ≥20 review | 130, tại 58 khách sạn |
+| **Tổng ca đáng ngờ** | **593**, trải trên **461 khách sạn** |
+| Ca đáng ngờ nằm trong khách sạn ≥20 review | 129, tại 57 khách sạn |
 
 Top ứng viên demo (đủ mẫu và có ca đáng ngờ):
 

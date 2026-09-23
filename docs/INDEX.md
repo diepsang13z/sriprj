@@ -7,7 +7,7 @@ Tài liệu này là Router đơn (Single Router) phân tầng điều hướng 
 ## 1. Core Context Files (Cốt lõi - Cấp File)
 
 - [`README.md`](../README.md) — Điểm vào cho người đọc: đề tài một câu, cấu trúc thư mục, lấy dữ liệu ở đâu và checksum, quy ước nhánh.
-- [`RULES.md`](../RULES.md) — Quy tắc vận hành, ngân sách dòng ($\le 200$ dòng), kỷ luật Git và Single Source of Truth.
+- [`RULES.md`](../RULES.md) — Quy tắc vận hành, ngân sách dòng ($\le 200$ dòng), kỷ luật Git, Single Source of Truth, và **luật nhật ký** (nhật ký bất biến — đính chính bằng cách chèn dòng, không sửa nội dung cũ).
 - [`AGENTS.md`](../AGENTS.md) — Định vị đề tài, phạm vi In-scope / Out-of-scope và thứ tự đọc tài liệu.
 - [`STATUS.md`](../STATUS.md) — Ảnh chụp trạng thái **cấp dự án** ($\le 40$ dòng). Chỉ sửa khi có `RDR` mới, đổi pha, hoặc chốt RQ.
 - [`docs/BACKLOG.md`](BACKLOG.md) — Việc **đang mở** ở cấp dự án. Xong thì đổi trạng thái, không xoá dòng.
@@ -24,6 +24,7 @@ Thư mục lưu trữ các quyết định kỹ thuật và kiến trúc theo qu
 - [`docs/decisions/RDR-0005_close_survey_and_lock_framework.md`](decisions/RDR-0005_close_survey_and_lock_framework.md) — Đóng khảo sát có điều kiện: miễn tiêu chí bão hòa, định nghĩa lại ba cụm, đóng băng core set, khóa khung lý thuyết, chốt boundary conditions và phạm vi dữ liệu 9.990 review.
 - [`docs/decisions/RDR-0003_review_and_reset_survey.md`](decisions/RDR-0003_review_and_reset_survey.md) — Mở lại khảo sát để tái định hình RQ3; ưu tiên journal và nguồn đóng khi quét.
 - [`docs/decisions/RDR-0004_lock_rq3_asymmetric_aspect_compensation.md`](decisions/RDR-0004_lock_rq3_asymmetric_aspect_compensation.md) — Chốt RQ3 theo cơ chế asymmetric aspect compensation; chốt bốn kiểm định phụ và danh sách boundary conditions dùng/loại.
+- [`docs/decisions/RDR-0006_freeze_negative_span_definition.md`](decisions/RDR-0006_freeze_negative_span_definition.md) — Đóng băng định nghĩa "ca bất nhất" cấp review: loại span gắn `Branding`, giữ `Loyalty` → **394 ca**; khai tử con số 402 không tái lập được, kèm số dẫn xuất tính lại.
 
 ---
 

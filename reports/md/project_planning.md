@@ -50,10 +50,10 @@ Nộp trên LMS trong tuần 1; chiếm 10% điểm môn học, trong đó 3 đi
 | Phân bố điểm | 1★ 228 · 2★ 237 · 3★ 601 · 4★ 1.776 · 5★ 7.148 (71,6%) |
 | Span khía cạnh | Service 19.289 · Facility 12.641 · Experience 9.113 · Amenity 7.651 · Loyalty 4.293 · Branding 1.339 |
 | Span cảm xúc | Positive 46.772 · Negative 4.508 · Neutral 2.992 |
-| Review 5★ chứa ≥1 span `Negative` | 404 review |
+| Review 5★ chứa ≥1 span `Negative` | 394 review |
 | Review 1–2★ chứa ≥1 span `Positive` | 199 review (trên tổng 465 review 1–2★) |
-| Tổng ca đáng ngờ | 603 review, trải trên 468 khách sạn |
-| Nhóm có sẵn cho gán nhãn tay | 404 + 199 ca đáng ngờ · aligned controls 5★ 6.744 review · aligned controls 1–2★ 266 review |
+| Tổng ca đáng ngờ | 593 review, trải trên 461 khách sạn |
+| Nhóm có sẵn cho gán nhãn tay | 394 + 199 ca đáng ngờ · aligned controls 5★ 6.754 review · aligned controls 1–2★ 266 review |
 
 ---
 
@@ -104,7 +104,7 @@ Ba paper này sẽ được trích dẫn lại trong Research Proposal (tuần 3
 | 3 | Bước 4 và 5, nộp Research Proposal | Bước 5: chạy 3 mô hình cổ điển (TF-IDF + Logistic Regression, TF-IDF + SVM, LightGBM) với chia tập theo khách sạn; khởi tạo BiLSTM và DeBERTa; Bước 4: dựng endpoint dự báo đầu tiên | Modelling Lead + Viz & App Lead | Research Proposal; bảng metric sơ bộ; endpoint draft |
 | 4 | Bước 6, LaTeX draft | Bước 6: dựng khung ứng dụng "Bảng soát điểm sao"; nối endpoint mô hình; dựng dashboard tương tác; **làm cảnh báo thật (SNS/email) vì không thể mock**; bắt đầu bản thảo LaTeX | Viz & App Lead | Ứng dụng chạy được; bản thảo LaTeX; sơ đồ kiến trúc |
 | 5 | Review 1, Audit Log đợt 1 | Hoàn tất 5 mô hình kèm tuning và cross-validation; so baseline; chuẩn bị demo; rà soát Audit Log cá nhân | Modelling Lead + cả nhóm | Bản Review 1; Audit Log đợt 1; bảng metric 5 mô hình |
-| 6 | RQ mới, làm lại 6 bước | Chốt RQ4–RQ6; bắt đầu validation study: dựng evaluation set 600–800 mẫu (404 + 199 ca đáng ngờ + aligned controls), hai người gán nhãn độc lập trên calibration subset | Research & Report Lead + Data & EDA Lead | RQ4–RQ6; evaluation set bản đầu; kết quả calibration |
+| 6 | RQ mới, làm lại 6 bước | Chốt RQ4–RQ6; bắt đầu validation study: dựng evaluation set 600–800 mẫu (394 + 199 ca đáng ngờ + aligned controls), hai người gán nhãn độc lập trên calibration subset | Research & Report Lead + Data & EDA Lead | RQ4–RQ6; evaluation set bản đầu; kết quả calibration |
 | 7 | Review 2, Audit Log đợt 2, viết Methodology, Discussion | Đo mức đồng thuận (Cohen's Kappa ≥ 0,70), giải quyết bất đồng, mở rộng gán nhãn; so sánh ba công thức đo bất nhất và chốt measure; chạy mô hình kinh tế lượng; tích hợp hỏi đáp (Lex/Transcribe) | Research & Report Lead + Modelling Lead | Methodology và Discussion; measure đã chốt; Audit Log đợt 2 |
 | 8 | Kiểm tra code, ứng dụng, paper; viết Abstract, Introduction | Chạy lại toàn bộ pipeline end-to-end với seed cố định; rà checklist chống rò rỉ dữ liệu; hoàn thiện Abstract, Introduction, Reflection; kiểm tra app gắn kết quả mô hình | Cả nhóm | Bản thảo gần cuối; ứng dụng ổn định; checklist rò rỉ |
 | 9 | Review 3, Audit Log đợt 3, nộp Final Report và Slide | Rà trích dẫn thật cho mọi nguồn; mỗi hình và bảng có chú giải; lập bảng RQ → quyết định; nộp Final Report và Slide | Cả nhóm | Final Report; slide 22 trang; Audit Log đợt 3 |
@@ -163,7 +163,7 @@ Mỗi thành viên nộp một file `AI_AuditLog_Template.xlsx` riêng theo ba �
 | **Rò rỉ dữ liệu theo khách sạn** — 2.622 khách sạn, cao nhất 85 review/khách sạn | Cao | Chia tập theo `hotel name`/`id_url` (GroupShuffleSplit), không chia ngẫu nhiên | Data & EDA Lead |
 | **Rò rỉ nhãn qua span `Branding`** — 1.339 span khách tự viết số sao | Cao | Loại toàn bộ span `Branding` khỏi mọi đặc trưng dự đoán trước khi huấn luyện | Data & EDA Lead |
 | **Công thức đo bất nhất chưa chốt** cho tới sau tuần 6 | Cao | Nhánh dự báo (Bước 5) không phụ thuộc quyết định này nên chạy song song; phần hiển thị $D$ chỉ ship sau khi chốt; phương án dự phòng là giữ ma trận phân cực có hướng làm baseline | Research & Report Lead |
-| **Mất cân bằng hai chiều bất nhất** — 404 ca điểm cao có văn bản tiêu cực so với 199 ca ngược lại | Cao | Báo đúng tỷ lệ thực tế, không cân bằng nhân tạo; nếu tập đối chiếu không đủ để kết luận thì ghi rõ giới hạn thay vì suy diễn | Research & Report Lead |
+| **Mất cân bằng hai chiều bất nhất** — 394 ca điểm cao có văn bản tiêu cực so với 199 ca ngược lại | Cao | Báo đúng tỷ lệ thực tế, không cân bằng nhân tạo; nếu tập đối chiếu không đủ để kết luận thì ghi rõ giới hạn thay vì suy diễn | Research & Report Lead |
 | **Dịch vụ đám mây thật không mock được** (cảnh báo SNS, endpoint mô hình) | Cao | Làm cảnh báo sớm ở tuần 4; nếu hết tín dụng, dùng FastAPI cục bộ **cùng giao diện JSON**, khai rõ trong Audit Log và báo cáo, đồng thời giữ ảnh chụp/log lần gọi endpoint thật | Viz & App Lead |
 | Hai người gán nhãn không thu xếp được thời gian chung | Trung bình | Chốt lịch gán nhãn từ tuần 6; calibration subset chỉ cần 30–50 mẫu nên có thể chia thành hai phiên ngắn | Data & EDA Lead |
 

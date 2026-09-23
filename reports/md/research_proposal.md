@@ -13,7 +13,7 @@
 
 ## Abstract / Tóm tắt
 
-Điểm sao thường được dùng làm nhãn cảm xúc cho review, ngầm giả định rằng văn bản và điểm số luôn nhất quán. Trong tập dữ liệu của đề tài, 404 review 5 sao vẫn chứa phàn nàn tiêu cực và 199 review 1–2 sao vẫn chứa lời khen. Đây là mẫu hành vi có cấu trúc, không phải nhiễu nhãn.
+Điểm sao thường được dùng làm nhãn cảm xúc cho review, ngầm giả định rằng văn bản và điểm số luôn nhất quán. Trong tập dữ liệu của đề tài, 394 review 5 sao vẫn chứa phàn nàn tiêu cực và 199 review 1–2 sao vẫn chứa lời khen. Đây là mẫu hành vi có cấu trúc, không phải nhiễu nhãn.
 
 Đề tài đặt bốn mục tiêu: (1) xây dựng tập đánh giá có đối chứng ở cấp khía cạnh, gồm hai nhóm lệch có hướng và nhóm đối chứng nhất quán để đo tỷ lệ báo động giả; (2) thiết lập ground truth bằng hai người gán nhãn độc lập, đo mức đồng thuận và đối soát bất đồng; (3) đối chiếu ba công thức lượng hóa bất nhất để chọn phép đo giữ đồng thời độ lớn và chiều; (4) kiểm định cách các khía cạnh kết hợp bất đối xứng để tạo ra bất nhất, dưới các điều kiện biên là mức độ nghiêm trọng, service recovery và hạng sao khách sạn.
 
@@ -57,7 +57,7 @@ Le, Nguyen & Nguyen (2026) áp dụng khung **S-O-R** trên hơn 1,3 triệu rev
 
 ### 1.2. The limitation of current works / Những hạn chế của các nghiên cứu hiện tại
 
-**L1 — Bỏ qua hiện tượng bất nhất, hoặc xử lý nó như nhiễu.** Mô hình của Le et al. (2026) giả định quan hệ đơn điệu giữa cảm xúc khía cạnh và điểm số: tích cực thì điểm tăng, tiêu cực thì điểm giảm. Giả định này không giải thích được các quan sát có thật trong chính tập dữ liệu gán nhãn của bài báo. Khảo sát trực tiếp của nhóm trên `data/TripAdvisor_EN.json` (9.990 review gán nhãn) cho thấy **404 review 5 sao chứa ít nhất một span cảm xúc `Negative`**, trong khi toàn tập chỉ có 465 review 1–2 sao và trong đó **199 review vẫn chứa span `Positive`**. Đây là hiện tượng có cấu trúc: Abaiyan et al. (2026) chỉ ra phần lớn mismatch tập trung vào một số nhóm người viết có hành vi hệ thống, chứ không phân bố ngẫu nhiên.
+**L1 — Bỏ qua hiện tượng bất nhất, hoặc xử lý nó như nhiễu.** Mô hình của Le et al. (2026) giả định quan hệ đơn điệu giữa cảm xúc khía cạnh và điểm số: tích cực thì điểm tăng, tiêu cực thì điểm giảm. Giả định này không giải thích được các quan sát có thật trong chính tập dữ liệu gán nhãn của bài báo. Khảo sát trực tiếp của nhóm trên `data/TripAdvisor_EN.json` (9.990 review gán nhãn) cho thấy **394 review 5 sao chứa ít nhất một span cảm xúc `Negative`**, trong khi toàn tập chỉ có 465 review 1–2 sao và trong đó **199 review vẫn chứa span `Positive`**. Đây là hiện tượng có cấu trúc: Abaiyan et al. (2026) chỉ ra phần lớn mismatch tập trung vào một số nhóm người viết có hành vi hệ thống, chứ không phân bố ngẫu nhiên.
 
 **L2 — Lập luận vòng ở biến `Loyalty`.** Biến `Loyalty` trong Le et al. (2026) được định nghĩa bằng chính các từ ngữ chỉ ý định hành vi (*"come back"*, *"highly recommend"* so với *"stay away"*, *"never again"*), rồi được đưa vào hồi quy để giải thích cho điểm số. Diễn đạt bằng lời và hành vi chấm điểm trong cùng một review là hai biểu hiện đồng thời của một trạng thái, nên dùng vế lời để giải thích vế số là lặp thừa. Hệ quả thực nghiệm là biến "mạnh nhất" trong mô hình lại gần như đồng nhất với biến phụ thuộc.
 
@@ -109,9 +109,9 @@ Le, Nguyen & Nguyen (2026) áp dụng khung **S-O-R** trên hơn 1,3 triệu rev
 | Tổng số span khía cạnh | 54.326 |
 | Phân bố khía cạnh | Service 19.289 · Facility 12.641 · Experience 9.113 · Amenity 7.651 · Loyalty 4.293 · Branding 1.339 |
 | Tổng số span cảm xúc | 54.272 (Positive 46.772 · Negative 4.508 · Neutral 2.992) |
-| Review 5★ chứa ≥1 span `Negative` | 404 review |
+| Review 5★ chứa ≥1 span `Negative` | 394 review |
 | Review 1–2★ chứa ≥1 span `Positive` | 199 review (trên tổng 465 review 1–2★) |
-| Aligned control 5★ (không có span `Negative`) | 6.744 review |
+| Aligned control 5★ (không có span `Negative`) | 6.754 review |
 | Aligned control 1–2★ (không có span `Positive`) | 266 review |
 
 **Nội dung nghiên cứu chính (in-scope):**
@@ -150,7 +150,7 @@ Le, Nguyen & Nguyen (2026) áp dụng khung **S-O-R** trên hơn 1,3 triệu rev
 
 **Rủi ro đã nhận diện và cách chặn:**
 
-- *Mất cân bằng giữa hai chiều bất nhất* (404 review 5 sao có span tiêu cực so với 199 review 1–2 sao có span tích cực, trong khi toàn tập chỉ có 465 review 1–2 sao). Cách chặn: **báo cáo đúng tỷ lệ thực tế, không cân bằng nhân tạo**; nếu tập đối chiếu không đủ để kết luận thì ghi rõ giới hạn thay vì suy diễn.
+- *Mất cân bằng giữa hai chiều bất nhất* (394 review 5 sao có span tiêu cực so với 199 review 1–2 sao có span tích cực, trong khi toàn tập chỉ có 465 review 1–2 sao). Cách chặn: **báo cáo đúng tỷ lệ thực tế, không cân bằng nhân tạo**; nếu tập đối chiếu không đủ để kết luận thì ghi rõ giới hạn thay vì suy diễn.
 - *Chất lượng nhãn cảm xúc tự động.* Cách chặn: không dùng điểm sao để huấn luyện bộ ước lượng cảm xúc, và đo hiệu năng bộ ước lượng bằng tập do người gán nhãn độc lập.
 - *Rò rỉ dữ liệu.* Ba đường rò rỉ đã xác minh trên file: (1) **theo khách sạn** — 2.622 khách sạn, cao nhất 85 review/khách sạn, nên phải chia tập theo khách sạn; (2) **qua span `Branding`** — 1.339 span chứa câu khách tự viết số sao, phải loại khỏi mọi đặc trưng dự đoán; (3) **trường `drafts`** — 37 bản ghi nháp lẫn trong file, chỉ dùng `annotations`.
 - *Lệch lớp cực nặng* — 5 sao chiếm 71,6%. Cách chặn: dùng macro-F1 và PR-AUC, không báo accuracy; class weight hoặc oversampling chỉ áp trên tập train.
@@ -385,7 +385,7 @@ Zhu, A., et al. (2025). DaNet: Dual-aware enhanced alignment network for multimo
 | 7 | Mục 5 | Cách tổng hợp cảm xúc nhiều khía cạnh | Validation Stage 4 |
 | 8 | Mục 5 | Công thức đo bất nhất được chọn | Validation Stage 4 |
 | 9 | Mục 5 | Sơ đồ kiến trúc pipeline | Vẽ sau khi chốt #4–#8 |
-| 10 | Mục 3 | Định nghĩa "negative span" đóng băng | Tài liệu dự án ghi 402, tính lại trên file là 404; nếu loại span đồng thời gắn `Branding` còn 394, nếu chỉ tính khía cạnh lõi còn 392. Phải chốt định nghĩa, chạy lại một lần và sửa mọi tài liệu đang ghi 402 |
+| 10 | Mục 3 | Định nghĩa "negative span" đóng băng | **Đã chốt 2026-09-23 — [`RDR-0006`](../../docs/decisions/RDR-0006_freeze_negative_span_definition.md):** loại span gắn `Branding`, giữ `Loyalty` → **394 ca** trên 7.148 review 5★ (5,5%). Số `402` trong tài liệu cũ không tái lập được nên đã khai tử; 9 tệp `docs/` và 3 tệp `reports/` đã sửa, số dẫn xuất tính lại (tổng ca 593 · đối chứng 5★ 6.754) |
 | 11 | Mục 3 | Tên khía cạnh dùng thống nhất giữa văn bản và mã (`Experience` hay `Experience Value`) | Thống nhất khi viết code |
 | 12 | Mục 5 | RQ1 và RQ2 chốt chính thức | Đối chiếu giảng viên hướng dẫn |
 | 13 | Mục 6 | Ngày cụ thể theo lịch học kỳ và phân công theo tên | Điền sau khi có lịch |

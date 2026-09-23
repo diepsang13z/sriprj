@@ -76,7 +76,7 @@ Trong paper gốc, ta có hiện tượng: **5 stars + Negative aspect**.
 - `Loyalty` $\rightarrow$ Positive
 - `Facility` $\rightarrow$ Negative
 
-Trong dataset có **402 review rating 5** nhưng vẫn chứa negative span. Ngược lại, với low-rating review đôi khi chứa positive aspects.
+Trong dataset có **394 review rating 5** nhưng vẫn chứa negative span (số này trước 2026-09-23 ghi **402**; sửa theo [`RDR-0006`](../../decisions/RDR-0006_freeze_negative_span_definition.md)). Ngược lại, với low-rating review đôi khi chứa positive aspects.
 
 ### 2. Định nghĩa toán học
 
