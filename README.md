@@ -22,18 +22,21 @@ Môn DAP391m (AI & Data Science) — học kỳ Fall 2026.
 | `reports/` | Báo cáo và bài trình bày của môn — `templates/`, `md/`, `presen/` |
 | `data/` | Dataset — **không nằm trong git**, xem mục dưới |
 
-## Lấy dữ liệu về
+## Nhận dữ liệu về
 
-Repo **không chứa dataset**. Phải tải thủ công một lần:
+Repo **không chứa dataset** — thư mục `data/` bị gitignore. Tệp do **nhóm dự án chia sẻ qua kênh chung của nhóm**, không tải từ nguồn công khai. Liên hệ nhóm trưởng để nhận, rồi đặt vào thư mục `data/` ở gốc repo.
 
 | | |
 | --- | --- |
 | Tệp | `data/TripAdvisor_EN.json` |
-| Nguồn | repo GitHub `Hanhlevna/Manhos` — nhóm tác giả bài báo gốc Le et al. (2026) |
 | Kích thước | 43.105.400 bytes (≈ 41,1 MB) |
 | SHA-256 | `4b655618b860ab7c128b87cf732862336a4546b34b81f40a5b93ce424981a71d` |
+| Nguồn | **Giảng viên môn học cung cấp**, nhóm dự án chia sẻ lại. Nhóm có quyền sử dụng trong phạm vi môn DAP391m. |
+| Ghi chú | Tập dữ liệu gốc thuộc nhóm tác giả Le et al. (2026). Bài báo công bố repo `github.com/Hanhlevna/Manhos`, nhưng kiểm ngày 2026-09-23 thì repo chỉ có `data_Booking.com.csv` — **không có tệp TripAdvisor**. Bản đang dùng vì thế không tải lại được từ đó, nên checksum là định danh duy nhất. |
 
-Kiểm tra sau khi tải:
+Khi nộp Final Report, khai báo nguồn dữ liệu theo dòng **Nguồn** ở trên.
+
+Sau khi nhận, kiểm tra:
 
 ```
 sha256sum data/TripAdvisor_EN.json

@@ -55,6 +55,6 @@ Mỗi Agent khi bắt đầu phiên làm việc mới chỉ cần đọc lướt
 
 ## 4. Dữ liệu (Dataset)
 
-Dataset **không nằm trong git** — thư mục `data/` bị gitignore. Cách lấy, kích thước và checksum nằm ở [`README.md`](README.md) mục **"Lấy dữ liệu về"**.
+Dataset **không nằm trong git** — thư mục `data/` bị gitignore. Tệp do **nhóm dự án chia sẻ**, không tải từ nguồn công khai; kích thước và checksum ở [`README.md`](README.md) mục **"Nhận dữ liệu về"**.
 
 Không tự tạo lại hay thay bằng nguồn khác: mọi con số thống kê trong tài liệu được tính trên đúng bản ghi ở checksum đó. Nếu tệp lệch checksum, **dừng lại và báo** thay vì tính tiếp.

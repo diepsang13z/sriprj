@@ -52,7 +52,7 @@
 ---
 
 ## 5. Các lỗ hổng lý thuyết & Đóng góp phản biện (Cơ sở mở rộng đề tài)
-> **Lưu ý quan trọng:** Đây là **phân tích phản biện độc lập (Critical Appraisal)** và phát hiện từ EDA tập dữ liệu gán nhãn gốc (`TripAdvisor_EN.json` từ GitHub `Hanhlevna/Manhos` của tác giả) do nhóm dự án thực hiện, **không phải nội dung bài báo gốc tự thừa nhận**.
+> **Lưu ý quan trọng:** Đây là **phân tích phản biện độc lập (Critical Appraisal)** và phát hiện từ EDA tập dữ liệu gán nhãn gốc (`TripAdvisor_EN.json`, nhóm nhận từ giảng viên môn học) do nhóm dự án thực hiện, **không phải nội dung bài báo gốc tự thừa nhận**. Bài báo công bố repo `Hanhlevna/Manhos`, nhưng kiểm ngày 2026-09-23 thì repo không chứa tệp này.
 
 1. **Lập luận vòng (Tautology) ở biến Loyalty:** Định nghĩa Loyalty bằng từ khóa ý định hành vi (*"stay away, never again"* $\rightarrow$ 1 sao; *"come back, highly recommend"* $\rightarrow$ 5 sao) rồi đưa vào hồi quy kết luận Loyalty quyết định Rating $\rightarrow$ Biểu hiện bằng lời và hành vi chấm sao là phản ứng đồng thời (co-occurring response), việc dùng từ ngữ giải thích cho điểm số là ngụy biện lặp thừa, thiếu giá trị nhân quả.
 2. **Loại bỏ nhãn thứ 6 `Branding`:** Khảo sát tập nhãn `TripAdvisor_EN.json` cho thấy có **1.339 spans gán nhãn `Branding`** (khách tự chấm số sao bằng lời: *"give 5 star"*, hoặc so sánh ảnh vs thực tế) nhưng bị tác giả loại bỏ khỏi mô hình để tránh rò rỉ dữ liệu (Data leakage) và xung đột khung S–O–R.
