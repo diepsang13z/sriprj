@@ -46,6 +46,7 @@ Chào mừng bạn đến với dự án nghiên cứu **Customer Sentiment Anal
 Mỗi Agent khi bắt đầu phiên làm việc mới chỉ cần đọc lướt theo thứ tự tối giản:
 
 1. **Bước 1 — `docs/INDEX.md`:** Định vị cấu trúc tài liệu.
-2. **Bước 2 — `RULES.md`:** Nắm vững các quy tắc giới hạn file, kỷ luật Git và Single Source of Truth.
-3. **Bước 3 — `STATUS.md`:** Xem nhanh ảnh chụp hiện trạng dự án ($\le 40$ dòng) và các đầu việc cần làm.
-4. **Bước 4 — Không tự ý đọc file PDF gốc và không đọc tràn lan `docs/logs/`**: Chỉ mở file log hoặc factsheet cụ thể khi nhiệm vụ hiện tại yêu cầu.
+2. **Bước 2 — `RULES.md`:** Nắm vững các quy tắc giới hạn file, kỷ luật Git, Single Source of Truth và kỷ luật ghi trạng thái.
+3. **Bước 3 — `STATUS.md`:** Xem ảnh chụp trạng thái **cấp dự án** ($\le 40$ dòng) — chỉ đổi khi có `RDR` mới.
+4. **Bước 4 — `docs/BACKLOG.md` và `docs/logs/progress/` (khi cần biết đang làm gì):** backlog là việc đang mở cấp dự án; progress là việc theo người theo ngày.
+5. **Bước 5 — Không tự ý đọc file PDF gốc và không đọc tràn lan `docs/logs/`**: Chỉ mở file log hoặc factsheet cụ thể khi nhiệm vụ hiện tại yêu cầu.

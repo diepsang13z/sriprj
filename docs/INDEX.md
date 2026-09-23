@@ -8,7 +8,8 @@ Tài liệu này là Router đơn (Single Router) phân tầng điều hướng 
 
 - [`RULES.md`](../RULES.md) — Quy tắc vận hành, ngân sách dòng ($\le 200$ dòng), kỷ luật Git và Single Source of Truth.
 - [`AGENTS.md`](../AGENTS.md) — Định vị đề tài, phạm vi In-scope / Out-of-scope và thứ tự đọc tài liệu.
-- [`STATUS.md`](../STATUS.md) — Ảnh chụp trạng thái hiện tại của dự án ($\le 40$ dòng, cập nhật ghi đè).
+- [`STATUS.md`](../STATUS.md) — Ảnh chụp trạng thái **cấp dự án** ($\le 40$ dòng). Chỉ sửa khi có `RDR` mới, đổi pha, hoặc chốt RQ.
+- [`docs/BACKLOG.md`](BACKLOG.md) — Việc **đang mở** ở cấp dự án. Xong thì đổi trạng thái, không xoá dòng.
 - [`refs/INDEX.md`](../refs/INDEX.md) — Danh mục tài liệu tham khảo và thư viện bài báo khoa học.
 
 ---
@@ -34,6 +35,7 @@ Khu vực ghi lại tiến trình tư duy, khảo sát văn hiến và nhật k�
 - [`notes/glossary.md`](../notes/glossary.md) — Từ điển thuật ngữ nghiên cứu: định nghĩa song ngữ toàn bộ khái niệm cốt lõi, lý thuyết hành vi, mô hình ABSA/NLP và công thức đo lường.
 - [`notes/pillar_strength.md`](../notes/pillar_strength.md) — Độ mạnh **6 trụ cột bằng chứng** (coverage 45% + evidence 35% + recency 20%), chi tiết từng trụ cột và khoảng trống thước đo discrepancy có dấu ở cấp khía cạnh.
 
+- [`docs/logs/progress/`](logs/progress/) — Nhật ký tiến độ theo người: mỗi người một tệp theo ngày, append-only, không sửa tệp của người khác.
 - [`docs/logs/brainstorm/`](logs/brainstorm/) — Nhật ký phát triển ý tưởng, bóc tách bài báo gốc và định hình đề tài:
   - [`0001_root_idea.md`](logs/brainstorm/0001_root_idea.md) — Phân tích bài báo gốc (IJHM 2026) và định hướng Sentiment–Rating Inconsistency.
   - [`0002_direction_of_work_after_survey_2.md`](logs/brainstorm/0002_direction_of_work_after_survey_2.md) — Nhật ký hướng triển khai B1–B3 sau Survey Round 2 (EDA dataset → evaluation set → gán nhãn thủ công).

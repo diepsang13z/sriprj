@@ -43,10 +43,28 @@ Tài liệu này quy định các nguyên tắc vận hành, quản lý context 
 - **Quy tắc chung:** Tên file và thư mục **chỉ dùng chữ thường, chữ số và dấu gạch dưới `_`**. Không dùng **gạch ngang `-`**, khoảng trắng, dấu tiếng Việt hoặc ký tự đặc biệt.
 - **Lý do:** gạch dưới không bị shell, đường dẫn URL và một số công cụ diễn giải thành ký tự đặc biệt; gạch ngang dễ lẫn với dấu phân tách từ khi tên đã có sẵn nhiều thành phần.
 - **Ngoại lệ 1 — mã quyết định:** `RDR-NNNN` giữ nguyên gạch ngang vì đó là phần của mã, không phải dấu phân tách từ. Phần mô tả phía sau vẫn dùng `_`, ví dụ `RDR-0004_lock_rq3_asymmetric_aspect_compensation.md`.
-- **Ngoại lệ 2 — file điều hướng và quản lý context:** tên file viết **CHỮ HOA TOÀN BỘ**, phần mở rộng giữ chữ thường. Nhóm này gồm `README.md`, `AGENTS.md`, `RULES.md`, `STATUS.md`, `INDEX.md`, `SOURCES.md`.
+- **Ngoại lệ 2 — file điều hướng và quản lý context:** tên file viết **CHỮ HOA TOÀN BỘ**, phần mở rộng giữ chữ thường. Nhóm này gồm `README.md`, `AGENTS.md`, `RULES.md`, `STATUS.md`, `INDEX.md`, `SOURCES.md`, `BACKLOG.md`.
+  - **Tiêu chí phân biệt:** nội dung file là **trỏ tới file khác** hoặc **trạng thái, quy ước của cả hệ thống** → viết hoa. Nội dung là **kiến thức, phân tích, nhật ký** → chữ thường. Ví dụ: `refs/04_mechanism/INDEX.md` và `docs/BACKLOG.md` viết hoa; `notes/reference_map.md` và `docs/logs/progress/2026_09_23_dieps.md` viết thường.
   - **Lý do:** tách hai loại file nằm cạnh nhau — file để **đọc và điều hướng** (viết hoa, nổi bật khi liệt kê thư mục) và file **nội dung** (chữ thường). Trong một thư mục có 7 PDF kèm 2 file quản lý, quy ước này cho biết ngay đâu là điểm vào.
   - **Chỉ áp cho tên file.** Tên thư mục vẫn chữ thường.
   - **Áp dụng cho file tạo mới.** File cũ đã đúng quy ước thì giữ nguyên; file nội dung không đổi tên chỉ vì quy ước này.
-- **Ví dụ đúng:** `refs/04_mechanism/2025_sharma_review_sentiment_garden.pdf` · `refs/04_mechanism/SOURCES.md` · `refs/INDEX.md`
-- **Ví dụ sai:** `refs/04_mechanism/2025-sharma-review.pdf` · `refs/04_mechanism/sources.md` · `refs/04_mechanism/Index.md`
+- **Ví dụ đúng:** `refs/04_mechanism/2025_sharma_review_sentiment_garden.pdf` · `refs/04_mechanism/SOURCES.md` · `docs/BACKLOG.md` · `refs/INDEX.md`
+- **Ví dụ sai:** `refs/04_mechanism/2025-sharma-review.pdf` · `refs/04_mechanism/sources.md` · `docs/backlog.md` · `refs/04_mechanism/Index.md`
 - **Quy ước thư viện `refs/`:** `<năm>_<tác giả chính không dấu>_<chủ đề ngắn>.pdf`, đặt trong thư mục chức năng (xem `refs/INDEX.md` mục 0).
+
+---
+
+## 6. Kỷ luật ghi Trạng thái, Việc mở và Nhật ký Tiến độ
+
+Ba tầng, tách theo **vòng đời thay đổi** — thứ gì đổi cùng nhịp thì nằm cùng tệp:
+
+| Tầng | Tệp | Đổi khi nào | Cách sửa |
+| --- | --- | --- | --- |
+| Trạng thái dự án | `STATUS.md` | có `RDR` mới, đổi pha, chốt RQ | Sửa từng dòng; **không viết lại cả tệp** |
+| Việc đang mở | `docs/BACKLOG.md` | có việc mới, có việc xong | Thêm dòng; xong thì đổi trạng thái, **không xoá dòng** |
+| Việc theo người | `docs/logs/progress/YYYY_MM_DD_<tên>.md` | mỗi phiên làm việc | Mở tệp mới; **không sửa tệp của người khác** |
+
+- **Tệp nhật ký tiến độ có bốn mục bắt buộc:** `Đã làm` · `Bằng chứng` · `Còn lại cho người khác` · `Đang chặn`. Mục nào không có gì thì ghi "không" — đừng bỏ mục.
+- **Lưu trữ backlog:** `docs/BACKLOG.md` được dẫn link trong `docs/INDEX.md` nên chịu trần 200 dòng. Khi số dòng việc đã `xong` vượt 30, chuyển các dòng đó sang `docs/logs/backlog_archive.md`.
+- **Không chép lại thứ đã có nhà.** Danh sách quyết định ở `docs/INDEX.md` mục 2; lịch 10 tuần ở `reports/md/project_planning.md`. Trạng thái chỉ **trỏ**, không sao chép.
+- **Lý do:** tệp dùng chung chỉ an toàn khi thứ trong nó đổi cùng nhịp. Trộn việc thường ngày vào `STATUS.md` khiến hai người hoàn thành hai việc cùng lúc ghi đè lẫn nhau — và git **không báo**, vì mất cập nhật không tạo merge conflict.
