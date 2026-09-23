@@ -10,7 +10,7 @@ _Cập nhật: 2026-09-23 · RQ3 đã chốt, khảo sát đóng có điều ki�
 ## 1. Giai đoạn Hiện tại
 
 - **Trạng thái:** ĐANG KHÁM PHÁ — RQ3 đã chốt, RQ1–RQ2 còn nháp.
-- **Đã có:** Survey Round 1–4 và khảo sát đóng có điều kiện (`RDR-0005`); Project Planning, Research Proposal, slide báo cáo tiến độ; thư viện `refs/` đã tái cấu trúc.
+- **Đã có:** Survey Round 1–4 và khảo sát đóng có điều kiện (`RDR-0005`); định nghĩa "ca bất nhất" đóng băng (`RDR-0006`, 394 ca trên 7.148 review 5★); Project Planning, Research Proposal, slide báo cáo tiến độ; thư viện `refs/` đã tái cấu trúc và có bản markdown cho cả 35 bài.
 - **Chưa chốt:** công thức đo discrepancy, bộ ước lượng cảm xúc, ngưỡng phân loại — chờ validation study.
 
 ## 2. Khung và Câu hỏi Nghiên cứu
