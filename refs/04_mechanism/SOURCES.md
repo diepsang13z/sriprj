@@ -1,16 +1,16 @@
 # Nguồn — 04_mechanism
 
-> **TỆP NGUỒN — sửa tay ở đây.** `INDEX.md` cùng thư mục là bản chụp của tệp này; sửa ở đây rồi cập nhật `INDEX.md` bằng tay cho khớp (script sinh đã gỡ khỏi repo).
+> **TỆP DỮ LIỆU CỦA CỤM — sửa tay ở đây.** Đây là bản ghi duy nhất của cụm; danh mục chung ở `refs/INDEX.md` lấy từ tệp này, nên sửa xong phải cập nhật mục của cụm ở đó.
 >
 > Mỗi nguồn là một mục `## `. Các trường là dòng `- khoá: giá trị`. Phần chữ còn lại
-> trong mục được chuyển nguyên vào `INDEX.md`. Các khoá đang dùng: `id`, `file`, `cite`,
+> trong mục là phần diễn giải của nguồn đó. Các khoá đang dùng: `id`, `file`, `cite`,
 > `doi`, `year`, `status`, `evidence_level`, `recency`, `pillars`, `round`, `code`,
 > `owner`, `updated`, `role`, `keep_reason`, `note`.
 
 ## Regitz et al. (2026)
 
 - id: 2026_regitz_kano_quality_features
-- file: A1_regitz_kano_quality_features_reviews.pdf
+- file: 2026_regitz_kano_quality_features_reviews.pdf
 - cite: Regitz, D., Höpken, W., & Fuchs, M. (2026). Online customer feedback for identifying KANO product quality features: A fine-grained topic detection and sentiment analysis approach. Information Technology & Tourism, 28(1), Article 20.
 - doi: 10.1007/s40558-025-00354-y
 - year: 2026

@@ -28,7 +28,7 @@
 
 | Ref | Tóm tắt ngắn | Tác dụng trong đề tài | Trạng thái |
 |---|---|---|---|
-| **Le et al. (2026)** — root paper | BERTopic + VADER + WMLR trên 1.3M hotel reviews; dùng `Loyalty` để giải thích rating. | Là điểm xuất phát, dataset/context đối chuẩn và căn cứ phản biện nguy cơ circularity khi dùng rating/loyalty. | **Đã kéo — local PDF**; có `full_paper.md`. |
+| **Le et al. (2026)** — root paper | BERTopic + VADER + WMLR trên 1.3M hotel reviews; dùng `Loyalty` để giải thích rating. | Là điểm xuất phát, dataset/context đối chuẩn và căn cứ phản biện nguy cơ circularity khi dùng rating/loyalty. | **Đã kéo — local PDF**; có bản markdown ở `md/`. |
 
 ## 4. Core evidence: sentiment–rating inconsistency
 

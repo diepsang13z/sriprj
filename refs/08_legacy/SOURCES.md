@@ -1,6 +1,6 @@
 # Nguồn — 08_legacy
 
-> **TỆP NGUỒN — sửa tay ở đây.** `INDEX.md` cùng thư mục là bản chụp của tệp này; sửa ở đây rồi cập nhật `INDEX.md` bằng tay cho khớp (script sinh đã gỡ khỏi repo).
+> **TỆP DỮ LIỆU CỦA CỤM — sửa tay ở đây.** Đây là bản ghi duy nhất của cụm; danh mục chung ở `refs/INDEX.md` lấy từ tệp này, nên sửa xong phải cập nhật mục của cụm ở đó.
 >
 > Đây là **audit trail**, không phải cụm dẫn dắt lập luận. Nguồn ở đây đã bị hạ ưu tiên
 > nhưng không xoá, để giữ dấu vết của các quyết định loại bỏ.

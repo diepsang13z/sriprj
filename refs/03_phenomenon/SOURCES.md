@@ -1,6 +1,6 @@
 # Nguồn — 03_phenomenon
 
-> **TỆP NGUỒN — sửa tay ở đây.** `INDEX.md` cùng thư mục là bản chụp của tệp này; sửa ở đây rồi cập nhật `INDEX.md` bằng tay cho khớp (script sinh đã gỡ khỏi repo).
+> **TỆP DỮ LIỆU CỦA CỤM — sửa tay ở đây.** Đây là bản ghi duy nhất của cụm; danh mục chung ở `refs/INDEX.md` lấy từ tệp này, nên sửa xong phải cập nhật mục của cụm ở đó.
 
 ## Abaiyan et al. (2026)
 
@@ -55,7 +55,7 @@
 ## Hu et al. (2024)
 
 - id: 2024_hu_sentiment_rating_inconsistency_beppu
-- file: E4_hu_sentiment_rating_inconsistency_beppu.pdf
+- file: 2024_hu_sentiment_rating_inconsistency_beppu.pdf
 - cite: Hu, F., Pan, J., & Wang, H. (2024). Unveiling the spatial and temporal variation of customer sentiment in hotel experiences: A case study of Beppu City, Japan. Humanities and Social Sciences Communications, 11(1), 1695.
 - doi: 10.1057/s41599-024-04226-4
 - year: 2024
@@ -106,7 +106,7 @@
 ## Marreira et al. (2026)
 
 - id: 2026_marreira_rating_text_mismatch
-- file: C2_marreira_rating_text_mismatch_llm.pdf
+- file: 2026_marreira_rating_text_mismatch_llm.pdf
 - cite: Marreira, et al. (2026). Rating–text mismatch in Brazilian Portuguese reviews: How reliable are zero-shot LLMs? In Proceedings of PROPOR 2026 (pp. 959–967).
 - year: 2026
 - status: full_text

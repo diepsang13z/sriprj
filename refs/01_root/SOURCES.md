@@ -1,6 +1,6 @@
 # Nguồn — 01_root
 
-> **TỆP NGUỒN — sửa tay ở đây.** `INDEX.md` cùng thư mục là bản chụp của tệp này; sửa ở đây rồi cập nhật `INDEX.md` bằng tay cho khớp (script sinh đã gỡ khỏi repo).
+> **TỆP DỮ LIỆU CỦA CỤM — sửa tay ở đây.** Đây là bản ghi duy nhất của cụm; danh mục chung ở `refs/INDEX.md` lấy từ tệp này, nên sửa xong phải cập nhật mục của cụm ở đó.
 
 ## Le et al. (2026)
 
@@ -16,6 +16,6 @@
 - updated: 2026-09-23
 - role: Bài gốc đối chuẩn — kế thừa khung S-O-R, pipeline và dữ liệu; đồng thời là đối tượng bị phản biện
 - keep_reason: Là điểm xuất phát của đề tài và là mốc so sánh cho mọi kết quả về sau
-- note: PDF gốc nặng 5,4 MB, để đối chiếu nguyên văn. `full_paper.md` là bản toàn văn dạng markdown — grep được và giữ nguyên bảng, nên đây là đường đọc chính. Tệp này là bản dẫn xuất từ PDF, không phải nguồn độc lập nên không có bản ghi riêng.
+- note: Bản toàn văn đọc và grep ở `md/` cùng tên PDF; PDF gốc nặng 5,4 MB chỉ để đối chiếu nguyên văn. Bản markdown là bản dẫn xuất, không phải nguồn độc lập nên không có bản ghi riêng.
 
 Ba điểm phản biện: giả định quan hệ đơn điệu giữa cảm xúc khía cạnh và điểm số; lập luận vòng ở biến `Loyalty`; trộn trục khía cạnh với trục cảm xúc. Kết quả công bố: McFadden pseudo $R^2$ 0,4617 (Booking) và 0,5898 (TripAdvisor).

@@ -89,7 +89,7 @@
 
 ## 6. Đọc thêm
 
-- [`refs/01_root/full_paper.md`](../refs/01_root/full_paper.md) — toàn văn bài gốc dạng markdown: tham số, phương trình hồi quy, kết quả công bố.
+- [`refs/01_root/md/`](../refs/01_root/md/) — toàn văn bài gốc dạng markdown: tham số, phương trình hồi quy 2a/2b, bảng kết quả. Bản markdown của mọi bài nằm ở `md/` trong cụm tương ứng.
 - [`docs/logs/brainstorm/0001_root_idea.md`](../docs/logs/brainstorm/0001_root_idea.md) — phân tích bài gốc, lỗi lập luận vòng của biến `Loyalty`.
 - [`docs/logs/literature_survey/0004_synthesis_and_next_step.md`](../docs/logs/literature_survey/0004_synthesis_and_next_step.md) — tổng kết bằng chứng, các điểm đã chốt và còn mở.
 - [`docs/logs/literature_survey/0005_survey_matrix_round_3_rq3_rescoping.md`](../docs/logs/literature_survey/0005_survey_matrix_round_3_rq3_rescoping.md) — targeted scan tái định hình RQ3 và đánh giá các phương án theo fit dữ liệu.

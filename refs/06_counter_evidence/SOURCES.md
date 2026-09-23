@@ -1,11 +1,11 @@
 # Nguồn — 06_counter_evidence
 
-> **TỆP NGUỒN — sửa tay ở đây.** `INDEX.md` cùng thư mục là bản chụp của tệp này; sửa ở đây rồi cập nhật `INDEX.md` bằng tay cho khớp (script sinh đã gỡ khỏi repo).
+> **TỆP DỮ LIỆU CỦA CỤM — sửa tay ở đây.** Đây là bản ghi duy nhất của cụm; danh mục chung ở `refs/INDEX.md` lấy từ tệp này, nên sửa xong phải cập nhật mục của cụm ở đó.
 
 ## Sterner (2026)
 
 - id: 2026_sterner_biases_online_reputation
-- file: D3_sterner_biases_online_reputation_survey.pdf
+- file: 2026_sterner_biases_online_reputation_survey.pdf
 - cite: Sterner, M. (2026). Biases in online reputation systems: A survey of the empirical literature. Electronic Commerce Research.
 - doi: 10.1007/s10660-026-10176-7
 - year: 2026

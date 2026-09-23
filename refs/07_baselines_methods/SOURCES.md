@@ -1,6 +1,6 @@
 # Nguồn — 07_baselines_methods
 
-> **TỆP NGUỒN — sửa tay ở đây.** `INDEX.md` cùng thư mục là bản chụp của tệp này; sửa ở đây rồi cập nhật `INDEX.md` bằng tay cho khớp (script sinh đã gỡ khỏi repo).
+> **TỆP DỮ LIỆU CỦA CỤM — sửa tay ở đây.** Đây là bản ghi duy nhất của cụm; danh mục chung ở `refs/INDEX.md` lấy từ tệp này, nên sửa xong phải cập nhật mục của cụm ở đó.
 
 ## Ameur et al. (2024)
 
@@ -21,7 +21,7 @@
 ## Guidotti et al. (2025)
 
 - id: 2025_guidotti_llm_tourism_review
-- file: E3_guidotti_llm_tourism_review_analysis.pdf
+- file: 2025_guidotti_llm_tourism_review_analysis.pdf
 - cite: Guidotti, D., Pandolfo, L., & Pulina, L. (2025). Discovering sentiment insights: Streamlining tourism review analysis with large language models. Information Technology & Tourism, 27(1), 227–261.
 - doi: 10.1007/s40558-024-00309-9
 - year: 2025
@@ -39,7 +39,7 @@
 ## Pramono et al. (2026)
 
 - id: 2026_pramono_explainable_absa
-- file: E1_pramono_explainable_absa_shap_lime.pdf
+- file: 2026_pramono_explainable_absa_shap_lime.pdf
 - cite: Pramono, B. A., Gernowo, R., & Sofwan, A. (2026). Explainable multilingual aspect-based sentiment analysis for tourism using SHAP and LIME. Engineering, Technology & Applied Science Research, 16(3), 37077–37084.
 - doi: 10.48084/etasr.18774
 - year: 2026
@@ -74,7 +74,7 @@
 ## You et al. (2024)
 
 - id: 2024_you_multitask_plm_absa
-- file: E2_you_multitask_plm_absa_hospitality.pdf
+- file: 2024_you_multitask_plm_absa_hospitality.pdf
 - cite: You, X.-Y., Chang, S.-C., Hung, S.-M., Ku, C.-H., & Chang, Y.-C. (2024). Using multitask learning with pre-trained language models for aspect-based sentiment analysis in the hospitality industry. In Proceedings of PACLIC 2024 (pp. 131–140).
 - year: 2024
 - status: full_text
@@ -92,7 +92,7 @@
 ## Zhu et al. (2025)
 
 - id: 2025_zhu_danet_multimodal_absa
-- file: E6_zhu_danet_multimodal_absa.pdf
+- file: 2025_zhu_danet_multimodal_absa.pdf
 - cite: Zhu, A., et al. (2025). DaNet: Dual-aware enhanced alignment network for multimodal aspect-based sentiment analysis. In Findings of ACL 2025 (pp. 14369–14381).
 - doi: 10.18653/v1/2025.findings-acl.741
 - year: 2025

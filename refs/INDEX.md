@@ -1,6 +1,6 @@
 # Reference Literature Index (refs/INDEX.md)
 
-> **Bản dựng một lần từ `SOURCES.md` của 8 cụm.** Mục 0–8 là bản chụp tự động; Mục 9 giữ bằng tay. Script sinh đã gỡ khỏi repo — xem git history nếu cần dựng lại.
+> **Bản đọc cấp thư viện — giữ bằng tay.** Dữ liệu gốc nằm ở `SOURCES.md` trong từng cụm; mục 0–8 ở đây lấy từ đó, mục 9–10 giữ bằng tay. **Không có script sinh:** sửa một nguồn thì phải sửa cả hai chỗ.
 
 *Cập nhật: 2026-09-23 · 35 nguồn có bản ghi trong SOURCES.md*
 
@@ -16,6 +16,8 @@
 | `06_counter_evidence/` | Phản biện & phê bình phương pháp | 1 | 1 |
 | `07_baselines_methods/` | Baseline, ABSA, benchmark, công cụ giải thích | 6 | 6 |
 | `08_legacy/` | Đã hạ ưu tiên (audit trail) | 4 | 4 |
+
+Mỗi cụm gồm `SOURCES.md` (bản ghi dữ liệu của cụm) và thư mục `md/` chứa bản markdown của từng bài, **trùng tên với PDF**. Thêm nguồn mới thì chuyển markdown ngay, theo bước 4 ở mục 10.
 
 ## 01_root — Bài gốc đối chuẩn
 
@@ -113,5 +115,6 @@ Thư viện hiện có **35 PDF** trong 8 cụm, tất cả đã có bản ghi t
 1. Chọn cụm theo **chức năng** ở Mục 0, không theo chủ đề.
 2. Đặt tên `<năm>_<tác giả chính không dấu>_<chủ đề ngắn>.pdf` (xem `RULES.md` mục 5).
 3. Thêm một mục `## ` vào `SOURCES.md` của cụm: `id`, `file`, `cite`, `doi`, `year`, `status`, `evidence_level`, `evidence_basis`, `recency`, `pillars`, `role`, `keep_reason`.
-4. Cập nhật `INDEX.md` cùng cụm và bảng Mục 0 của tệp này cho khớp — **phải làm bằng tay** vì script sinh đã gỡ khỏi repo.
-5. Nếu nguồn nằm trong danh sách chờ ở Mục 9 thì gạch tên khỏi danh sách đó.
+4. Chuyển PDF sang markdown ở `md/` cùng thư mục, **trùng tên với PDF**, chỉ đổi phần mở rộng.
+5. Cập nhật mục của cụm và bảng Mục 0 ở tệp này cho khớp — **phải làm bằng tay**, không có script sinh.
+6. Nếu nguồn nằm trong danh sách chờ ở Mục 9 thì gạch tên khỏi danh sách đó.

@@ -1,6 +1,6 @@
 # Nguồn — 05_boundary_conditions
 
-> **TỆP NGUỒN — sửa tay ở đây.** `INDEX.md` cùng thư mục là bản chụp của tệp này; sửa ở đây rồi cập nhật `INDEX.md` bằng tay cho khớp (script sinh đã gỡ khỏi repo).
+> **TỆP DỮ LIỆU CỦA CỤM — sửa tay ở đây.** Đây là bản ghi duy nhất của cụm; danh mục chung ở `refs/INDEX.md` lấy từ tệp này, nên sửa xong phải cập nhật mục của cụm ở đó.
 
 ## Das et al. (2026)
 
@@ -60,7 +60,7 @@
 ## Lim et al. (2025)
 
 - id: 2025_lim_service_recovery_paradox
-- file: B5_lim_service_recovery_paradox.pdf
+- file: 2025_lim_service_recovery_paradox.pdf
 - cite: Lim, W. M., Saha, V., & Das, M. (2025). From service failure to brand loyalty: Evidence of service recovery paradox. Journal of Brand Management, 32(4), 257–281.
 - doi: 10.1057/s41262-025-00380-5
 - year: 2025

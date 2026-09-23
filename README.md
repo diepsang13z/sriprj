@@ -18,7 +18,7 @@ Môn DAP391m (AI & Data Science) — học kỳ Fall 2026.
 | --- | --- |
 | `docs/` | Router (`INDEX.md`), quyết định (`decisions/`), việc đang mở (`BACKLOG.md`), nhật ký (`logs/`) |
 | `notes/` | Note định hướng: tổng quan đề tài, khảo sát văn hiến, bản đồ ref, thuật ngữ |
-| `refs/` | Thư viện **35 PDF** xếp theo 8 cụm chức năng; mỗi cụm có `SOURCES.md` (dữ liệu) và `INDEX.md` (bản chụp) |
+| `refs/` | Thư viện **35 PDF** xếp theo 8 cụm chức năng; mỗi cụm có `SOURCES.md` (dữ liệu), danh mục chung ở `refs/INDEX.md` |
 | `reports/` | Báo cáo và bài trình bày của môn — `templates/`, `md/`, `presen/` |
 | `data/` | Dataset — **không nằm trong git**, xem mục dưới |
 
