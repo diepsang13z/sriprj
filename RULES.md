@@ -31,17 +31,22 @@ Tài liệu này quy định các nguyên tắc vận hành, quản lý context 
 
 ---
 
-## 5. Quy ước Đặt tên File và Thư mục (Naming Convention)
+## 4. Kỷ luật trong Giai đoạn Khám phá Đề tài (Exploratory Discipline)
 
-- **Quy tắc:** Tên file và thư mục **chỉ dùng chữ thường, chữ số và dấu gạch dưới `_`**. Không dùng **gạch ngang `-`**, khoảng trắng, dấu tiếng Việt hoặc ký tự đặc biệt.
-- **Lý do:** gạch dưới không bị shell, đường dẫn URL và một số công cụ diễn giải thành ký tự đặc biệt; gạch ngang dễ lẫn với dấu phân tách từ khi tên đã có sẵn nhiều thành phần.
-- **Ngoại lệ duy nhất:** mã định danh quyết định `RDR-NNNN` giữ nguyên gạch ngang vì đó là phần của mã, không phải dấu phân tách từ. Phần mô tả phía sau vẫn dùng `_`, ví dụ `RDR-0004_lock_rq3_asymmetric_aspect_compensation.md`.
-- **Ví dụ đúng:** `refs/04_mechanism/2025_sharma_review_sentiment_garden.pdf`
-- **Ví dụ sai:** `refs/04_mechanism/2025-sharma-review.pdf`
-- **Quy ước thư viện `refs/`:** `<năm>_<tác giả chính không dấu>_<chủ đề ngắn>.pdf`, đặt trong thư mục chức năng (xem `refs/INDEX.md` mục 0).
+* **Quy tắc:** Khi đề tài và Research Questions (RQs) chưa được chốt chính thức (chưa có quyết định kiến trúc `RDR-0001` ban hành trong `docs/decisions/`), **Agent KHÔNG tự ý sinh code triển khai hay tự chốt khung phương pháp luận**.
+* **Phạm vi hành vi:** Agent chỉ tập trung hỗ trợ phân tích dữ liệu, bóc tách cấu trúc dataset, đối soát văn hiến và brainstorm ý tưởng theo yêu cầu của người dùng.
 
 ---
 
-## 4. Kỷ luật trong Giai đoạn Khám phá Đề tài (Exploratory Discipline)
-* **Quy tắc:** Khi đề tài và Research Questions (RQs) chưa được chốt chính thức (chưa có quyết định kiến trúc `RDR-0001` ban hành trong `docs/decisions/`), **Agent KHÔNG tự ý sinh code triển khai hay tự chốt khung phương pháp luận**.
-* **Phạm vi hành vi:** Agent chỉ tập trung hỗ trợ phân tích dữ liệu, bóc tách cấu trúc dataset, đối soát văn hiến và brainstorm ý tưởng theo yêu cầu của người dùng.
+## 5. Quy ước Đặt tên File và Thư mục (Naming Convention)
+
+- **Quy tắc chung:** Tên file và thư mục **chỉ dùng chữ thường, chữ số và dấu gạch dưới `_`**. Không dùng **gạch ngang `-`**, khoảng trắng, dấu tiếng Việt hoặc ký tự đặc biệt.
+- **Lý do:** gạch dưới không bị shell, đường dẫn URL và một số công cụ diễn giải thành ký tự đặc biệt; gạch ngang dễ lẫn với dấu phân tách từ khi tên đã có sẵn nhiều thành phần.
+- **Ngoại lệ 1 — mã quyết định:** `RDR-NNNN` giữ nguyên gạch ngang vì đó là phần của mã, không phải dấu phân tách từ. Phần mô tả phía sau vẫn dùng `_`, ví dụ `RDR-0004_lock_rq3_asymmetric_aspect_compensation.md`.
+- **Ngoại lệ 2 — file điều hướng và quản lý context:** tên file viết **CHỮ HOA TOÀN BỘ**, phần mở rộng giữ chữ thường. Nhóm này gồm `README.md`, `AGENTS.md`, `RULES.md`, `STATUS.md`, `INDEX.md`, `SOURCES.md`.
+  - **Lý do:** tách hai loại file nằm cạnh nhau — file để **đọc và điều hướng** (viết hoa, nổi bật khi liệt kê thư mục) và file **nội dung** (chữ thường). Trong một thư mục có 7 PDF kèm 2 file quản lý, quy ước này cho biết ngay đâu là điểm vào.
+  - **Chỉ áp cho tên file.** Tên thư mục vẫn chữ thường.
+  - **Áp dụng cho file tạo mới.** File cũ đã đúng quy ước thì giữ nguyên; file nội dung không đổi tên chỉ vì quy ước này.
+- **Ví dụ đúng:** `refs/04_mechanism/2025_sharma_review_sentiment_garden.pdf` · `refs/04_mechanism/SOURCES.md` · `refs/INDEX.md`
+- **Ví dụ sai:** `refs/04_mechanism/2025-sharma-review.pdf` · `refs/04_mechanism/sources.md` · `refs/04_mechanism/Index.md`
+- **Quy ước thư viện `refs/`:** `<năm>_<tác giả chính không dấu>_<chủ đề ngắn>.pdf`, đặt trong thư mục chức năng (xem `refs/INDEX.md` mục 0).
