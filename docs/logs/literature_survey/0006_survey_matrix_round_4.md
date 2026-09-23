@@ -469,7 +469,7 @@ Thư mục trước đây trộn chủ đề (`inconsistency`, `asymmetric-compe
 
 | Thư mục | Chức năng | File |
 | --- | --- | ---: |
-| `01_root/` | Bài gốc đối chuẩn + factsheet | 3 |
+| `01_root/` | Bài gốc đối chuẩn | 2 |
 | `02_definition/` | Định nghĩa construct & provenance | 2 |
 | `03_phenomenon/` | Bằng chứng hiện tượng bất nhất | 7 |
 | `04_mechanism/` | Lý thuyết & cơ chế bất đối xứng | 5 |
@@ -491,3 +491,5 @@ Thư mục trước đây trộn chủ đề (`inconsistency`, `asymmetric-compe
 - `_round4_staging/` → phân vào cụm chức năng tương ứng
 
 **Hệ quả:** B1 Das (meta-analysis) tải về sẽ vào `05_boundary_conditions/`, Slevitch vào `06_counter_evidence/` — hai cụm mới thay cho đề xuất `severity-recovery/` và `method-critique/` ở mục 7.3. Đường dẫn trong `refs/INDEX.md`, `AGENTS.md` và các log `0004`–`0005` đã cập nhật theo. Không file nào bị xoá.
+
+**Cập nhật cùng ngày 2026-09-23:** `01_root/factsheet.md` đã xoá. Bản tóm tắt dẫn xuất này trùng nội dung với `full_paper.md` (phương trình 2a/2b nằm nguyên ở `full_paper.md:259-273`) và các số liệu EDA tự sinh đã có nhà khác: 1.339 span `Branding` ở `docs/logs/brainstorm/0001_root_idea.md` và `notes/glossary.md`, 402 review 5 sao có span tiêu cực ở `docs/logs/brainstorm/0001_root_idea.md` và `docs/logs/validation/0001_manual_annotation_protocol.md`, ba điểm phản biện ở mục Chi tiết của `refs/01_root/INDEX.md`. `01_root/` còn 2 tệp: PDF gốc và `full_paper.md`. Con trỏ đã trỏ về `full_paper.md` ở `AGENTS.md`, `refs/01_root/SOURCES.md`, `refs/01_root/INDEX.md`, `notes/project_overview.md`, `notes/reference_map.md`, `notes/pillar_strength.md`, log `0004` và `reports/md/project_planning.md`.

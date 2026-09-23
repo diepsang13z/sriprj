@@ -41,7 +41,7 @@ P4  Phản biện & phê bình phương pháp   46  █████████�
 
 ### P6 — Nguồn gốc & đối chuẩn — **85**
 
-*Bài báo bị phản biện, kèm factsheet và toàn văn.*
+*Bài báo bị phản biện, kèm bản toàn văn dạng markdown.*
 
 - 1 nguồn · **1** có toàn văn (100%)
 - Mức bằng chứng tốt nhất: **4** · trong cửa sổ 36 tháng: 100%

@@ -17,7 +17,7 @@
 
 ## 2. Toàn cảnh `refs/`
 
-- **35 PDF local, xếp theo chức năng:** `01_root` 1 · `02_definition` 2 · `03_phenomenon` 8 · `04_mechanism` 7 · `05_boundary_conditions` 6 · `06_counter_evidence` 1 · `07_baselines_methods` 6 · `08_legacy` 4. Cộng 2 file markdown ở `01_root` (factsheet, full_paper).
+- **35 PDF local, xếp theo chức năng:** `01_root` 1 · `02_definition` 2 · `03_phenomenon` 8 · `04_mechanism` 7 · `05_boundary_conditions` 6 · `06_counter_evidence` 1 · `07_baselines_methods` 6 · `08_legacy` 4. Cộng 1 file markdown ở `01_root` (bản toàn văn).
 - **Không có file mồ côi:** mọi PDF local đều được ghi trong `refs/INDEX.md`; trạng thái toàn văn ở Mục 9 của file đó.
 - **Trục active hiện tại:** signed sentiment–rating discrepancy và RQ3 về cross-aspect asymmetric compensation (đã chốt theo `RDR-0004`), đọc kèm hai điều chỉnh bắt buộc của Round 4 (mục 10).
 - **Full text Round 3:** 3/9 nguồn shortlist đã có local full text: Sharma et al. (2025), Li et al. (2024), Wang J. et al. (2024).
@@ -28,7 +28,7 @@
 
 | Ref | Tóm tắt ngắn | Tác dụng trong đề tài | Trạng thái |
 |---|---|---|---|
-| **Le et al. (2026)** — root paper | BERTopic + VADER + WMLR trên 1.3M hotel reviews; dùng `Loyalty` để giải thích rating. | Là điểm xuất phát, dataset/context đối chuẩn và căn cứ phản biện nguy cơ circularity khi dùng rating/loyalty. | **Đã kéo — local PDF**; có `factsheet.md` và `full_paper.md`. |
+| **Le et al. (2026)** — root paper | BERTopic + VADER + WMLR trên 1.3M hotel reviews; dùng `Loyalty` để giải thích rating. | Là điểm xuất phát, dataset/context đối chuẩn và căn cứ phản biện nguy cơ circularity khi dùng rating/loyalty. | **Đã kéo — local PDF**; có `full_paper.md`. |
 
 ## 4. Core evidence: sentiment–rating inconsistency
 

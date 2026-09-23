@@ -16,6 +16,6 @@
 - **Tệp:** `2026_unlocking_insights_into_customer_sentiment_analysis_impact_of_loyalty_on_online_hotel_ratings.pdf`
 - **Nhóm trụ cột:** P6
 - **Vì sao giữ:** Là điểm xuất phát của đề tài và là mốc so sánh cho mọi kết quả về sau
-- **Ghi chú:** PDF gốc nặng 5,4 MB. Đọc qua `factsheet.md`; `full_paper.md` là bản toàn văn dạng markdown. Hai tệp này là bản dẫn xuất từ PDF, không phải nguồn độc lập nên không có bản ghi riêng.
+- **Ghi chú:** PDF gốc nặng 5,4 MB, để đối chiếu nguyên văn. `full_paper.md` là bản toàn văn dạng markdown — grep được và giữ nguyên bảng, nên đây là đường đọc chính. Tệp này là bản dẫn xuất từ PDF, không phải nguồn độc lập nên không có bản ghi riêng.
 
 Ba điểm phản biện: giả định quan hệ đơn điệu giữa cảm xúc khía cạnh và điểm số; lập luận vòng ở biến `Loyalty`; trộn trục khía cạnh với trục cảm xúc. Kết quả công bố: McFadden pseudo $R^2$ 0,4617 (Booking) và 0,5898 (TripAdvisor).

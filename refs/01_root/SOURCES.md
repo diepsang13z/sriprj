@@ -16,6 +16,6 @@
 - updated: 2026-09-23
 - role: Bài gốc đối chuẩn — kế thừa khung S-O-R, pipeline và dữ liệu; đồng thời là đối tượng bị phản biện
 - keep_reason: Là điểm xuất phát của đề tài và là mốc so sánh cho mọi kết quả về sau
-- note: PDF gốc nặng 5,4 MB. Đọc qua `factsheet.md`; `full_paper.md` là bản toàn văn dạng markdown. Hai tệp này là bản dẫn xuất từ PDF, không phải nguồn độc lập nên không có bản ghi riêng.
+- note: PDF gốc nặng 5,4 MB, để đối chiếu nguyên văn. `full_paper.md` là bản toàn văn dạng markdown — grep được và giữ nguyên bảng, nên đây là đường đọc chính. Tệp này là bản dẫn xuất từ PDF, không phải nguồn độc lập nên không có bản ghi riêng.
 
 Ba điểm phản biện: giả định quan hệ đơn điệu giữa cảm xúc khía cạnh và điểm số; lập luận vòng ở biến `Loyalty`; trộn trục khía cạnh với trục cảm xúc. Kết quả công bố: McFadden pseudo $R^2$ 0,4617 (Booking) và 0,5898 (TripAdvisor).

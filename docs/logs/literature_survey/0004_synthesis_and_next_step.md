@@ -65,7 +65,7 @@ Bằng chứng mới nhất cho forgiveness vẫn dừng ở forgiveness, repatr
 
 ### 1.4. Baseline kỹ thuật đã đủ để validation, chưa đủ để chốt pipeline
 
-- **Baseline tái lập:** `BERTopic + VADER + WMLR` của [paper gốc](../../../refs/01_root/factsheet.md).
+- **Baseline tái lập:** `BERTopic + VADER + WMLR` của [paper gốc](../../../refs/01_root/full_paper.md).
 - **Aspect-level benchmark:** HOSSemEval-EB23/TAS-BERT cung cấp điểm quy chiếu cho hospitality ABSA ([Doan et al., 2025](https://doi.org/10.1007/s11042-024-19518-9)).
 - **Interpretable rating driver:** high-utility aspect rules của Öztürk mô tả co-occurrence và trade-off giữa aspects ([Öztürk, 2026](https://doi.org/10.1109/access.2026.3672490)).
 - **Rating-prediction watchlist:** DeBERTa + random oversampling của Topçu et al. là baseline dự đoán rating, nhưng không được dùng làm sentiment estimator độc lập vì rating là training label ([Topçu et al., 2026](https://dergipark.org.tr/en/pub/saucis/article/1748175)).
