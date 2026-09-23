@@ -37,7 +37,7 @@ Nếu chỉ giới hạn ở 1–2 công thức cố định, nghiên cứu sẽ
 * **Ý tưởng:** Rời rạc hóa bài viết và điểm số thành ma trận $2 \times 2$ hoặc $3 \times 3$:
   * Trục Text: Tích cực ($\ge 0$) vs. Tiêu cực ($< 0$).
   * Trục Rating: Cao (4–5 sao) vs. Thấp (1–2 sao).
-* **Ứng dụng thực tế:** Nhóm đã phát hiện **402 mẫu 5-sao có chứa phàn nàn tiêu cực** trong dataset `TripAdvisor_EN.json` — đây là đại diện trực tiếp cho ô *Negative Text – High Rating*.
+* **Ứng dụng thực tế:** Nhóm đã phát hiện **394 mẫu 5-sao có chứa phàn nàn tiêu cực** trong dataset `TripAdvisor_EN.json` — đây là đại diện trực tiếp cho ô *Negative Text – High Rating*.
 * **Ưu điểm:** Trực quan, dễ giải thích, không phụ thuộc vào tham số mô hình hóa phức tạp.
 * **Nhược điểm:** Mất thông tin cường độ cảm xúc do việc phân nhóm nhị phân/tam phân.
 

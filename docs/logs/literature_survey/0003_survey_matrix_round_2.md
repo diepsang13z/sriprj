@@ -121,7 +121,7 @@ trên dữ liệu review khách sạn thực tế. Đây vẫn là khoảng tr�
 | ≥1 discrepancy operationalization | **Đạt** | Continuous magnitude + directional class + aspect-level absolute conflict |
 | ≥1 technical baseline | **Đạt** | HOSSemEval/TAS-BERT, HUIM aspect rules; DeBERTa/ROS ở watchlist |
 | Saturation: 3–5 bài liên tiếp không sinh construct/method | **Chưa đạt** | Cả 6 nguồn promoted đều thêm construct, measure hoặc mechanism |
-| Đủ ban hành RDR-0003 | **Chưa đạt** | Cần chốt estimator/thang chuẩn hóa/threshold và kiểm tra feasibility trên 402 mẫu 5-star có negative span |
+| Đủ ban hành RDR-0003 | **Chưa đạt** | Cần chốt estimator/thang chuẩn hóa/threshold và kiểm tra feasibility trên 394 mẫu 5-star có negative span |
 
 **Quyết định sau vòng quét:** dừng broad search tạm thời vì core set đã chạm 15; bước kế tiếp là validation có mục tiêu trên dữ liệu dự án. Chỉ mở Round 3 nếu validation phát hiện measure không tái lập hoặc citation chain sinh nguồn trực tiếp hơn.
 

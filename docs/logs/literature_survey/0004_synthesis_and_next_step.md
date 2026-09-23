@@ -65,7 +65,7 @@ Bằng chứng mới nhất cho forgiveness vẫn dừng ở forgiveness, repatr
 
 ### 1.4. Baseline kỹ thuật đã đủ để validation, chưa đủ để chốt pipeline
 
-- **Baseline tái lập:** `BERTopic + VADER + WMLR` của [paper gốc](../../../refs/01_root/factsheet.md).
+- **Baseline tái lập:** `BERTopic + VADER + WMLR` của [paper gốc](../../../refs/01_root/md/).
 - **Aspect-level benchmark:** HOSSemEval-EB23/TAS-BERT cung cấp điểm quy chiếu cho hospitality ABSA ([Doan et al., 2025](https://doi.org/10.1007/s11042-024-19518-9)).
 - **Interpretable rating driver:** high-utility aspect rules của Öztürk mô tả co-occurrence và trade-off giữa aspects ([Öztürk, 2026](https://doi.org/10.1109/access.2026.3672490)).
 - **Rating-prediction watchlist:** DeBERTa + random oversampling của Topçu et al. là baseline dự đoán rating, nhưng không được dùng làm sentiment estimator độc lập vì rating là training label ([Topçu et al., 2026](https://dergipark.org.tr/en/pub/saucis/article/1748175)).
@@ -102,7 +102,7 @@ Không nên so sánh trực tiếp accuracy/F1 giữa các paper vì khác label
 
 ### Gate A — Tạo evaluation set có đối chứng
 
-1. Bắt đầu từ **402 review 5 sao có negative span** trong `data/TripAdvisor_EN.json`.
+1. Bắt đầu từ **394 review 5 sao có negative span** trong `data/TripAdvisor_EN.json`.
 2. Tạo mirror subset `1–2 sao + positive span`; nếu không có đủ mẫu, báo đúng prevalence thay vì cân bằng nhân tạo.
 3. Thêm aligned controls từ hai phía rating để đo false-positive rate.
 4. Gắn nhãn thủ công tối thiểu:
@@ -112,7 +112,7 @@ Không nên so sánh trực tiếp accuracy/F1 giữa các paper vì khác label
    - có/không service recovery, negation hoặc sarcasm.
 5. Hai người gán nhãn độc lập một calibration subset, đo inter-rater agreement và adjudicate disagreement trước khi mở rộng.
 
-**Rủi ro cần chặn:** 402 mẫu chỉ kiểm tra được chiều high-rating/negative-text; không đủ để kết luận về punitive/anger direction nếu thiếu mirror subset.
+**Rủi ro cần chặn:** 394 mẫu chỉ kiểm tra được chiều high-rating/negative-text; không đủ để kết luận về punitive/anger direction nếu thiếu mirror subset.
 
 ### Gate B — So sánh ba formulation tối thiểu
 
@@ -130,7 +130,7 @@ Chọn formulation chính khi nó đồng thời:
 
 1. Khớp tốt nhất với human direction labels, báo cáo macro-F1/confusion matrix thay vì accuracy đơn lẻ.
 2. Giữ được dấu và phân biệt hai hướng inconsistency.
-3. Ổn định giữa high-rating và low-rating strata, không chỉ hoạt động trên 402 mẫu 5 sao.
+3. Ổn định giữa high-rating và low-rating strata, không chỉ hoạt động trên 394 mẫu 5 sao.
 4. Giải thích được ở cấp aspect và không dùng rating để huấn luyện sentiment estimator.
 5. Không phụ thuộc vào explicit star mentions/`Branding` text gây data leakage.
 

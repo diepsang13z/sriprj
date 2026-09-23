@@ -19,7 +19,7 @@ Trước khi ban hành Quyết định Kiến trúc `RDR-0003` để chốt côn
 Tập đánh giá được trích xuất từ `data/TripAdvisor_EN.json` với quy mô khuyến nghị **600 – 800 mẫu**, bao gồm 3 nhóm thành phần:
 
 1. **Nhóm Nghi ngờ Bất nhất Chiều 1 (Candidate High-Rating / Negative-Text):**
-   * Toàn bộ **402 review 5 sao** có chứa span/từ khóa tiêu cực đã được bóc tách từ bước phân tích sơ bộ.
+   * Toàn bộ **394 review 5 sao** (trước 2026-09-23 ghi 402) có chứa span/từ khóa tiêu cực đã được bóc tách từ bước phân tích sơ bộ. Định nghĩa "ca bất nhất" đóng băng ở [`RDR-0006`](../../decisions/RDR-0006_freeze_negative_span_definition.md), kèm phép đếm lại ở mục 2.4 của quyết định đó.
 2. **Nhóm Nghi ngờ Bất nhất Chiều 2 (Mirror Subset: Low-Rating / Positive-Text):**
    * Các review **1–2 sao** nhưng có chứa span/từ khóa tích cực (khen ngợi).
    * Lấy theo tỷ lệ xuất hiện thực tế (prevalence), không tạo cân bằng nhân tạo nếu dữ liệu gốc phân bố lệch.

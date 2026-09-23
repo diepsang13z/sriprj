@@ -469,7 +469,7 @@ Thư mục trước đây trộn chủ đề (`inconsistency`, `asymmetric-compe
 
 | Thư mục | Chức năng | File |
 | --- | --- | ---: |
-| `01_root/` | Bài gốc đối chuẩn + factsheet | 3 |
+| `01_root/` | Bài gốc đối chuẩn | 2 |
 | `02_definition/` | Định nghĩa construct & provenance | 2 |
 | `03_phenomenon/` | Bằng chứng hiện tượng bất nhất | 7 |
 | `04_mechanism/` | Lý thuyết & cơ chế bất đối xứng | 5 |
@@ -491,3 +491,9 @@ Thư mục trước đây trộn chủ đề (`inconsistency`, `asymmetric-compe
 - `_round4_staging/` → phân vào cụm chức năng tương ứng
 
 **Hệ quả:** B1 Das (meta-analysis) tải về sẽ vào `05_boundary_conditions/`, Slevitch vào `06_counter_evidence/` — hai cụm mới thay cho đề xuất `severity-recovery/` và `method-critique/` ở mục 7.3. Đường dẫn trong `refs/INDEX.md`, `AGENTS.md` và các log `0004`–`0005` đã cập nhật theo. Không file nào bị xoá.
+
+**Cập nhật cùng ngày 2026-09-23:** `01_root/factsheet.md` đã xoá. Bản tóm tắt dẫn xuất này trùng nội dung với `full_paper.md` (phương trình 2a/2b nằm nguyên ở `full_paper.md:259-273`) và các số liệu EDA tự sinh đã có nhà khác: 1.339 span `Branding` ở `docs/logs/brainstorm/0001_root_idea.md` và `notes/glossary.md`, 394 review 5 sao có span tiêu cực ở `docs/logs/brainstorm/0001_root_idea.md` và `docs/logs/validation/0001_manual_annotation_protocol.md`, ba điểm phản biện ở mục Chi tiết của `refs/01_root/INDEX.md`. `01_root/` còn 2 tệp: PDF gốc và `full_paper.md`. Con trỏ đã trỏ về `full_paper.md` ở `AGENTS.md`, `refs/01_root/SOURCES.md`, `refs/01_root/INDEX.md`, `notes/project_overview.md`, `notes/reference_map.md`, `notes/pillar_strength.md`, log `0004` và `reports/md/project_planning.md`.
+
+**Cập nhật cùng ngày 2026-09-23 (đợt 2) — gộp lớp thư viện:** xoá **8 tệp `INDEX.md` cấp cụm**. Chúng là bản render của `SOURCES.md` nhưng bị giữ bằng tay, và kiểm lịch sử cho thấy **chưa từng có script sinh nào trong repo** (`git log --all -- "*.py"` không ra kết quả), nên câu *"script sinh đã gỡ khỏi repo"* trong 17 tệp là sai — ba lớp đó xưa nay đều do người chép. Dữ liệu của cụm nay chỉ nằm ở `SOURCES.md`; danh mục cấp thư viện ở `refs/INDEX.md`. Cũng xoá `01_root/full_paper.md` (431 dòng) vì bản ở `01_root/md/` (610 dòng) đầy đủ hơn: có phương trình 2a/2b kèm hệ số và các bảng 3–8. Quy ước mới ghi ở `RULES.md` mục 5 và `refs/INDEX.md` mục 10: bản markdown của mỗi bài nằm ở `md/` trong cụm, trùng tên với PDF. Bản markdown đang được chuyển song song ngoài phiên agent — tại thời điểm ghi: 11/35 bài. Chuẩn hoá tên 9 PDF lệch quy ước (mã cụm `A1`, `B5`, `C2`, `D3`, `E1`, `E2`, `E3`, `E4`, `E6` đặt trước năm thay vì năm đứng đầu) đã xong 2 tệp ở `03_phenomenon`; **8 tệp còn lại hoãn** vì tiến trình chuyển markdown đang giữ tệp, đổi tên lúc này sẽ làm md lệch tên PDF — thành việc #7 và #8 ở `docs/BACKLOG.md`.
+
+**Cập nhật cùng ngày 2026-09-23 (đợt 3):** tiến trình chuyển markdown chạy xong ngoài phiên agent — **35/35 bài có bản md trùng tên PDF**, không cụm nào lệch. Nhờ đó làm nốt việc #8: cả **9 tệp** lệch quy ước đã đổi sang năm đứng đầu (2 tệp `03_phenomenon` làm trước, 7 tệp còn lại sau khi tiến trình nhả tệp), kèm bản md và field `file:` trong `SOURCES.md`; mã cụm vẫn giữ ở field `code:`. Việc #7 và #8 đóng. Kiểm chứng sau cùng: 8 cụm khớp cả ba lớp PDF ↔ `md/` ↔ field `file:`, 74 tệp `.md` với 105 link nội bộ, 0 link hỏng.

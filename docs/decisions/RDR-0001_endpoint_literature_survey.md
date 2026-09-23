@@ -30,7 +30,7 @@ Khảo sát văn hiến chỉ hợp lệ khi phục vụ chốt 4 thành phần 
    * *Mục tiêu tối thiểu:* Xác định được **ít nhất 1 công thức/chỉ số toán học hoặc NLP** khả thi trên tập dữ liệu của dự án, phản ánh được cả độ lớn (*magnitude*) và chiều hướng (*direction*: vị tha/nâng đỡ vs. trừng phạt/bực bội).
    * *Điểm neo ban đầu (Baseline Anchors):*
      * *Phần dư mô hình (Econometric Residual):* $\text{Discrepancy} = \text{Rating} - \widehat{\text{Rating}}_{\text{text}}$ (kế thừa từ hồi quy WMLR của paper gốc).
-     * *Ma trận phân cực (Polarity Discrepancy Matrix):* Phân nhóm $2 \times 2$ (Positive Text $\times$ Low Rating; Negative Text $\times$ High Rating) như 402 mẫu 5-sao đã phát hiện.
+     * *Ma trận phân cực (Polarity Discrepancy Matrix):* Phân nhóm $2 \times 2$ (Positive Text $\times$ Low Rating; Negative Text $\times$ High Rating) như 394 mẫu 5-sao đã phát hiện.
    * *Ghi chú mở rộng (Open Exploration):* Chủ động rà soát các họ công thức mới (Embedding distance, Attitudinal Ambivalence/Entropy, Aspect-Weighted Discrepancy Vector, Wasserstein distance...) và tuyển chọn dựa trên 3 tiêu chí: *Tính diễn giải hành vi*, *Độ chi tiết cấp khía cạnh*, và *Tính khả thi thực nghiệm*.
 
 3. **Baseline & Phương pháp luận thực nghiệm (Methodology Benchmark):**

@@ -15,7 +15,7 @@ Chào mừng bạn đến với dự án nghiên cứu **Customer Sentiment Anal
 > - Mọi đề cập đến _"paper gốc"_, _"bài báo gốc"_, hoặc _"root paper"_ đều chỉ bài báo:
 >   - **Trích dẫn:** Le, H. T. M., Nguyen, T. Q., & Nguyen, B. T. (2026). _Unlocking insights into customer sentiment analysis: Impact of loyalty on online hotel ratings_. _International Journal of Hospitality Management_, 134, 104574.
 >   - **Vị trí file:** `refs/01_root/2026_unlocking_insights_into_customer_sentiment_analysis_impact_of_loyalty_on_online_hotel_ratings.pdf`.
->   - **Bản tóm tắt kỹ thuật:** [`refs/01_root/factsheet.md`](refs/01_root/factsheet.md) (Agent tra cứu file này, **KHÔNG đọc file PDF 5.4MB**).
+>   - **Bản toàn văn:** [`refs/01_root/md/2026_unlocking_insights_into_customer_sentiment_analysis_impact_of_loyalty_on_online_hotel_ratings.md`](refs/01_root/md/2026_unlocking_insights_into_customer_sentiment_analysis_impact_of_loyalty_on_online_hotel_ratings.md) — markdown, grep được, có bảng và hệ số hồi quy 2a/2b (Agent tra cứu file này, **KHÔNG đọc file PDF 5.4MB**; PDF chỉ để đối chiếu nguyên văn).
 >   - **Bản chất bài báo gốc:** Áp dụng khung S-O-R trên 1.3M review (Booking.com & TripAdvisor tại VN) dùng BERTopic + VADER + WMLR để phân 5 khía cạnh (`Facility`, `Amenity`, `Service`, `Experience Value`, `Loyalty`) giải thích cho `CoRe` (Rating $\ge 4$ sao).
 >   - **Điểm kế thừa & phản biện:** Kế thừa bộ dữ liệu đối chuẩn; đồng thời chỉ ra lỗi **lập luận vòng (Tautology)** khi dùng từ khóa Loyalty dự đoán Rating để mở ra hướng nghiên cứu mới về **Sự bất nhất (Inconsistency)**.
 
@@ -46,6 +46,15 @@ Chào mừng bạn đến với dự án nghiên cứu **Customer Sentiment Anal
 Mỗi Agent khi bắt đầu phiên làm việc mới chỉ cần đọc lướt theo thứ tự tối giản:
 
 1. **Bước 1 — `docs/INDEX.md`:** Định vị cấu trúc tài liệu.
-2. **Bước 2 — `RULES.md`:** Nắm vững các quy tắc giới hạn file, kỷ luật Git và Single Source of Truth.
-3. **Bước 3 — `STATUS.md`:** Xem nhanh ảnh chụp hiện trạng dự án ($\le 40$ dòng) và các đầu việc cần làm.
-4. **Bước 4 — Không tự ý đọc file PDF gốc và không đọc tràn lan `docs/logs/`**: Chỉ mở file log hoặc factsheet cụ thể khi nhiệm vụ hiện tại yêu cầu.
+2. **Bước 2 — `RULES.md`:** Nắm vững các quy tắc giới hạn file, kỷ luật Git, Single Source of Truth và kỷ luật ghi trạng thái.
+3. **Bước 3 — `STATUS.md`:** Xem ảnh chụp trạng thái **cấp dự án** ($\le 40$ dòng) — chỉ đổi khi có `RDR` mới.
+4. **Bước 4 — `docs/BACKLOG.md` và `docs/logs/progress/` (khi cần biết đang làm gì):** backlog là việc đang mở cấp dự án; progress là việc theo người theo ngày.
+5. **Bước 5 — Không tự ý đọc file PDF gốc và không đọc tràn lan `docs/logs/`**: Chỉ mở file log hoặc bản toàn văn cụ thể khi nhiệm vụ hiện tại yêu cầu.
+
+---
+
+## 4. Dữ liệu (Dataset)
+
+Dataset **không nằm trong git** — thư mục `data/` bị gitignore. Tệp do **nhóm dự án chia sẻ**, không tải từ nguồn công khai; kích thước và checksum ở [`README.md`](README.md) mục **"Nhận dữ liệu về"**.
+
+Không tự tạo lại hay thay bằng nguồn khác: mọi con số thống kê trong tài liệu được tính trên đúng bản ghi ở checksum đó. Nếu tệp lệch checksum, **dừng lại và báo** thay vì tính tiếp.

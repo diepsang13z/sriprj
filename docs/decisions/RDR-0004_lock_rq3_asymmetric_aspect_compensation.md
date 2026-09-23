@@ -90,7 +90,7 @@ Cách diễn đạt cũ `positive Service × negative Facility → rating đư�
 ## 5. Đọc thêm
 
 - [`docs/logs/literature_survey/0005_survey_matrix_round_3_rq3_rescoping.md`](../logs/literature_survey/0005_survey_matrix_round_3_rq3_rescoping.md) — search protocol, evidence matrix, candidate alternatives, endpoint check.
-- [`notes/survey_round_3_overview.md`](../../notes/survey_round_3_overview.md) — bản giải thích ngắn về Round 3.
+- [`notes/survey_overview.md`](../../notes/survey_overview.md) — tổng quan bốn vòng khảo sát văn hiến.
 - [`notes/reference_map.md`](../../notes/reference_map.md) — ref nào dùng cho phần nào, trạng thái full text.
 - [`docs/logs/brainstorm/0003_app_concept_and_course_requirements.md`](../logs/brainstorm/0003_app_concept_and_course_requirements.md) — hướng ứng dụng đã chốt cho artifact của môn DAP391m.
 - [`docs/logs/validation/0001_manual_annotation_protocol.md`](../logs/validation/0001_manual_annotation_protocol.md) — thiết kế evaluation set và tiêu chí chốt công thức đo lường.

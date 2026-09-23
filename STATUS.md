@@ -1,37 +1,21 @@
 # Project Status Snapshot
 
-_Cập nhật lần cuối: 2026-09-23 | Trạng thái: RQ3 chốt, khảo sát đóng có điều kiện_
+_Cập nhật: 2026-09-23 · RQ3 đã chốt, khảo sát đóng có điều kiện_
+
+> **Ảnh chụp trạng thái CẤP DỰ ÁN.** Chỉ sửa khi có `RDR` mới, đổi pha, hoặc chốt RQ.
+> Việc đang mở: `docs/BACKLOG.md` · Việc theo người: `docs/logs/progress/` · Danh sách quyết định: `docs/INDEX.md` mục 2.
 
 ---
 
-## 1. Giai đoạn Hiện tại & Trạng thái Đề tài
-* **Trạng thái đề tài:** **ĐANG KHÁM PHÁ / RQ3 ĐÃ CHỐT, RQ1–RQ2 CÒN NHÁP**.
-* **Tiến độ:** Đã hoàn tất targeted Survey Round 3 theo `RDR-0003` và chốt RQ3 theo `RDR-0004`. Đã chốt hướng artifact ứng dụng cho môn DAP391m (Bảng soát điểm sao).
+## 1. Giai đoạn Hiện tại
 
-## 2. Research Questions
+- **Trạng thái:** ĐANG KHÁM PHÁ — RQ3 đã chốt, RQ1–RQ2 còn nháp.
+- **Đã có:** Survey Round 1–4 và khảo sát đóng có điều kiện (`RDR-0005`); định nghĩa "ca bất nhất" đóng băng (`RDR-0006`, 394 ca trên 7.148 review 5★); Project Planning, Research Proposal, slide báo cáo tiến độ; thư viện `refs/` đã tái cấu trúc và có bản markdown cho cả 35 bài.
+- **Chưa chốt:** công thức đo discrepancy, bộ ước lượng cảm xúc, ngưỡng phân loại — chờ validation study.
 
-* **Khung lý thuyết — ĐÃ KHÓA (`RDR-0005`):** S-O-R + Kano/three-factor + Prospect Theory. Nhánh forgiveness không còn là cơ chế trung tâm.
-* **RQ3 — ĐÃ CHỐT (`RDR-0004`):** Cảm xúc tích cực và tiêu cực trên nhiều khía cạnh khách sạn kết hợp bất đối xứng như thế nào để quyết định chiều hướng và độ lớn của sentiment–rating discrepancy?
-* RQ1–RQ2 chưa chốt chính thức; tiếp tục giữ hướng prevalence/typology và signed aspect-level discrepancy.
-* RQ3 dùng cơ chế asymmetric compensatory/non-compensatory. `Service × Facility` chỉ còn là planned contrast.
-* `Severity` và `Service_Recovery` chỉ kiểm định được trên evaluation set (sub-sample); hotel class dùng cho robustness.
-* Ba RQ kỹ thuật RQ4–RQ6 sinh từ nhánh dự báo phục vụ Bước 5 của môn (`0003` brainstorm log).
+## 2. Khung và Câu hỏi Nghiên cứu
 
-## 3. Quyết định Kỹ thuật đã chốt (Decisions)
-
-- Đã chốt `RDR-0001`: Mục tiêu và tiêu chí dừng khảo sát văn hiến.
-- Đã chốt `RDR-0002`: Quét chủ động trong cửa sổ 36 tháng, nguồn cũ chỉ theo citation chain có lý do.
-- Đã chốt `RDR-0003`: Mở lại khảo sát để tái định hình RQ3; ưu tiên journal và nguồn đóng.
-- Đã chốt `RDR-0004` (2026-09-23): Chốt RQ3 theo cơ chế asymmetric aspect compensation.
-- Đã chốt `RDR-0005` (2026-09-23): Đóng khảo sát có điều kiện; khóa khung lý thuyết S-O-R + Kano + Prospect Theory; phạm vi dữ liệu 9.990 review; forgiveness không đo.
-- Survey Round 3 đã sàng lọc 9 journal candidates; 2/9 nguồn đã có toàn văn. Hàng đợi ưu tiên ban đầu 8 bài, đã lấy Sharma và còn 7 bài.
-- Chưa chốt công thức đo discrepancy — chờ validation study quyết định.
-
-## 4. Việc tiếp theo (Next Steps)
-
-1. Nhờ thư viện trường/giảng viên lấy 6 bài đóng trong `refs/INDEX.md` mục B2 (ưu tiên Kwon 2026) — 4 bài truy cập mở đã lấy xong.
-2. Cập nhật Research Proposal theo RQ3 đã chốt và theo nhánh dự báo; giữ nguyên audit trail `refs/`.
-3. Chạy validation study để chốt công thức đo discrepancy, rồi mới khóa mô hình econometric.
-4. Tải 5 bài truy cập mở còn thiếu + nhờ thư viện 12 bài đóng (xem `refs/INDEX.md` mục D và log `0006` mục 7.2).
-5. Viết Research Proposal trên khung đã khóa: phạm vi 9.990 review, boundary conditions = Severity + Service_Recovery + hotel class.
-6. Dựng khung ứng dụng + endpoint sớm (mục tiêu tuần 4); cảnh báo SNS làm sớm vì không thể mock.
+- **Khung lý thuyết — ĐÃ KHÓA (`RDR-0005`):** S-O-R + Kano/three-factor + Prospect Theory. Forgiveness không còn là cơ chế trung tâm.
+- **RQ3 — ĐÃ CHỐT (`RDR-0004`):** Cảm xúc tích cực và tiêu cực trên nhiều khía cạnh kết hợp bất đối xứng như thế nào để quyết định chiều hướng và độ lớn của sentiment–rating discrepancy?
+- RQ1–RQ2 còn nháp: prevalence/typology và phép đo có dấu ở cấp khía cạnh. RQ4–RQ6 là nhánh kỹ thuật cho Bước 5 của môn.
+- `Severity` và `Service_Recovery` chỉ kiểm định trên evaluation set (sub-sample); hotel class dùng cho robustness. `Service × Facility` chỉ là planned contrast.

@@ -17,7 +17,7 @@
 
 ## 2. Toàn cảnh `refs/`
 
-- **35 PDF local, xếp theo chức năng:** `01_root` 1 · `02_definition` 2 · `03_phenomenon` 8 · `04_mechanism` 7 · `05_boundary_conditions` 6 · `06_counter_evidence` 1 · `07_baselines_methods` 6 · `08_legacy` 4. Cộng 2 file markdown ở `01_root` (factsheet, full_paper).
+- **35 PDF local, xếp theo chức năng:** `01_root` 1 · `02_definition` 2 · `03_phenomenon` 8 · `04_mechanism` 7 · `05_boundary_conditions` 6 · `06_counter_evidence` 1 · `07_baselines_methods` 6 · `08_legacy` 4. Cộng 1 file markdown ở `01_root` (bản toàn văn).
 - **Không có file mồ côi:** mọi PDF local đều được ghi trong `refs/INDEX.md`; trạng thái toàn văn ở Mục 9 của file đó.
 - **Trục active hiện tại:** signed sentiment–rating discrepancy và RQ3 về cross-aspect asymmetric compensation (đã chốt theo `RDR-0004`), đọc kèm hai điều chỉnh bắt buộc của Round 4 (mục 10).
 - **Full text Round 3:** 3/9 nguồn shortlist đã có local full text: Sharma et al. (2025), Li et al. (2024), Wang J. et al. (2024).
@@ -28,7 +28,7 @@
 
 | Ref | Tóm tắt ngắn | Tác dụng trong đề tài | Trạng thái |
 |---|---|---|---|
-| **Le et al. (2026)** — root paper | BERTopic + VADER + WMLR trên 1.3M hotel reviews; dùng `Loyalty` để giải thích rating. | Là điểm xuất phát, dataset/context đối chuẩn và căn cứ phản biện nguy cơ circularity khi dùng rating/loyalty. | **Đã kéo — local PDF**; có `factsheet.md` và `full_paper.md`. |
+| **Le et al. (2026)** — root paper | BERTopic + VADER + WMLR trên 1.3M hotel reviews; dùng `Loyalty` để giải thích rating. | Là điểm xuất phát, dataset/context đối chuẩn và căn cứ phản biện nguy cơ circularity khi dùng rating/loyalty. | **Đã kéo — local PDF**; có bản markdown ở `md/`. |
 
 ## 4. Core evidence: sentiment–rating inconsistency
 
@@ -36,7 +36,7 @@
 |---|---|---|---|
 | **Wang, P. et al. (2025)** | Đo score–textual inconsistency và liên hệ tỷ lệ inconsistency với hotel performance. | Evidence gần nhất cho directional polarity mismatch và mức độ inconsistency ở cấp hotel. | **Đã kéo — local PDF**. |
 | **Bigné et al. (2023)** | So sánh star rating với sentiment ở customer service experience; cho thấy positive/negative aspect sentiments có thể cancel-out/compensate. | Nền thực chứng gần nhất cho cross-aspect compensation; giữ active dù ở rìa cửa sổ quét. | **Đã kéo — local PDF**. |
-| **Kwon, B. et al. (2025)** | Tách degree inconsistency liên tục `|z(rating)-z(sentiment)|` và directional mismatch; outcome là perceived review usefulness. | Cung cấp định nghĩa/đo lường độ lớn và chiều; không dùng helpfulness làm RQ chính. | **Đã kéo — local PDF**. |
+| **Kwon, B. et al. (2025)** | Tách degree inconsistency liên tục `\|z(rating)-z(sentiment)\|` và directional mismatch; outcome là perceived review usefulness. | Cung cấp định nghĩa/đo lường độ lớn và chiều; không dùng helpfulness làm RQ chính. | **Đã kéo — local PDF**. |
 | **Abaiyan et al. (2026)** | Phân loại sáu dạng rating–sentiment incongruence và kiểm tra độ tin cậy của rating như sentiment label. | Supporting evidence cho typology có hướng và cảnh báo weak-label. | **Đã kéo — preprint**; chưa peer-reviewed. |
 | **Jayakody et al. (2026)** | Đo absolute cross-modal discrepancy ở hotel–aspect level. | Supporting technical evidence cho discrepancy đa phương thức/cấp aspect. | **Đã kéo — preprint**; chưa peer-reviewed. |
 | **Wang, D. et al. (2025)** | Phân biệt review inconsistency và rating inconsistency trong TripAdvisor helpfulness. | Giữ để tránh trộn hai construct; outcome helpfulness không dẫn dắt RQ. | **Chưa kéo** — đóng, cần thư viện trường. |
@@ -153,7 +153,7 @@ Tình trạng toàn văn sau Round 4: **16 bài đã tải** (9 tự tải + 7 t
 | Chốt tuyên bố prevalence cho RQ1 | E4 Hu et al. (17,3% trên 4.004 review), đọc kèm D1/D2 để ghi đúng giới hạn phạm vi. |
 | Chọn baseline và tầng giải thích cho app DAP391m | E2 (số baseline F1 0,5817), E1 (SHAP/LIME), E3 (prior art mục đích), E5. |
 | Tránh leakage/circularity khi xây sentiment estimator | Root paper, Valdivia (2019), Almansour (2022), Topçu (2026), D1. |
-| Chuẩn bị proposal sau khi RQ3 được duyệt | `notes/project_overview.md`, `notes/survey_round_3_overview.md`, rồi literature logs. |
+| Chuẩn bị proposal sau khi RQ3 được duyệt | `notes/project_overview.md`, `notes/survey_overview.md`, rồi literature logs. |
 
 ## 10. Giới hạn sử dụng
 
