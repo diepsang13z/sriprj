@@ -43,3 +43,9 @@
 - Mã tạo slide cũ chưa đồng bộ với các chỉnh sửa thủ công trong PowerPoint; không chạy lại để ghi đè bản hiện tại.
 ### Đang chặn
 - Không.
+
+## Bổ sung thuật ngữ tiếng Anh và đổi tên đề tài trên bìa
+- Đã làm: tên đề tài chính bằng tiếng Anh, tên tiếng Việt ở dòng phụ; bổ sung S-O-R, IAA, Three-factor theory, Two-stage model, non-compensatory/compensatory, span, discrepancy, validation, evaluation set và ground truth.
+- Bằng chứng: giữ thuộc tính font/cỡ chữ, xuất và xem năm slide thay đổi bằng PowerPoint; không phát hiện tràn chữ.
+- Còn lại cho người khác: không.
+- Đang chặn: không.
