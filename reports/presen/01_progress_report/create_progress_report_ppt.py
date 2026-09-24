@@ -325,16 +325,20 @@ layers = [
     ("TẦNG 2", "Đo lường", "So rating với sentiment text để có D theo khía cạnh — giữ cả độ lớn và chiều.", BLUE),
     ("TẦNG 3", "Kinh tế lượng", "Xác định khía cạnh chi phối, khía cạnh bù trừ và điều kiện biên.", AMBER),
 ]
-txt(s, 0.85, 1.63, 2.2, 0.24, "Văn bản review", 15, NAVY, True, PP_ALIGN.CENTER)
-line(s, 1.98, 1.94, 1.98, 5.85, TEAL, 1.5)
+txt(s, 0.85, 1.65, 3.55, 0.35, "Văn bản review", 15, NAVY, True)
 for i, (tag, title, body, accent) in enumerate(layers):
-    y = 1.76 + i * 1.55
-    shp = s.shapes.add_shape(MSO_SHAPE.OVAL, Inches(1.73), Inches(y), Inches(0.52), Inches(0.52))
+    x = 0.8 + i * 4.1
+    rect(s, x, 2.25, 3.55, 3.35, WHITE, LINE, True)
+    shp = s.shapes.add_shape(MSO_SHAPE.OVAL, Inches(x + 0.25), Inches(2.53), Inches(0.52), Inches(0.52))
     shp.fill.solid(); shp.fill.fore_color.rgb = rgb(accent); shp.line.color.rgb = rgb(accent)
-    txt(s, 1.73, y + 0.14, 0.52, 0.18, str(i + 1), 10, WHITE, True, PP_ALIGN.CENTER)
-    card(s, 2.75, y - 0.14, 9.2, 1.12, title, body, accent, WHITE, 17.5, 12.8)
-    pill(s, 10.54, y + 0.12, 1.02, tag, PALE_SLATE, MUTED, 9.3)
-pill(s, 3.1, 6.28, 8.48, "Đầu ra: một phép đo được kiểm chứng + mô hình giải thích mẫu chấm điểm", PALE_TEAL, TEAL_DARK, 13)
+    txt(s, x + 0.25, 2.65, 0.52, 0.24, str(i + 1), 11, WHITE, True, PP_ALIGN.CENTER)
+    pill(s, x + 2.18, 2.62, 1.08, tag, PALE_SLATE, MUTED, 10)
+    txt(s, x + 0.25, 3.31, 3.05, 0.42, title, 20, NAVY, True)
+    txt(s, x + 0.25, 4.02, 3.05, 1.26, body, 15, INK)
+    if i < 2:
+        add_arrow(s, x + 3.7, 3.7, 0.25, 0.38, TEAL)
+rect(s, 0.8, 6.12, 11.75, 0.58, PALE_TEAL, PALE_TEAL, True)
+txt(s, 1.0, 6.25, 11.35, 0.32, "Đầu ra: một phép đo được kiểm chứng + mô hình giải thích mẫu chấm điểm", 14, TEAL_DARK, True, PP_ALIGN.CENTER)
 
 # 12 — validation & separation
 s = prs.slides.add_slide(blank); header(s, "Validation trước khi chốt phép đo", "04 · Quy trình 5 bước", 12)
